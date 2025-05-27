@@ -1,0 +1,20 @@
+# Core packages
+pandas
+numpy
+matplotlib
+tqdm
+
+# Machine learning
+scikit-learn
+xgboost
+tensorflow
+
+# Transformers / LLM APIs
+transformers
+huggingface_hub
+
+# Image processing (used by Keras + PIL)
+Pillow
+
+# Kaggle dataset downloader
+kagglehub
