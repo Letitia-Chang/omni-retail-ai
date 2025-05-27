@@ -13,3 +13,6 @@ model/
 
 # Colab artifacts
 .ipynb_checkpoints/
+
+# Ignore raw images folder
+data/raw/images/
