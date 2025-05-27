@@ -121,19 +121,22 @@ git clone https://github.com/your-username/OmniRetail-AI.git
 cd OmniRetail-AI
 ```
 
-1. **Install dependencies**
+2. **Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-1. **Download the dataset (one-time setup)**
+3. **Download the dataset (one-time setup)**
 
 ```bash
 python src/download_data.py
 ```
 
-1. **Explore notebooks or build a custom pipeline!**
+4. **Explore notebooks or build a custom pipeline!**
+
+> ⚠️ Note: The full image dataset is not included in the repository due to size.
+> Please run `src/download_data.py` to fetch it locally using KaggleHub.
 
 ---
 
