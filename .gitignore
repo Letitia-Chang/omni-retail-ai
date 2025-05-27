@@ -6,13 +6,8 @@ __pycache__/
 *.pyc
 .env
 
-# Data
-data/raw/
-data/processed/
-model/
-
 # Colab artifacts
 .ipynb_checkpoints/
 
-# Ignore raw images folder
+# Ignore large image assets
 data/raw/images/
