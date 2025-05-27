@@ -1,0 +1,1001 @@
+id,gender,masterCategory,subCategory,year,usage,productDisplayName,filename,articleType,baseColour,season,price,click_count,user_type,purchase_prob,purchase_pred,inventory
+25170,Women,Accessories,Bags,2015.0,Casual,Lino Perros Women Leatherette Dark Brown Handbag,25170.jpg,Handbags,Black,Summer,47.0,3,fashionista,0.06042171,0,51
+3357,Men,Apparel,Topwear,2011.0,Casual,Myntra Men's Ear Plugs Black T-shirt,3357.jpg,Tshirts,Black,Summer,54.0,4,color_lover,0.19885038,0,92
+6304,Unisex,Footwear,Flip Flops,2011.0,Casual,Puma Unisex Issac Red Black Flip Flop,6304.jpg,Flip Flops,Red,Summer,40.0,1,color_lover,0.38588154,0,14
+4575,Men,Footwear,Shoes,2011.0,Sports,Nike Men's Air Max Court Blue Shoe,4575.jpg,Sports Shoes,White,Summer,39.0,4,color_lover,0.1144452,0,71
+1807,Men,Apparel,Topwear,2010.0,Casual,Quechua Men G1 Techfresh Red T-shirt,1807.jpg,Tshirts,Red,Fall,71.0,5,color_lover,0.009084767,0,60
+39449,Women,Apparel,Topwear,2012.0,Ethnic,Diva Women Orange Kurta,39449.jpg,Kurtas,Pink,Summer,25.0,4,color_lover,0.03524357,0,20
+31274,Men,Apparel,Topwear,2012.0,Casual,Puma Men Calogne Graphic Navy Blue T-shirt,31274.jpg,Tshirts,Navy Blue,Summer,62.0,4,fashionista,0.036047786,0,82
+10161,Men,Footwear,Shoes,2011.0,Sports,Puma Men Cabana Racer White Sports Shoes,10161.jpg,Casual Shoes,White,Fall,51.0,2,budget,0.31150138,0,86
+57084,Women,Apparel,Bottomwear,2012.0,Casual,Elle Women Blue Skirt,57084.jpg,Shorts,Blue,Summer,64.0,3,fashionista,0.16907722,0,74
+35123,Women,Accessories,Jewellery,2012.0,Casual,Allen Solly Woman Blue Pendant,35123.jpg,Perfume and Body Mist,Blue,Spring,38.0,3,budget,0.52817935,1,74
+24408,Men,Footwear,Shoes,2012.0,Sports,ADIDAS Men Black Vanquish Sports Shoes,24408.jpg,Casual Shoes,Black,Summer,24.0,0,fashionista,0.09619937,0,87
+3251,Men,Footwear,Shoes,2010.0,Sports,Puma Men's Suede Archive Red White Shoe,3251.jpg,Sports Shoes,Red,Summer,61.0,4,budget,0.03303307,0,99
+28898,Women,Apparel,Innerwear,2014.0,Casual,Enamor Women Red Brief,28898.jpg,Briefs,Black,Summer,71.0,4,fashionista,0.026634606,0,23
+22268,Women,Footwear,Shoes,2012.0,Casual,Inc. 5 Women Casual Black Wedges,22268.jpg,Heels,Black,Fall,23.0,1,color_lover,0.06056534,0,2
+51884,Women,Accessories,Wallets,2016.0,Casual,Nyk Women Blue Wallet,51884.jpg,Wallets,Black,Summer,41.0,6,budget,0.08961669,0,21
+30134,Men,Apparel,Topwear,2012.0,Casual,Flying Machine Men Printed Orange T-shirt,30134.jpg,Tshirts,Black,Summer,46.0,2,color_lover,0.35383922,0,52
+58446,Women,Accessories,Watches,2016.0,Casual,Fossil Women White Dial Chronograph Watch,58446.jpg,Kurtis,Maroon,Fall,49.0,5,budget,0.055333965,0,1
+26676,Women,Footwear,Flip Flops,2012.0,Casual,Puma Women Stawberry Pink Flip Flops,26676.jpg,Flip Flops,Red,Summer,54.0,3,color_lover,0.31772193,0,87
+17684,Women,Footwear,Shoes,2015.0,Casual,Catwalk Women Ballerina Grey Casual Shoe,17684.jpg,Casual Shoes,Black,Winter,68.0,2,color_lover,0.16130234,0,29
+37946,Women,Apparel,Topwear,2012.0,Casual,Mineral Women Mustard Tunic,37946.jpg,Shirts,Blue,Summer,64.0,1,budget,0.45856768,0,37
+10149,Men,Footwear,Shoes,2011.0,Formal,Rockport Men Ed Plaintoe Brown Formal Shoes,10149.jpg,Formal Shoes,Black,Fall,60.0,2,color_lover,0.10843548,0,1
+37450,Men,Accessories,Belts,2012.0,Casual,Turtle Men Black Belt,37450.jpg,Belts,Black,Summer,41.0,2,color_lover,0.18232657,0,63
+6298,Women,Footwear,Shoes,2015.0,Casual,Catwalk Summer Blue Flats,6298.jpg,Heels,Brown,Summer,10.0,3,fashionista,0.019134747,0,59
+30729,Girls,Apparel,Bottomwear,2012.0,Ethnic,Fabindia Girls Printed Blue Salwar,30729.jpg,Tops,Blue,Summer,78.0,1,fashionista,0.1542986,0,20
+39499,Men,Apparel,Topwear,2012.0,Casual,Wildcraft Men Yellow T-shirt,39499.jpg,Tshirts,Green,Summer,25.0,3,color_lover,0.15766229,0,32
+3329,Men,Apparel,Topwear,2011.0,Sports,KXIP Boys Fangear Tee,3329.jpg,Tshirts,Red,Summer,40.0,4,color_lover,0.1243529,0,75
+10761,Unisex,Footwear,Flip Flops,2012.0,Casual,Disney Unisex Kids Basic Red Flip Flops,10761.jpg,Flip Flops,Red,Summer,45.0,2,budget,0.31603706,0,57
+12701,Women,Footwear,Shoes,2011.0,Sports,Nike Women Lunarfly Blue Sports Shoes,12701.jpg,Sports Shoes,Blue,Summer,56.0,2,fashionista,0.28673017,0,21
+39462,Women,Apparel,Topwear,2012.0,Ethnic,Diva Women Brown Kurta,39462.jpg,Kurtas,Black,Summer,77.0,3,budget,0.5303569,1,88
+48897,Women,Accessories,Jewellery,2013.0,Casual,Lucera Women Silver Pendant with Chain,48897.jpg,Ring,Steel,Summer,51.0,1,fashionista,0.07186265,0,48
+49642,Women,Apparel,Topwear,2012.0,Casual,Mineral Women Cream Tunic,49642.jpg,Kurtas,Cream,Summer,85.0,2,fashionista,0.06533819,0,90
+32515,Men,Footwear,Sandal,2013.0,Casual,Franco Leone Men Brown Sandals,32515.jpg,Casual Shoes,Brown,Winter,36.0,3,color_lover,0.07023651,0,58
+3400,Women,Accessories,Bags,2015.0,Casual,Murcia Women Brown Hobo Handbag,3400.jpg,Handbags,Green,Summer,44.0,4,budget,0.029350245,0,41
+31847,Women,Accessories,Watches,2016.0,Casual,Titan Women Raga Mother Of Pearl Dial Watch,31847.jpg,Watches,Gold,Winter,69.0,3,color_lover,0.028656047,0,91
+40972,Girls,Apparel,Topwear,2012.0,Casual,Palm Tree Girls Knits White Tops,40972.jpg,Tops,White,Summer,65.0,0,budget,0.46784016,0,59
+6704,Women,Accessories,Socks,2011.0,Sports,Nike Women's Nsw Wmns Ctn White Pink Socks,6704.jpg,Socks,White,Summer,28.0,6,color_lover,0.22345805,0,79
+44148,Men,Personal Care,Fragrance,2017.0,Casual,Nike Fragrances Men Casual Deo,44148.jpg,Deodorant,Green,Spring,64.0,4,color_lover,0.07759916,0,14
+9717,Men,Footwear,Sandal,2015.0,Casual,Hush Puppies Men Decent Black Sandals,9717.jpg,Casual Shoes,Black,Summer,40.0,2,fashionista,0.30828306,0,61
+29267,Men,Footwear,Shoes,2012.0,Sports,ADIDAS Men Predito Blue Sports Shoes,29267.jpg,Casual Shoes,Green,Summer,55.0,2,color_lover,0.29950377,0,61
+52434,Women,Apparel,Loungewear and Nightwear,2017.0,Casual,Red Rose Women Purple Nightdress,52434.jpg,Nightdress,Green,Summer,55.0,2,fashionista,0.086844556,0,46
+43768,Women,Accessories,Jewellery,2012.0,Casual,Royal Diadem Black Earrings,43768.jpg,Earrings,Gold,Summer,36.0,8,fashionista,0.034620713,0,61
+4817,Men,Apparel,Topwear,2011.0,Sports,ADIDAS Men's AP ST Black T-shirt,4817.jpg,Tshirts,Black,Summer,57.0,4,fashionista,0.17018947,0,50
+58914,Men,Accessories,Ties,2012.0,Casual,Hakashi Men Lavender Silk Tie,58914.jpg,Ties,Blue,Summer,77.0,4,fashionista,0.09694385,0,54
+35439,Boys,Apparel,Topwear,2012.0,Casual,Doodle Boys Check Black Shirt,35439.jpg,Shirts,Blue,Summer,31.0,2,color_lover,0.40700772,0,63
+46688,Men,Personal Care,Fragrance,2017.0,Casual,Rasasi Men Royale Perfume,46688.jpg,Perfume and Body Mist,White,Summer,35.0,3,budget,0.3921127,0,2
+6900,Men,Footwear,Shoes,2011.0,Casual,Puma Men's Lifestyle Canvas Blue Shoe,6900.jpg,Casual Shoes,White,Summer,10.0,0,budget,0.30244514,0,50
+40648,Women,Apparel,Topwear,2012.0,Ethnic,Span Women Purple & Blue Kurta,40648.jpg,Kurtas,Red,Summer,93.0,3,color_lover,0.61655736,1,6
+3478,Men,Apparel,Topwear,2010.0,Sports,ADIDAS Men's White Universal Red Stripe T-shirt,3478.jpg,Tshirts,White,Summer,23.0,0,budget,0.4631069,0,20
+54973,Women,Apparel,Dress,2012.0,Casual,Femella Women Off White Dress,54973.jpg,Dresses,White,Summer,53.0,5,fashionista,0.0030183513,0,72
+37945,Women,Apparel,Topwear,2012.0,Casual,Mineral Women Soild White Tunic,37945.jpg,Tops,White,Summer,36.0,3,budget,0.3282453,0,38
+48741,Men,Accessories,Jewellery,2012.0,Casual,Revv Men Steel Bangle,48741.jpg,Earrings,Steel,Winter,63.0,4,fashionista,0.011634145,0,17
+53981,Women,Accessories,Bags,2012.0,Casual,Kiara Women Burnt Yellow Sling Bag,53981.jpg,Handbags,Brown,Summer,65.0,3,fashionista,0.028467951,0,3
+5261,Unisex,Accessories,Bags,2017.0,Casual,Wildcraft Unisex Orange & Grey Printed Laptop Backpack,5261.jpg,Backpacks,Black,Summer,68.0,2,budget,0.32472846,0,88
+15658,Unisex,Free Items,Free Gifts,2016.0,Casual,Belkin Unisex Simple Messenger Blue Handbags,15658.jpg,Laptop Bag,Blue,Winter,39.0,3,color_lover,0.027500842,0,59
+35982,Women,Apparel,Topwear,2012.0,Casual,Flying Machine Women Grey T-shirt,35982.jpg,Tops,White,Summer,29.0,6,budget,0.060387067,0,13
+2208,Men,Footwear,Flip Flops,2011.0,Casual,Puma Mens Drifter Black Flip Flop,2208.jpg,Flats,Black,Summer,15.0,5,color_lover,0.12953618,0,8
+2939,Women,Apparel,Topwear,2010.0,Casual,DUSG Women's Play Lady Organic Blue T-shirt,2939.jpg,Tops,Grey,Fall,47.0,2,color_lover,0.05523431,0,89
+23241,Women,Apparel,Topwear,2011.0,Ethnic,Aneri Women Juhi Blue Kurti,23241.jpg,Kurtas,Multi,Summer,65.0,3,color_lover,0.26384416,0,52
+4383,Men,Apparel,Topwear,2011.0,Casual,Batman Men's Comics Foil Dark Blue T-shirt,4383.jpg,Tshirts,Blue,Summer,28.0,4,color_lover,0.55860025,1,1
+52401,Women,Apparel,Loungewear and Nightwear,2015.0,Casual,Red Rose Women Blue Nightdress,52401.jpg,Nightdress,White,Summer,31.0,2,fashionista,0.08325039,0,83
+34097,Boys,Apparel,Topwear,2012.0,Casual,Doodle Boys Printed Green T-shirt,34097.jpg,Tshirts,Green,Summer,61.0,7,color_lover,0.05040602,0,91
+43059,Men,Apparel,Topwear,2012.0,Casual,Nike Men Blue FFF Football T-shirt,43059.jpg,Tshirts,Blue,Summer,40.0,2,fashionista,0.42602482,0,59
+26716,Men,Apparel,Topwear,2012.0,Casual,Puma Men Large Logo Red T-shirt,26716.jpg,Tshirts,Red,Summer,20.0,3,fashionista,0.094997965,0,70
+50622,Men,Apparel,Innerwear,2016.0,Casual,Chromozome Men White Brief,50622.jpg,Briefs,White,Summer,42.0,3,fashionista,0.08129417,0,43
+6294,Men,Apparel,Topwear,2011.0,Casual,UCB Men's Super Star Print Green T-shirt,6294.jpg,Tshirts,Blue,Summer,36.0,5,budget,0.1526303,0,7
+41467,Women,Footwear,Shoes,2013.0,Casual,Carlton London Women Brown Solid Suede Ballerinas,41467.jpg,Casual Shoes,Black,Winter,70.0,5,budget,0.098636866,0,46
+47266,Men,Apparel,Innerwear,2016.0,Casual,FCUK Underwear Men White Striped Brief,47266.jpg,Briefs,White,Summer,28.0,3,fashionista,0.09220081,0,34
+47232,Men,Footwear,Sandal,2012.0,Casual,Franco Leone Men Brown Sandals,47232.jpg,Sandals,Brown,Summer,34.0,3,fashionista,0.08392108,0,77
+20333,Men,Apparel,Topwear,2011.0,Casual,Mr.Men Men Printed Black Tshirt,20333.jpg,Tshirts,Black,Summer,73.0,3,color_lover,0.26532692,0,80
+10456,Men,Apparel,Topwear,2011.0,Casual,Flying Machine Men Grey Polo Tshirts,10456.jpg,Tshirts,Blue,Fall,46.0,3,budget,0.44698754,0,35
+41387,Women,Apparel,Topwear,2012.0,Casual,Wrangler Women Donna Yellow Top,41387.jpg,Tops,Yellow,Summer,83.0,3,budget,0.41276762,0,49
+47556,Women,Footwear,Shoes,2012.0,Casual,Portia Women Bronze & Golden Flats,47556.jpg,Heels,Brown,Winter,88.0,5,fashionista,0.022120245,0,3
+4858,Men,Apparel,Topwear,2011.0,Sports,Nike Men Utd White Jersey,4858.jpg,Tshirts,White,Summer,81.0,3,fashionista,0.15176658,0,1
+46216,Women,Apparel,Dress,2012.0,Casual,AND Women Pink Dress,46216.jpg,Kurtas,Multi,Summer,31.0,4,budget,0.097028024,0,5
+1920,Men,Footwear,Shoes,2011.0,Casual,Puma Men Graffiti FX Shoes,1920.jpg,Casual Shoes,White,Summer,53.0,1,fashionista,0.088059336,0,53
+17288,Men,Apparel,Topwear,2011.0,Casual,U.S. Polo Assn. Men Solid Red  Polo Tshirt,17288.jpg,Tshirts,Red,Fall,21.0,3,budget,0.59911585,1,3
+34788,Men,Footwear,Shoes,2012.0,Casual,Fila Men Higgins Black Shoes,34788.jpg,Casual Shoes,Black,Summer,20.0,0,budget,0.305243,0,53
+22080,Women,Apparel,Topwear,2011.0,Ethnic,Vishudh Women Printed Black Kurta,22080.jpg,Kurtas,Black,Fall,31.0,4,fashionista,0.23633853,0,92
+31936,Women,Apparel,Topwear,2012.0,Ethnic,Mumbai Slang Women Printed Blue Tunic,31936.jpg,Kurtas,Blue,Summer,74.0,3,budget,0.6572044,1,62
+43194,Women,Accessories,Watches,2016.0,Casual,Fastrack Women White Dial Watch NA2049SM09,43194.jpg,Watches,White,Winter,41.0,2,fashionista,0.07757877,0,17
+14107,Women,Apparel,Topwear,2011.0,Casual,Flying Machine Women Solid Purple Tops,14107.jpg,Tops,Blue,Fall,61.0,2,color_lover,0.1773638,0,89
+47569,Women,Footwear,Shoes,2012.0,Casual,Portia Women Black Flats,47569.jpg,Casual Shoes,Black,Summer,50.0,4,color_lover,0.17289215,0,43
+41971,Girls,Apparel,Topwear,2012.0,Casual,Gini and Jony Girls Summer Up Blue Top,41971.jpg,Tops,White,Summer,20.0,1,fashionista,0.07133341,0,33
+4776,Women,Apparel,Topwear,2011.0,Sports,ADIDAS Women's  Geo White Yellow T-shirt,4776.jpg,Tshirts,White,Summer,41.0,5,budget,0.03880679,0,73
+43755,Women,Accessories,Jewellery,2012.0,Casual,Royal Diadem Set of 2 Golden Bangles,43755.jpg,Bangle,Gold,Winter,60.0,0,color_lover,0.082407035,0,61
+58659,Women,Apparel,Topwear,2012.0,Ethnic,ALayna Women Pink Kurta,58659.jpg,Kurtas,Maroon,Summer,77.0,7,fashionista,0.0058672265,0,99
+37971,Women,Footwear,Shoes,2012.0,Casual,Clarks Women Un Spire Red Sandals,37971.jpg,Sandals,Red,Summer,76.0,2,budget,0.30285764,0,13
+6857,Women,Apparel,Bottomwear,2011.0,Casual,Forever New Women's Animal Stroke Print Black Skirt,6857.jpg,Tops,Black,Summer,49.0,1,fashionista,0.4129855,0,94
+35211,Unisex,Accessories,Bags,2013.0,Casual,Wildcraft Unisex Blue & Grey Backpack,35211.jpg,Backpacks,Blue,Summer,58.0,3,budget,0.37416917,0,47
+56591,Women,Personal Care,Eyes,2017.0,,Streetwear Hi Lite Eye Shadow,56591.jpg,Eyeshadow,Brown,Spring,37.0,0,color_lover,0.28288835,0,14
+14913,Men,Apparel,Topwear,2011.0,Casual,Mr. Men Men Mr. Nonsense Purple Tshirts,14913.jpg,Tshirts,Green,Summer,40.0,1,budget,0.44521925,0,71
+21038,Women,Footwear,Shoes,2012.0,Casual,Clarks Women Balti Zing Black Heels,21038.jpg,Heels,Black,Summer,63.0,3,budget,0.39490128,0,77
+5766,Women,Apparel,Bottomwear,2011.0,Casual,Jealous 21 Women Black Jegging,5766.jpg,Night suits,Navy Blue,Summer,63.0,3,color_lover,0.13298254,0,86
+18817,Men,Accessories,Wallets,2011.0,Formal,Peter England Men Statements Black Wallet,18817.jpg,Wallets,Black,Winter,56.0,1,budget,0.370139,0,61
+11280,Men,Apparel,Bottomwear,2011.0,Casual,Wrangler Men Black Texas Jeans,11280.jpg,Track Pants,Black,Fall,35.0,0,color_lover,0.08064701,0,39
+26934,Women,Apparel,Dress,2012.0,Casual,Jealous 21 Women Black Dress,26934.jpg,Tops,Black,Summer,57.0,4,color_lover,0.42943016,0,84
+7741,Men,Footwear,Shoes,2011.0,Sports,Fila Men's Dna Lite Black Blue Shoe,7741.jpg,Casual Shoes,Black,Summer,51.0,2,budget,0.3702448,0,79
+17370,Men,Accessories,Accessories,2011.0,Formal,Arrow Men Formal Purple Tie+Cufflink+Pocket square - Combo Pack,17370.jpg,Accessory Gift Set,Brown,Summer,32.0,1,fashionista,0.046834335,0,81
+21919,Women,Apparel,Topwear,2011.0,Ethnic,BIBA Women Printed Red Kurta,21919.jpg,Kurtas,Pink,Fall,40.0,0,fashionista,0.15773039,0,52
+37895,Women,Apparel,Bottomwear,2012.0,Casual,Happy Socks Women Striped Tights,37895.jpg,Leggings,Black,Summer,70.0,5,fashionista,0.01804589,0,23
+5625,Men,Footwear,Flip Flops,2011.0,Casual,ADIDAS Men's Adi Jumble Grey Flip Flop,5625.jpg,Flip Flops,White,Summer,63.0,5,color_lover,0.045499448,0,25
+20389,Women,Accessories,Bags,2015.0,Casual,Baggit Women Praise Taj Brown Handbag,20389.jpg,Handbags,Brown,Summer,58.0,2,color_lover,0.29216945,0,88
+5205,Men,Apparel,Topwear,2011.0,Casual,Beatles Men's The Beatles Dark Grey T-shirt,5205.jpg,Tshirts,Black,Summer,74.0,5,color_lover,0.13067453,0,59
+40290,Unisex,Footwear,Flip Flops,2012.0,Casual,Warner Bros Kids Unisex Turquoise Blue Flip Flops,40290.jpg,Flip Flops,Pink,Summer,13.0,4,color_lover,0.24250239,0,40
+39883,Unisex,Accessories,Bags,2012.0,Casual,ADIDAS Unisex Blue Duffle Bag,39883.jpg,Duffel Bag,Blue,Summer,43.0,6,budget,0.023109833,0,28
+28120,Men,Apparel,Innerwear,2016.0,Casual,Jockey MC Men Pack Of Two Blue Briefs 8003,28120.jpg,Briefs,Navy Blue,Summer,61.0,5,budget,0.080520086,0,14
+35877,Boys,Apparel,Topwear,2012.0,Casual,Marvel Boys Comics Yellow T-shirt,35877.jpg,Tshirts,Yellow,Summer,24.0,7,color_lover,0.080368236,0,44
+33884,Men,Accessories,Watches,2016.0,Casual,Citizen Men Black Dial Eco-Drive Watch,33884.jpg,Watches,Black,Winter,48.0,1,budget,0.33028263,0,64
+28653,Men,Footwear,Shoes,2012.0,Sports,Nike Men Air Max Quarter Black Sports Shoes,28653.jpg,Sports Shoes,Black,Fall,12.0,2,budget,0.35048515,0,88
+32221,Women,Apparel,Topwear,2012.0,Ethnic,Fabindia Women Purple & Blue Striped Kurta,32221.jpg,Kurtas,Blue,Fall,39.0,4,budget,0.37464517,0,70
+4169,Unisex,Footwear,Shoes,2011.0,Sports,Reebok Unisex Trail Mudslinger Black Shoe,4169.jpg,Sports Shoes,Black,Summer,37.0,2,color_lover,0.3563015,0,8
+11866,Men,Footwear,Flip Flops,2011.0,Casual,Playboy Men Casual Red Slippers,11866.jpg,Flip Flops,Red,Summer,36.0,2,color_lover,0.39562133,0,87
+19783,Men,Apparel,Topwear,2016.0,Casual,U.S. Polo Assn. Men Solid Orange Tshirt,19783.jpg,Tshirts,Red,Fall,27.0,0,color_lover,0.07232686,0,0
+27320,Women,Personal Care,Fragrance,2017.0,Casual,ADIDAS Women Free Emotion Perfume,27320.jpg,Perfume and Body Mist,White,Spring,57.0,1,color_lover,0.11770718,0,7
+57077,Women,Apparel,Bottomwear,2012.0,Casual,Elle Women Light Blue Jeans,57077.jpg,Jeans,Blue,Summer,61.0,3,budget,0.22927451,0,87
+52782,Women,Accessories,Wallets,2012.0,Casual,Fiorelli Women Red Wallet,52782.jpg,Wallets,Red,Summer,44.0,7,fashionista,0.005763399,0,62
+17410,Men,Footwear,Shoes,2011.0,Sports,Lotto Men Atlantica White Sports Shoe,17410.jpg,Sports Shoes,White,Fall,77.0,4,color_lover,0.060044304,0,10
+28946,Women,Apparel,Topwear,2012.0,Ethnic,BIBA OUTLET Women White Tunic,28946.jpg,Tops,Pink,Fall,40.0,5,budget,0.05574617,0,80
+43856,Women,Accessories,Jewellery,2012.0,Ethnic,Royal Diadem Green & White Earrings,43856.jpg,Earrings,Silver,Fall,26.0,2,budget,0.30938974,0,7
+1847,Men,Apparel,Topwear,2011.0,Casual,Inkfruit Mens Messy T-shirt,1847.jpg,Tshirts,Black,Summer,66.0,2,budget,0.52569,1,34
+37089,Women,Accessories,Bags,2012.0,Casual,Lino Perros Women Brown Handbag,37089.jpg,Handbags,Beige,Summer,37.0,7,fashionista,0.05144721,0,34
+28782,Women,Apparel,Innerwear,2015.0,Casual,Enamor Women Pack of 2 Briefs,28782.jpg,Briefs,Blue,Winter,34.0,2,color_lover,0.132382,0,32
+29022,Men,Apparel,Topwear,2012.0,Casual,ADIDAS Men Aess Crew White T-shirt,29022.jpg,Tshirts,Blue,Fall,79.0,4,fashionista,0.143388,0,4
+30705,Women,Accessories,Bags,2012.0,Casual,Fabindia Women Orange Silk Purse,30705.jpg,Handbags,Orange,Fall,85.0,3,fashionista,0.034893684,0,40
+15022,Men,Apparel,Bottomwear,2011.0,Sports,ADIDAS Men Solid Grey Track Pants,15022.jpg,Track Pants,Blue,Fall,31.0,4,color_lover,0.7370891,1,27
+44534,Men,Footwear,Sandal,2012.0,Casual,Coolers Men White Sandals,44534.jpg,Casual Shoes,White,Summer,41.0,4,fashionista,0.013053978,0,6
+14430,Women,Footwear,Shoes,2012.0,Casual,Enroute Women Casual Black Casual Shoes,14430.jpg,Casual Shoes,Black,Summer,10.0,6,fashionista,0.01619209,0,72
+55541,Women,Personal Care,Makeup,2017.0,Casual,Revlon Colorstay Black Eyeliner,55541.jpg,Kajal and Eyeliner,Blue,Spring,54.0,3,fashionista,0.49119854,0,71
+12489,Men,Footwear,Sandal,2013.0,Casual,Clarks Men Leather Brown Sandals,12489.jpg,Casual Shoes,Brown,Summer,62.0,0,color_lover,0.46956313,0,11
+31132,Men,Apparel,Topwear,2012.0,Formal,John Miller Men Check Blue Shirt,31132.jpg,Shirts,Blue,Fall,92.0,4,color_lover,0.18467107,0,33
+2347,Men,Apparel,Topwear,2010.0,Casual,Reebok Men White Contrasts T-shirt,2347.jpg,Tshirts,White,Summer,53.0,6,fashionista,0.012745146,0,32
+58888,Men,Accessories,Ties,2012.0,Casual,Hakashi Men White Tie,58888.jpg,Ties,White,Summer,72.0,1,budget,0.5361297,1,47
+23448,Women,Apparel,Topwear,2011.0,Casual,Satya Paul Women Multi Coloured Printed Tunic,23448.jpg,Nightdress,White,Summer,68.0,2,budget,0.29091176,0,22
+9870,Men,Apparel,Topwear,2011.0,Casual,Status Quo Men Stripes Pink Tshirts,9870.jpg,Tshirts,Red,Fall,29.0,4,fashionista,0.19787756,0,61
+49615,Women,Footwear,Shoes,2015.0,Casual,Catwalk Women Brown Heels,49615.jpg,Heels,Black,Fall,32.0,2,color_lover,0.11927803,0,87
+10884,Men,Apparel,Topwear,2011.0,Casual,Wrangler Men Grey Glow In Dark T-shirt,10884.jpg,Tshirts,Black,Summer,73.0,2,budget,0.5956253,1,36
+19314,Unisex,Accessories,Bags,2011.0,Casual,Nike Unisex Graphic North Classic Red Backpack,19314.jpg,Backpacks,Blue,Summer,40.0,2,fashionista,0.26576382,0,98
+54890,Women,Apparel,Topwear,2012.0,Casual,Do u speak green Women Green Top,54890.jpg,Tshirts,White,Summer,68.0,3,budget,0.3413895,0,43
+48489,Women,Apparel,Topwear,2012.0,Casual,French Connection Women Peach Top,48489.jpg,Tops,Grey,Summer,44.0,3,color_lover,0.16356261,0,85
+43177,Men,Accessories,Watches,2016.0,Casual,Fastrack Men Black Dial Watch,43177.jpg,Watches,Black,Winter,58.0,5,color_lover,0.008303452,0,90
+18959,Women,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Women Solid Blue Sweater,18959.jpg,Tops,Blue,Fall,32.0,4,color_lover,0.72292614,1,34
+51699,Unisex,Accessories,Eyewear,2016.0,Casual,Van Heusen Unisex Blue Aviator Sunglasses VH217-C2,51699.jpg,Sunglasses,Black,Winter,46.0,1,color_lover,0.07890845,0,64
+58110,Women,Accessories,Jewellery,2012.0,Casual,Rreverie Silver Earrings,58110.jpg,Earrings,Silver,Fall,45.0,4,color_lover,0.023903977,0,98
+40934,Boys,Apparel,Topwear,2012.0,Casual,Gini and JonyBoys Around the World White Shirts,40934.jpg,Tshirts,White,Summer,40.0,2,budget,0.45928746,0,46
+7647,Men,Apparel,Topwear,2011.0,Sports,Puma Men's Ducati One Ups Black T-shirt,7647.jpg,Tshirts,Black,Summer,44.0,1,fashionista,0.38103145,0,77
+1852,Men,Apparel,Topwear,2011.0,Casual,Inkfruit Men Ride It Or Die T-shirt,1852.jpg,Tshirts,Blue,Summer,39.0,2,fashionista,0.35928205,0,2
+42408,Men,Apparel,Innerwear,2016.0,Casual,Basics Men Black Trunk Brief,42408.jpg,Trunk,Red,Summer,11.0,2,budget,0.3643262,0,0
+18370,Men,Apparel,Innerwear,2016.0,Casual,Undercolors of Benetton Men Pack Of 3 Innerwear T-Shirts,18370.jpg,Tshirts,Black,Fall,62.0,6,budget,0.20128313,0,4
+55425,Women,Personal Care,Lips,2017.0,Casual,Revlon Moisture Stay Nutty Lipstick 32,55425.jpg,Lip Gloss,Brown,Spring,41.0,0,color_lover,0.15809615,0,89
+30785,Men,Apparel,Topwear,2012.0,Ethnic,Fabindia Men Printed Blue Kurta,30785.jpg,Shirts,Blue,Fall,68.0,3,fashionista,0.18884496,0,13
+5559,Men,Apparel,Topwear,2011.0,Casual,Reebok Men Reversible Blue & Yellow Jacket,5559.jpg,Tshirts,Orange,Summer,65.0,1,budget,0.41266704,0,26
+23921,Women,Footwear,Shoes,2011.0,Casual,Fila Women Cortez Grey Casual Shoes,23921.jpg,Casual Shoes,White,Fall,46.0,3,color_lover,0.06400239,0,8
+15463,Men,Apparel,Bottomwear,2011.0,Sports,Puma Men Graphic Logo Blue Tracksuits,15463.jpg,Tracksuits,Blue,Fall,33.0,4,color_lover,0.6952716,1,78
+7194,Women,Apparel,Topwear,2011.0,Casual,Jealous 21 Women's BFF Printed White Top,7194.jpg,Tshirts,White,Summer,43.0,3,fashionista,0.087543644,0,14
+47327,Women,Accessories,Bags,2015.0,Casual,Baggit Women Brown Bag,47327.jpg,Handbags,Brown,Summer,45.0,3,fashionista,0.024413394,0,89
+14282,Women,Footwear,Shoes,2011.0,Sports,Timberland Women Tma All Mtn Low Sports Shoe,14282.jpg,Casual Shoes,Brown,Summer,63.0,2,fashionista,0.07566256,0,41
+55862,Women,Personal Care,Nails,2017.0,Casual,Colorbar Rose Quartz Nail Lacquer 92,55862.jpg,Nail Polish,Pink,Spring,86.0,1,budget,0.42223582,0,76
+2702,Girls,Apparel,Topwear,2011.0,Casual,Disney Kids Girl's Blue Check Kidswear Shirt,2702.jpg,Tshirts,Blue,Summer,52.0,5,fashionista,0.074489675,0,50
+48562,Men,Accessories,Jewellery,2013.0,Casual,Revv Men Steel Bracelet,48562.jpg,Bracelet,Steel,Winter,69.0,3,color_lover,0.08273714,0,62
+2825,Men,Footwear,Shoes,2012.0,Formal,Lee Cooper Men Leather Semi Formal Black Shoe,2825.jpg,Casual Shoes,Black,Summer,33.0,2,budget,0.4660892,0,95
+16819,Men,Apparel,Bottomwear,2011.0,Casual,Locomotive Men Washed Blue Jeans,16819.jpg,Jeans,Blue,Fall,78.0,4,fashionista,0.059547693,0,51
+55196,Women,Personal Care,Nails,2017.0,Casual,Lakme Absolute Fast & Fabulous Gold Shimmer Nail Polish 01,55196.jpg,Nail Polish,White,Spring,94.0,2,color_lover,0.22997412,0,95
+21696,Women,Accessories,Watches,2016.0,Casual,Fossil Women Green Dial Watch ES2951,21696.jpg,Watches,Black,Winter,56.0,4,fashionista,0.15683435,0,3
+37569,Girls,Apparel,Topwear,2012.0,Casual,Madagascar3 Infant Girls Light Green T-Shirt,37569.jpg,Tshirts,Yellow,Summer,15.0,3,budget,0.26011142,0,93
+54514,Men,Footwear,Shoes,2012.0,Casual,F Sports Men White Rodeo Shoes,54514.jpg,Casual Shoes,White,Summer,10.0,0,fashionista,0.4362345,0,22
+42022,Men,Footwear,Flip Flops,2012.0,Casual,ADIDAS Men AdiCliff Black Flip Flops,42022.jpg,Flip Flops,Black,Summer,34.0,3,color_lover,0.2822148,0,14
+35712,Men,Footwear,Shoes,2012.0,Sports,Nike Men Dual Fusion TR III Grey Sports Shoes,35712.jpg,Sports Shoes,White,Summer,47.0,2,color_lover,0.26659945,0,42
+11879,Men,Footwear,Shoes,2013.0,Formal,Franco Leone Men Formal Black Formal Shoes,11879.jpg,Formal Shoes,Brown,Winter,79.0,4,fashionista,0.0072094873,0,28
+26806,Men,Apparel,Bottomwear,2013.0,Formal,Arrow Men Charcoal Flat Front Trousers,26806.jpg,Trousers,Blue,Fall,37.0,1,color_lover,0.07768022,0,35
+21914,Women,Apparel,Apparel Set,2011.0,Ethnic,Biba Women Off-White & Brown Printed Churidar Kurta with Dupatta,21914.jpg,Tops,White,Summer,59.0,5,budget,0.014293572,0,12
+49612,Women,Footwear,Shoes,2015.0,Casual,Catwalk Women Yellow  Flats,49612.jpg,Heels,Brown,Winter,62.0,5,fashionista,0.0071454677,0,31
+43592,Girls,Apparel,Topwear,2012.0,Casual,Gini and Jony Girls Polo Striped Pink T-shirt,43592.jpg,Tshirts,Red,Summer,64.0,3,color_lover,0.26927397,0,70
+6667,Women,Footwear,Shoes,2011.0,Sports,Nike Women's Ballista II Black Silver Shoe,6667.jpg,Sports Shoes,White,Fall,47.0,4,budget,0.038485326,0,58
+39753,Boys,Apparel,Bottomwear,2012.0,Casual,Gini Jony Boys Khaki Trousers,39753.jpg,Jeans,Blue,Summer,41.0,1,budget,0.30664834,0,85
+56020,Women,Personal Care,Lips,2017.0,Casual,Colorbar Soft Touch Felin Lipstick 036,56020.jpg,Lipstick,Brown,Spring,10.0,3,budget,0.40221098,0,27
+18167,Girls,Apparel,Dress,2011.0,Casual,Doodle Kids Girls Party Frock Purple Dress,18167.jpg,Dresses,Pink,Fall,10.0,2,budget,0.2059089,0,65
+8532,Women,Footwear,Shoes,2011.0,Sports,Nike Women Nike Womens Ballista II Silver Sports Shoes,8532.jpg,Sports Shoes,White,Fall,14.0,4,budget,0.12433888,0,41
+6571,Men,Apparel,Topwear,2011.0,Casual,Inkfruit Men's Barcode Lemon Yellow T-shirt,6571.jpg,Tshirts,White,Fall,45.0,0,color_lover,0.072057344,0,44
+3205,Men,Apparel,Topwear,2011.0,Casual,Tantra Men's Instant Grey T-shirt,3205.jpg,Tshirts,Blue,Fall,18.0,2,budget,0.7543171,1,61
+29243,Men,Footwear,Shoes,2012.0,Sports,ADIDAS Men 22Yds Trainer2 White Sports Shoes,29243.jpg,Sports Shoes,White,Fall,48.0,6,color_lover,0.006455053,0,56
+15501,Women,Footwear,Shoes,2011.0,Casual,Carlton London Women Casual Black Casual Shoes,15501.jpg,Casual Shoes,Black,Fall,56.0,4,color_lover,0.099673755,0,5
+15615,Men,Apparel,Topwear,2011.0,Sports,Nike Men Running Red Jerseys,15615.jpg,Tshirts,Red,Summer,22.0,1,budget,0.4133462,0,27
+29131,Women,Accessories,Eyewear,2016.0,Casual,Vogue Women Black Sunglasses,29131.jpg,Sunglasses,Black,Winter,10.0,0,fashionista,0.3549881,0,27
+46676,Women,Personal Care,Fragrance,2017.0,Casual,Rasasi Women Pack of 3 Perfumes,46676.jpg,Perfume and Body Mist,Pink,Spring,58.0,5,color_lover,0.010990005,0,43
+20324,Women,Apparel,Topwear,2011.0,Ethnic,Mother Earth Women Printed White Kurta,20324.jpg,Kurtas,White,Fall,25.0,5,budget,0.03693723,0,83
+38191,Unisex,Accessories,Eyewear,2016.0,Casual,Polaroid Unisex Sunglasses,38191.jpg,Sunglasses,Black,Winter,40.0,2,budget,0.65102786,1,29
+25064,Men,Accessories,Accessories,2015.0,Formal,Lino Perros Men Formal Brown Accessory Gift Set,25064.jpg,Accessory Gift Set,Brown,Summer,50.0,6,color_lover,0.025291445,0,61
+39037,Men,Accessories,Cufflinks,2012.0,Formal,Belmonte Men Steel Bright Assorted Cufflinks,39037.jpg,Cufflinks,White,Winter,80.0,3,budget,0.35147402,0,74
+34006,Girls,Apparel,Topwear,2012.0,Casual,Gini and Jony Girls Purple Top,34006.jpg,Tops,Black,Summer,28.0,5,color_lover,0.2252945,0,91
+5411,Women,Footwear,Shoes,2011.0,Sports,Tribord To 100 Basic Lady Ss11,5411.jpg,Flip Flops,Black,Summer,30.0,2,budget,0.32426506,0,88
+36657,Women,Accessories,Bags,2012.0,Casual,Paridhan Women Multi Coloured Purse,36657.jpg,Wallets,Brown,Summer,35.0,5,budget,0.13508645,0,61
+58720,Men,Apparel,Topwear,2012.0,Casual,Puma Men White T-shirt,58720.jpg,Tshirts,White,Summer,50.0,6,fashionista,0.005118139,0,96
+57759,Women,Personal Care,Skin Care,2017.0,,Lotus Herbals Jojobawash Face Wash,57759.jpg,Face Wash and Cleanser,White,Spring,36.0,1,budget,0.5211723,1,0
+22295,Women,Footwear,Shoes,2012.0,Casual,Inc. 5 Women Casual Black Flats,22295.jpg,Flip Flops,Blue,Summer,36.0,2,budget,0.4736259,0,26
+40525,Men,Accessories,Watches,2016.0,Casual,Titan Men Black Dial Watch,40525.jpg,Watches,Black,Winter,23.0,2,budget,0.34653807,0,61
+53764,Men,Apparel,Topwear,2012.0,Casual,Puma Men Blue Striped T-shirt,53764.jpg,Tshirts,Blue,Fall,69.0,3,fashionista,0.20652275,0,76
+57359,Women,Apparel,Innerwear,2015.0,Casual,Amante Black Printed Full-Coverage Bra BGSW01,57359.jpg,Bra,White,Winter,46.0,1,color_lover,0.15849014,0,2
+21290,Women,Accessories,Eyewear,2016.0,Casual,Allen Solly Women Oversized Sunglasses AS205-C3,21290.jpg,Sunglasses,Black,Winter,21.0,1,fashionista,0.17787644,0,69
+6882,Women,Apparel,Topwear,2011.0,Casual,Forever New Women Long Peach Jacket,6882.jpg,Jackets,White,Summer,58.0,1,fashionista,0.08907985,0,71
+10050,Men,Apparel,Topwear,2011.0,Casual,Puma Men Usain Bolt Black Tshirts,10050.jpg,Tshirts,Black,Summer,84.0,5,budget,0.020552414,0,26
+50297,Men,Accessories,Ties,2012.0,Casual,Parx Men Black Tie,50297.jpg,Ties,Black,Summer,59.0,4,fashionista,0.20130883,0,8
+25125,Women,Accessories,Bags,2015.0,Casual,Lino Perros Women Sequins Gold Clutch,25125.jpg,Clutches,Beige,Summer,62.0,1,fashionista,0.6785435,1,61
+27931,Women,Apparel,Topwear,2012.0,Casual,Jealous 21 Women White Shirt,27931.jpg,Tshirts,White,Fall,58.0,1,budget,0.1719242,0,36
+26654,Men,Footwear,Shoes,2012.0,Sports,Puma Men Black Sports Shoes,26654.jpg,Sports Shoes,Black,Summer,35.0,3,color_lover,0.25491256,0,96
+46086,Women,Footwear,Shoes,2012.0,Sports,ADIDAS Women Lavender Hagkok Sports Shoes,46086.jpg,Casual Shoes,White,Fall,54.0,4,color_lover,0.030245991,0,50
+36025,Men,Accessories,Belts,2015.0,Casual,OTLS Men Brown & Black Reversible Leather Belt,36025.jpg,Belts,Brown,Summer,57.0,5,fashionista,0.005723261,0,43
+54580,Women,Apparel,Topwear,2012.0,Ethnic,Sushilas Women Printed Red Kurta,54580.jpg,Kurtas,Red,Summer,52.0,4,budget,0.12799835,0,23
+21251,Unisex,Accessories,Bags,2011.0,Casual,Skybags Unisex Red Duffle Bag,21251.jpg,Handbags,Red,Summer,34.0,2,color_lover,0.1452561,0,78
+19994,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Solid Black TShirt,19994.jpg,Tshirts,Black,Summer,65.0,4,budget,0.23230487,0,58
+28892,Women,Apparel,Innerwear,2012.0,Casual,Enamor Women Black Mid-Rise Bikini Brief,28892.jpg,Briefs,Black,Summer,59.0,10,fashionista,0.024130972,0,31
+29399,Men,Apparel,Bottomwear,2012.0,Formal,Genesis Men Grey Trousers,29399.jpg,Trousers,Blue,Fall,66.0,4,color_lover,0.26266438,0,95
+6988,Men,Apparel,Topwear,2011.0,Casual,s.Oliver Men's Qsm White T-shirt,6988.jpg,Tshirts,White,Fall,79.0,6,fashionista,0.028998086,0,87
+10842,Men,Apparel,Topwear,2011.0,Casual,Wrangler Men Celebrate Polo Grey T-Shirt,10842.jpg,Tshirts,Grey,Fall,60.0,3,budget,0.21057379,0,51
+40435,Women,Apparel,Topwear,2012.0,Casual,Tonga Women Multi Colored Top,40435.jpg,Tops,White,Summer,34.0,7,fashionista,0.030498493,0,61
+53802,Men,Apparel,Topwear,2012.0,Casual,Puma Men Black T-shirt,53802.jpg,Tshirts,Black,Summer,42.0,4,color_lover,0.2840409,0,57
+37773,Men,Apparel,Topwear,2012.0,Casual,John Players Men Red Gingham Shirt,37773.jpg,Shirts,Red,Fall,25.0,3,fashionista,0.48548895,0,51
+24868,Men,Accessories,Wallets,2012.0,Casual,Reid & Taylor Men Casual Black Wallet,24868.jpg,Wallets,Black,Summer,83.0,5,fashionista,0.020592935,0,11
+33396,Women,Accessories,Wallets,2012.0,Casual,Baggit Women Kites Jimmy Purple Wallet,33396.jpg,Wallets,Black,Summer,35.0,4,fashionista,0.17591643,0,38
+54964,Women,Apparel,Topwear,2012.0,Casual,Do U Speak Green Women Cream T-Shirt,54964.jpg,Tshirts,White,Summer,24.0,1,fashionista,0.14133456,0,1
+20758,Women,Footwear,Shoes,2011.0,Casual,Carlton London Women Casual Black Sandals,20758.jpg,Sandals,Brown,Summer,36.0,1,budget,0.40538448,0,2
+16899,Men,Apparel,Topwear,2011.0,Casual,Status Quo Men Black Polo Tshirt,16899.jpg,Tshirts,Black,Fall,91.0,6,fashionista,0.06325219,0,55
+42942,Men,Accessories,Belts,2012.0,Casual,French Connection Men Black Tobacco Belt,42942.jpg,Belts,Black,Summer,19.0,2,color_lover,0.25051185,0,80
+19274,Women,Accessories,Watches,2016.0,Casual,Guess Women Glisten Gold Watch,19274.jpg,Watches,Gold,Winter,31.0,1,fashionista,0.0898154,0,58
+51006,Women,Apparel,Innerwear,2017.0,Casual,Enamor Brown Bra,51006.jpg,Bra,Black,Summer,53.0,4,budget,0.088218905,0,1
+59967,Women,Apparel,Dress,2012.0,Party,Avirate Women Black Dress,59967.jpg,Dresses,Black,Summer,57.0,1,color_lover,0.18286282,0,1
+22491,Men,Footwear,Shoes,2011.0,Sports,ADIDAS Men Response Cushion 20 Sport Shoes,22491.jpg,Sports Shoes,Green,Fall,62.0,1,color_lover,0.08243978,0,91
+22468,Men,Apparel,Topwear,2011.0,Casual,Timberland Men White Claremont Plaid Shirt,22468.jpg,Shirts,White,Fall,75.0,0,color_lover,0.28248197,0,53
+47203,Men,Footwear,Shoes,2012.0,Formal,Franco Leone Men Brown Formal Shoes,47203.jpg,Formal Shoes,Brown,Winter,73.0,2,color_lover,0.036638748,0,86
+16533,Men,Apparel,Topwear,2011.0,Casual,Locomotive Men Check Purple Shirt,16533.jpg,Shirts,Blue,Fall,52.0,1,fashionista,0.33070076,0,95
+2205,Men,Apparel,Topwear,2010.0,Sports,ADIDAS Men Stripe White T-shirt,2205.jpg,Tshirts,White,Summer,48.0,2,color_lover,0.26278937,0,96
+4744,Men,Apparel,Topwear,2011.0,Sports,ADIDAS Men's Blue Polo T-shirt,4744.jpg,Tshirts,Blue,Summer,43.0,2,budget,0.5278237,1,0
+56958,Women,Footwear,Shoes,2012.0,Casual,HM Women Blue Flats,56958.jpg,Heels,Blue,Summer,69.0,4,color_lover,0.20387052,0,18
+43613,Men,Apparel,Topwear,2012.0,Casual,Angry Birds Men Blue T-shirt,43613.jpg,Tshirts,Blue,Summer,57.0,2,color_lover,0.29046136,0,1
+22751,Women,Apparel,Topwear,2011.0,Ethnic,BIBA Women Printed White Kurta,22751.jpg,Kurtas,Green,Fall,53.0,3,color_lover,0.14393492,0,52
+44845,Men,Apparel,Topwear,2012.0,Casual,Puma Men Red Ducati Logo T-shirt,44845.jpg,Tshirts,Red,Fall,63.0,5,budget,0.02948891,0,43
+46872,Men,Accessories,Socks,2012.0,Casual,Lino Perros Men Pack of 2 Socks,46872.jpg,Socks,White,Summer,57.0,2,fashionista,0.05814789,0,89
+2708,Girls,Apparel,Dress,2011.0,Casual,Disney Kids Girl's White Dress Pooh Kidswear,2708.jpg,Tops,White,Summer,36.0,4,budget,0.103685945,0,31
+48508,Women,Apparel,Topwear,2012.0,Casual,French Connection Women Navy Blue & Cream Striped Top,48508.jpg,Tops,Grey,Summer,57.0,3,color_lover,0.27505544,0,69
+51713,Unisex,Accessories,Eyewear,2016.0,Casual,Van Heusen Unisex Sunglasses VH213-C1,51713.jpg,Sunglasses,Black,Winter,52.0,2,color_lover,0.17630802,0,31
+53825,Women,Apparel,Apparel Set,2012.0,Ethnic,Ayaany Women Teal & Purple Embroidered Churidar Kurta with Dupatta,53825.jpg,Kurta Sets,Green,Summer,82.0,2,budget,0.6817388,1,67
+22355,Men,Apparel,Topwear,2011.0,Casual,John Players Men Solid Blue Shirt,22355.jpg,Shirts,Blue,Fall,76.0,1,color_lover,0.2972464,0,54
+5809,Women,Apparel,Bottomwear,2011.0,Casual,Puma Women Black Capris,5809.jpg,Track Pants,Navy Blue,Fall,24.0,1,budget,0.3678612,0,74
+48469,Women,Apparel,Dress,2012.0,Casual,French Connection Black Dress,48469.jpg,Dresses,Black,Summer,85.0,7,fashionista,0.008955281,0,55
+52125,Girls,Apparel,Dress,2012.0,Casual,Doodle Girls Pink Printed Dress,52125.jpg,Dresses,White,Fall,64.0,4,budget,0.08721023,0,16
+26559,Men,Footwear,Shoes,2012.0,Casual,Lee Cooper Men Black Shoes,26559.jpg,Formal Shoes,Black,Summer,68.0,1,color_lover,0.31923947,0,37
+54813,Women,Accessories,Bags,2010.0,Casual,Ivory Tag Brown Fur Handbag,54813.jpg,Handbags,Black,Summer,34.0,3,budget,0.16922489,0,23
+29165,Women,Apparel,Topwear,2012.0,Casual,United Colors of Benetton Women Printed Black & White Top,29165.jpg,Tshirts,Blue,Summer,61.0,5,color_lover,0.07226555,0,68
+48365,Men,Apparel,Topwear,2012.0,Casual,French Connection Men Navy Blue Shirt,48365.jpg,Shirts,Navy Blue,Summer,23.0,4,color_lover,0.14979827,0,97
+56461,Women,Personal Care,Nails,2017.0,Casual,Streetwear Pluto's Nail Polish 10,56461.jpg,Nail Polish,Brown,Spring,53.0,4,color_lover,0.085115105,0,69
+31985,Men,Footwear,Shoes,2012.0,Casual,Woodland Men Khaki Shoes,31985.jpg,Casual Shoes,Brown,Summer,25.0,1,color_lover,0.15216354,0,85
+23572,Men,Personal Care,Fragrance,2017.0,Casual,Boss Men Perfume,23572.jpg,Perfume and Body Mist,White,Spring,45.0,3,budget,0.31378514,0,10
+32269,Women,Apparel,Topwear,2012.0,Ethnic,Vishudh Women Printed Orange Kurta,32269.jpg,Kurtas,White,Summer,38.0,3,budget,0.41513953,0,15
+28033,Men,Apparel,Innerwear,2016.0,Casual,Jockey ELANCE Men Black Y Front Briefs 1006,28033.jpg,Briefs,Black,Summer,17.0,1,fashionista,0.059959084,0,96
+54639,Men,Accessories,Watches,2016.0,Casual,Fastrack Men Black Dial Watch,54639.jpg,Watches,Black,Winter,37.0,3,color_lover,0.050902475,0,72
+58215,Women,Apparel,Bottomwear,2012.0,Ethnic,Shree Women Multi Coloured Patiala,58215.jpg,Patiala,Multi,Summer,89.0,0,budget,0.13526936,0,58
+28383,Men,Accessories,Eyewear,2016.0,Casual,Idee Men Black Sunglasses,28383.jpg,Sunglasses,Black,Winter,54.0,3,fashionista,0.19947463,0,69
+40468,Men,Footwear,Shoes,2012.0,Casual,Fila Men Rockford Black Shoes,40468.jpg,Casual Shoes,Black,Fall,51.0,3,color_lover,0.11747519,0,79
+55418,Women,Personal Care,Lips,2017.0,Casual,Revlon Moisture Stay Violet Lipstick 13,55418.jpg,Lip Gloss,Brown,Spring,58.0,4,budget,0.07357979,0,92
+5187,Men,Apparel,Topwear,2011.0,Casual,Linkin Park Men's Black T-shirt,5187.jpg,Tshirts,Black,Summer,43.0,3,budget,0.2588078,0,2
+31325,Women,Apparel,Topwear,2012.0,Ethnic,Aurelia Women Printed Purple Kurta,31325.jpg,Kurtas,Green,Fall,70.0,2,budget,0.5032131,1,19
+21410,Men,Apparel,Topwear,2011.0,Casual,Locomotive Men Printed Black T-shirt,21410.jpg,Tshirts,Black,Summer,47.0,5,budget,0.034792893,0,58
+50669,Men,Apparel,Loungewear and Nightwear,2018.0,Casual,Chromozome Men Assorted Checked Pyjamas S-5264,50669.jpg,Lounge Pants,Blue,Summer,53.0,2,color_lover,0.2983476,0,35
+46047,Women,Accessories,Jewellery,2016.0,Casual,Estelle Gold Earrings,46047.jpg,Earrings,Silver,Summer,76.0,4,budget,0.20643033,0,18
+32118,Men,Apparel,Innerwear,2016.0,Casual,Playboy Men Jack Green Brief,32118.jpg,Briefs,Green,Summer,59.0,4,fashionista,0.014127932,0,89
+28808,Men,Apparel,Topwear,2012.0,Casual,Denizen Men Striped Black Shirt,28808.jpg,Shirts,Navy Blue,Fall,44.0,7,color_lover,0.021604953,0,66
+18753,Women,Apparel,Topwear,2011.0,Casual,Arrow Woman Megan Blue Top,18753.jpg,Tops,Grey,Summer,99.0,4,budget,0.7646328,1,18
+15794,Men,Apparel,Innerwear,2016.0,Casual,Facit Men Grey String Bikini Briefs,15794.jpg,Briefs,Blue,Summer,40.0,1,color_lover,0.2266568,0,19
+51399,Men,Apparel,Topwear,2012.0,Casual,Myntra Men Blue Check Shirt,51399.jpg,Shirts,Blue,Summer,85.0,3,color_lover,0.14375152,0,95
+51879,Women,Accessories,Wallets,2016.0,Casual,Nyk Women Pink Wallet,51879.jpg,Wallets,Red,Summer,66.0,5,color_lover,0.03907535,0,70
+7996,Men,Apparel,Topwear,2011.0,Sports,Fila Men's Striper Pique Polo Purple Navy T-shirt,7996.jpg,Tshirts,Black,Fall,31.0,1,budget,0.42459127,0,51
+53367,Unisex,Accessories,Bags,2012.0,Casual,Puma Unisex Pink Backpack,53367.jpg,Backpacks,Red,Summer,41.0,4,color_lover,0.13485803,0,32
+29649,Men,Apparel,Topwear,2012.0,Formal,Indigo Nation Men Striped Blue Shirt,29649.jpg,Shirts,Blue,Fall,67.0,2,budget,0.32028356,0,39
+9926,Unisex,Accessories,Bags,2011.0,Casual,Puma Unisex Originals Mono Flight Green Bags,9926.jpg,Handbags,Blue,Summer,42.0,2,budget,0.18827805,0,38
+34992,Women,Apparel,Saree,2012.0,Ethnic,Fabindia H& Printed Navy Blue Cotton Mull Sari,34992.jpg,Sarees,Black,Fall,64.0,4,fashionista,0.14623965,0,81
+18613,Men,Apparel,Topwear,2011.0,Sports,Puma Men Team SS Chive-Olive Tshirts,18613.jpg,Tshirts,Green,Fall,60.0,1,fashionista,0.09281945,0,0
+35692,Men,Footwear,Shoes,2012.0,Casual,U.S. Polo Assn. Men White Shoes,35692.jpg,Casual Shoes,White,Summer,48.0,3,color_lover,0.26152325,0,10
+59276,Women,Accessories,Watches,2016.0,Casual,Titan Women Black Watch,59276.jpg,Watches,Black,Winter,31.0,2,color_lover,0.17476347,0,91
+43264,Women,Apparel,Topwear,2012.0,Ethnic,Aneri Women White Kurta,43264.jpg,Kurtas,White,Summer,43.0,2,fashionista,0.09590689,0,56
+16421,Men,Apparel,Topwear,2011.0,Casual,Levi's Men Stripes Brown Tshirts,16421.jpg,Tshirts,Black,Fall,80.0,5,fashionista,0.04941984,0,88
+44219,Men,Apparel,Topwear,2012.0,Casual,Nike Men Black Ozil T-shirt,44219.jpg,Tshirts,Black,Fall,67.0,3,budget,0.43384516,0,49
+13195,Men,Footwear,Shoes,2011.0,Casual,Puma Men Track Cat Basic White Casual Shoes,13195.jpg,Casual Shoes,White,Fall,32.0,5,budget,0.1524973,0,22
+5701,Men,Footwear,Shoes,2015.0,Casual,Skechers Men's Flaunted Black Shoe,5701.jpg,Casual Shoes,Black,Summer,95.0,6,budget,0.14140657,0,30
+52835,Women,Accessories,Jewellery,2012.0,Casual,Adrika Red Earrings,52835.jpg,Earrings,Brown,Summer,80.0,6,color_lover,0.013406359,0,93
+6818,Men,Footwear,Flip Flops,2011.0,Casual,Timberland Men's Grn Thng Red Flip Flop,6818.jpg,Flip Flops,Black,Summer,59.0,2,color_lover,0.28595978,0,41
+37561,Girls,Apparel,Topwear,2012.0,Casual,Madagascar3 Infant Girls Pink Snapsuit Romper,37561.jpg,Rompers,Pink,Summer,84.0,4,fashionista,0.03409171,0,98
+36666,Unisex,Accessories,Bags,2012.0,Casual,Paridhan Unisex Brown Duffle Bag,36666.jpg,Handbags,Brown,Winter,61.0,6,fashionista,0.0033414839,0,6
+52156,Women,Apparel,Topwear,2012.0,Casual,Femella Women Black Summer Cape Top,52156.jpg,Tshirts,Green,Fall,118.0,2,budget,0.033341475,0,15
+51920,Women,Accessories,Bags,2016.0,Casual,Nyk Women Ink Blue Albedo Handbag,51920.jpg,Handbags,Black,Summer,57.0,4,fashionista,0.06514112,0,89
+56202,Women,Accessories,Jewellery,2016.0,Casual,Estelle Women Gold Pendant,56202.jpg,Earrings,Gold,Fall,67.0,2,color_lover,0.05224574,0,59
+27624,Men,Apparel,Bottomwear,2012.0,Casual,Scullers Men Cream Shorts,27624.jpg,Shorts,White,Summer,59.0,2,fashionista,0.08553486,0,1
+28776,Women,Apparel,Topwear,2012.0,Ethnic,Aurelia Women Printed Orange Kurti,28776.jpg,Kurtis,Red,Summer,35.0,5,budget,0.06311138,0,0
+22758,Women,Apparel,Topwear,2011.0,Ethnic,BIBA Women Printed Blue Kurta,22758.jpg,Kurtas,Green,Fall,20.0,1,color_lover,0.053619068,0,47
+42054,Women,Accessories,Wallets,2012.0,Casual,Bulchee  Women Red Wallet Clutch,42054.jpg,Wallets,Red,Summer,49.0,5,fashionista,0.0054488843,0,11
+56184,Women,Personal Care,Makeup,2017.0,Casual,ColorBar Neutral Triple Act Compact 001,56184.jpg,Compact,Skin,Summer,42.0,3,budget,0.28468943,0,68
+51583,Women,Apparel,Bottomwear,2012.0,Casual,Wrangler Women Navy Blue Jeggings,51583.jpg,Jeans,Black,Summer,49.0,1,fashionista,0.30179933,0,36
+8389,Men,Apparel,Topwear,2011.0,Sports,ADIDAS Men  Red Polo Tshirts,8389.jpg,Tshirts,Black,Summer,61.0,2,color_lover,0.28582555,0,31
+35045,Women,Apparel,Topwear,2012.0,Ethnic,Fabindia Women Silk Green Kurta,35045.jpg,Kurtas,Green,Summer,65.0,0,color_lover,0.47033873,0,8
+3812,Men,Footwear,Shoes,2014.0,Casual,Converse Men CT COLOR HI Black Black Casual Shoes,3812.jpg,Casual Shoes,Black,Summer,66.0,2,budget,0.42776576,0,98
+4034,Men,Apparel,Topwear,2011.0,Casual,Myntra Men's Better Days Are Coming Black T-shirt,4034.jpg,Tshirts,Black,Summer,31.0,1,budget,0.31674138,0,18
+23766,Men,Accessories,Eyewear,2016.0,Casual,Oakley Men Black Fast Jacket Sunglasses,23766.jpg,Sunglasses,Black,Winter,33.0,3,color_lover,0.121979155,0,47
+56425,Women,Personal Care,Eyes,2017.0,Casual,Streetwear FX Spice Girl Eye Shadow,56425.jpg,Eyeshadow,Bronze,Spring,50.0,0,budget,0.5123204,1,79
+57129,Women,Apparel,Topwear,2012.0,Casual,Elle Women Red Top,57129.jpg,Tops,Pink,Summer,68.0,4,color_lover,0.07646929,0,2
+23747,Unisex,Accessories,Eyewear,2016.0,Casual,Ray-Ban Unisex Active Lifestyle Sunglasses,23747.jpg,Sunglasses,Black,Winter,57.0,2,color_lover,0.15757993,0,19
+8694,Women,Accessories,Eyewear,2016.0,Casual,Fastrack Women Gradient Sunglasses P168BK1F,8694.jpg,Sunglasses,Black,Winter,63.0,3,fashionista,0.25522444,0,23
+35051,Women,Apparel,Topwear,2012.0,Ethnic,Fabindia Women Printed Blue Kurtis,35051.jpg,Kurtas,Blue,Summer,44.0,2,budget,0.5203486,1,53
+3399,Women,Accessories,Bags,2015.0,Casual,Murcia Women Yellow Handbag,3399.jpg,Handbags,Yellow,Winter,84.0,2,fashionista,0.067371376,0,32
+48400,Men,Apparel,Topwear,2012.0,Casual,French Connection Men White T-shirt,48400.jpg,Tshirts,White,Summer,61.0,2,fashionista,0.094607815,0,23
+38987,Boys,Apparel,Topwear,2012.0,Casual,Gini and Jony Boys Wild West T-shirt,38987.jpg,Tshirts,Blue,Summer,51.0,4,color_lover,0.21773684,0,74
+28525,Men,Apparel,Topwear,2012.0,Casual,Nike Men Man U Core Black T-shirt,28525.jpg,Tshirts,Black,Summer,57.0,3,budget,0.3908106,0,71
+4915,Women,Apparel,Topwear,2011.0,Casual,Gini and Jony Girl's Vollie White Kidswear,4915.jpg,Tshirts,White,Summer,65.0,3,color_lover,0.27707565,0,35
+12502,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Short Red Tshirts,12502.jpg,Tshirts,Red,Fall,77.0,4,budget,0.25420976,0,37
+38010,Men,Accessories,Watches,2016.0,Casual,Q&Q Men White Dial Watch DB06J304Y,38010.jpg,Watches,White,Winter,39.0,2,budget,0.2882239,0,83
+45214,Women,Accessories,Watches,2016.0,Casual,CASIO Enticer Women Black Dial Watch A669,45214.jpg,Watches,Black,Winter,33.0,1,budget,0.37122986,0,98
+44255,Women,Accessories,Wallets,2012.0,Casual,Hidekraft Women Black Wallet,44255.jpg,Wallets,Black,Summer,37.0,0,budget,0.3987637,0,88
+10327,Men,Accessories,Watches,2016.0,Casual,Puma Men Slick Gents 3HD Black Watches,10327.jpg,Watches,Black,Winter,17.0,4,fashionista,0.07740274,0,98
+33272,Girls,Apparel,Bottomwear,2012.0,Casual,Gini & Jony Girls Pink Pedal Pusher,33272.jpg,Capris,White,Summer,21.0,3,budget,0.12841101,0,24
+26105,Men,Apparel,Topwear,2012.0,Formal,John Miller Men Striped Purple Shirt,26105.jpg,Shirts,Blue,Fall,49.0,3,fashionista,0.2475579,0,92
+10450,Men,Apparel,Topwear,2011.0,Casual,Flying Machine Men Blue Polo Tshirts,10450.jpg,Tshirts,Blue,Fall,19.0,1,color_lover,0.18378651,0,17
+51256,Men,Accessories,Belts,2012.0,Formal,Park Avenue Men Brown Belt,51256.jpg,Belts,Black,Summer,35.0,3,color_lover,0.21977666,0,81
+12438,Unisex,Accessories,Headwear,2011.0,Casual,Timberland Unisex Casual Black Caps,12438.jpg,Caps,Black,Fall,52.0,7,budget,0.12213604,0,65
+42348,Women,Apparel,Bottomwear,2012.0,Casual,Flying Machine Women Back Trousers,42348.jpg,Track Pants,Blue,Summer,54.0,6,budget,0.06640394,0,53
+33126,Women,Footwear,Shoes,2015.0,Casual,Catwalk Women Gold Stilettos,33126.jpg,Heels,Beige,Winter,38.0,6,fashionista,0.11795035,0,34
+41959,Boys,Apparel,Topwear,2012.0,Casual,Gini and Jony Boys Rugby Green T-shirt,41959.jpg,Tshirts,Blue,Summer,58.0,1,budget,0.15665357,0,79
+36693,Men,Footwear,Sandal,2012.0,Casual,Spalding Men Brown Sandals,36693.jpg,Sandals,Brown,Summer,45.0,3,color_lover,0.24003893,0,60
+49783,Women,Apparel,Loungewear and Nightwear,2012.0,Casual,Little Miss Intimates Grey & Black Pyjama Set,49783.jpg,Night suits,White,Summer,32.0,4,color_lover,0.17901026,0,40
+37332,Women,Accessories,Watches,2016.0,Casual,DKNY Women White Dial Watch NY8482,37332.jpg,Watches,White,Winter,76.0,1,budget,0.19041632,0,99
+29493,Women,Accessories,Watches,2016.0,Casual,Giordano Women Chronograph White Dial Watch,29493.jpg,Watches,White,Winter,49.0,3,color_lover,0.018240102,0,32
+45387,Women,Footwear,Shoes,2012.0,Casual,Rocia Women Black Flats,45387.jpg,Flip Flops,Black,Summer,64.0,4,color_lover,0.12678035,0,67
+2122,Women,Apparel,Topwear,2010.0,Casual,Lee Women Black Top,2122.jpg,Tshirts,Black,Fall,29.0,4,color_lover,0.6383305,1,32
+23886,Men,Footwear,Shoes,2012.0,Sports,Fila Men Hex II White Sports Shoes,23886.jpg,Sports Shoes,White,Fall,45.0,5,color_lover,0.00716308,0,13
+53759,Men,Apparel,Topwear,2012.0,Casual,Puma Men Grey T-shirt,53759.jpg,Tshirts,Black,Summer,62.0,2,fashionista,0.2990335,0,20
+39314,Girls,Apparel,Bottomwear,2012.0,Casual,Gini and Jony Girls Red Skirt,39314.jpg,Skirts,Red,Summer,75.0,3,budget,0.2543736,0,47
+49896,Girls,Accessories,Watches,2016.0,Casual,Q&Q Kids Girls White Dial Analog Watch,49896.jpg,Watches,White,Winter,43.0,3,budget,0.11874507,0,19
+8124,Women,Accessories,Watches,2016.0,Casual,Fastrack Women Core Analog Steel White Watch,8124.jpg,Watches,White,Winter,36.0,7,budget,0.035056274,0,7
+4081,Men,Apparel,Topwear,2011.0,Casual,Inkfruit Men's Type Bee Grey Melange T-shirt,4081.jpg,Tshirts,Grey,Summer,26.0,2,color_lover,0.31086975,0,6
+57658,Women,Personal Care,Nails,2017.0,Casual,Lotus Herbals Pure White Nail Polish 81,57658.jpg,Nail Polish,Silver,Spring,58.0,1,fashionista,0.13995102,0,66
+31661,Men,Apparel,Topwear,2012.0,Casual,Indigo Nation Men Printed Blue Shirt,31661.jpg,Shirts,Blue,Fall,36.0,4,budget,0.46646386,0,16
+35007,Women,Accessories,Stoles,2012.0,Ethnic,Fabindia Women Printed Rust Stole,35007.jpg,Kurtas,Red,Summer,37.0,0,color_lover,0.39903444,0,32
+51486,Men,Apparel,Bottomwear,2012.0,Casual,Denizen Men Brown Trousers,51486.jpg,Jeans,Blue,Summer,39.0,2,color_lover,0.231818,0,47
+14721,Women,Apparel,Topwear,2011.0,Casual,Scullers For Her Women Casual Shirt Purple Shirts,14721.jpg,Tops,Black,Summer,56.0,1,fashionista,0.44243145,0,75
+23795,Women,Footwear,Shoes,2012.0,Casual,Clarks Women Black Cocoa Creme Shoes,23795.jpg,Formal Shoes,Black,Summer,63.0,3,color_lover,0.22912973,0,58
+29548,Men,Apparel,Topwear,2012.0,Casual,Classic Polo Men Printed Navy Blue T-shirt,29548.jpg,Tshirts,Navy Blue,Summer,31.0,2,fashionista,0.10416295,0,85
+52306,Women,Accessories,Jewellery,2016.0,Casual,ToniQ Women Golden Necklace,52306.jpg,Necklace and Chains,Gold,Summer,45.0,3,fashionista,0.058884874,0,21
+20872,Men,Footwear,Shoes,2011.0,Formal,Franco Leone Men Formal Brown Shoes,20872.jpg,Formal Shoes,Black,Winter,50.0,3,color_lover,0.045731835,0,29
+27372,Men,Apparel,Topwear,2011.0,Casual,Tantra Men Blood Test Green T-shirt,27372.jpg,Tshirts,Green,Fall,53.0,5,budget,0.14514834,0,37
+34856,Men,Footwear,Shoes,2012.0,Casual,Vans Men Classic Slip-On Black Shoes,34856.jpg,Casual Shoes,Black,Summer,58.0,4,fashionista,0.21482657,0,50
+8526,Women,Footwear,Shoes,2011.0,Sports,Nike Women Nike Womens Downshifter 3 MSL Black Sports Shoes,8526.jpg,Sports Shoes,Black,Summer,55.0,1,fashionista,0.33939248,0,53
+10658,Women,Apparel,Topwear,2011.0,Casual,Doodle Girl Little frock White Tops,10658.jpg,Tops,White,Summer,73.0,1,budget,0.5133388,1,7
+43336,Men,Footwear,Shoes,2012.0,Sports,Reebok Men White Turbo Sports Shoes,43336.jpg,Sports Shoes,White,Summer,59.0,1,color_lover,0.32443857,0,26
+31857,Women,Accessories,Watches,2016.0,Casual,Titan Women Mother Of Pearl Dial Watch,31857.jpg,Watches,Gold,Winter,38.0,1,color_lover,0.092700735,0,26
+1981,Women,Apparel,Bottomwear,2010.0,Casual,Puma Women's Island Green Shorts,1981.jpg,Shorts,White,Summer,82.0,3,color_lover,0.3408993,0,97
+6870,Women,Apparel,Dress,2011.0,Casual,Forever New Women's Pink Dress,6870.jpg,Dresses,Pink,Summer,30.0,2,fashionista,0.044170335,0,20
+14026,Men,Apparel,Topwear,2011.0,Sports,Nike Men Solid Grey Tshirts,14026.jpg,Tshirts,Black,Fall,56.0,3,color_lover,0.08981423,0,29
+29352,Men,Apparel,Topwear,2012.0,Casual,Probase Men Navy Blue Printed T-shirt,29352.jpg,Tshirts,Blue,Summer,51.0,0,fashionista,0.33709595,0,96
+50183,Women,Accessories,Bags,2012.0,Casual,Paridhan Women Brown Handbag,50183.jpg,Handbags,Black,Summer,48.0,1,budget,0.18397692,0,27
+22664,Unisex,Accessories,Bags,2015.0,Casual,Wildcraft Unisex Red & Black Backpack,22664.jpg,Backpacks,Black,Summer,41.0,2,color_lover,0.21704005,0,63
+42200,Women,Apparel,Topwear,2012.0,Casual,Sepia Women Yellow Top,42200.jpg,Tops,Green,Summer,61.0,4,fashionista,0.032889545,0,96
+18259,Women,Apparel,Topwear,2011.0,Ethnic,Aneri Women Roshan Peach Kurta,18259.jpg,Kurtas,Brown,Summer,44.0,1,budget,0.50051445,1,68
+6907,Women,Apparel,Topwear,2011.0,Casual,Tantra Women's Re-incarnation Cream T-shirt,6907.jpg,Tshirts,Grey,Summer,46.0,1,budget,0.4729218,0,60
+28912,Men,Accessories,Bags,2015.0,Casual,CABARELLI Men Black Laptop bag,28912.jpg,Laptop Bag,Black,Winter,40.0,4,fashionista,0.057185538,0,47
+19947,Unisex,Accessories,Bags,2011.0,Casual,Nike Unisex Classic Base Black Backpack,19947.jpg,Laptop Bag,Black,Winter,53.0,6,budget,0.046947386,0,18
+24884,Women,Apparel,Topwear,2012.0,Casual,United Colors of Benetton Women Black Polo T-shirt,24884.jpg,Tops,Black,Summer,82.0,2,budget,0.3319765,0,3
+11755,Women,Apparel,Topwear,2011.0,Casual,Lee Women Solid White Shirts,11755.jpg,Tshirts,White,Summer,69.0,1,color_lover,0.3299968,0,34
+3150,Men,Footwear,Shoes,2010.0,Sports,Nike Men's Lunarswift Black Shoe,3150.jpg,Sports Shoes,Black,Summer,42.0,3,color_lover,0.14782721,0,63
+35339,Women,Accessories,Jewellery,2016.0,Ethnic,Fabindia Women Anusuya Green Pendant,35339.jpg,Earrings,Silver,Summer,40.0,1,budget,0.526629,1,48
+26801,Men,Apparel,Topwear,2015.0,Formal,Arrow Men Lavender Striped Shirt,26801.jpg,Shirts,Blue,Fall,74.0,3,budget,0.62211627,1,16
+12405,Men,Accessories,Socks,2016.0,Formal,Reid & Taylor Men Stripes  Navy Blue Socks,12405.jpg,Socks,Grey,Summer,92.0,2,budget,0.2394207,0,43
+34027,Boys,Apparel,Topwear,2012.0,Casual,Gini and Jony Boys Printed White T-shirt,34027.jpg,Tshirts,White,Summer,56.0,1,budget,0.35093415,0,91
+17507,Men,Apparel,Topwear,2011.0,Casual,Classic Polo Men Stripes Black Polo T-Shirt,17507.jpg,Tshirts,Black,Fall,73.0,2,budget,0.6676901,1,29
+47216,Men,Footwear,Sandal,2012.0,Casual,Franco Leone Men Brown Sandals,47216.jpg,Sandals,Brown,Summer,36.0,3,color_lover,0.25126976,0,92
+31695,Women,Apparel,Topwear,2012.0,Ethnic,Folklore Women Printed Purple Kurta,31695.jpg,Kurtas,Multi,Summer,30.0,4,budget,0.06543816,0,45
+46102,Men,Footwear,Shoes,2012.0,Casual,ADIDAS Men Green Lucent Shoes,46102.jpg,Casual Shoes,Red,Summer,38.0,6,fashionista,0.0094826855,0,5
+56483,Women,Personal Care,Nails,2017.0,,Streetwear Brassy Brown Nail Polish # 67,56483.jpg,Nail Polish,Brown,Spring,73.0,1,color_lover,0.10225698,0,98
+46726,Women,Personal Care,Fragrance,2017.0,Casual,Rasasi Women Hope Perfume,46726.jpg,Perfume and Body Mist,White,Spring,10.0,2,budget,0.5123466,1,36
+34268,Women,Apparel,Topwear,2012.0,Ethnic,Fabindia Women Printed Purple Dupatta,34268.jpg,Dupatta,Brown,Fall,53.0,1,budget,0.4125547,0,23
+26881,Women,Apparel,Topwear,2012.0,Casual,Jealous 21 Women Pink T-shirt,26881.jpg,Tshirts,Red,Summer,29.0,1,budget,0.5785299,1,92
+39685,Men,Footwear,Shoes,2012.0,Casual,Lotto Men Black Shoes,39685.jpg,Casual Shoes,Black,Fall,27.0,1,budget,0.5460667,1,45
+12159,Women,Apparel,Bottomwear,2011.0,Ethnic,Aurelia Women Solid Red Leggings,12159.jpg,Leggings,Red,Summer,73.0,4,color_lover,0.062078837,0,52
+18534,Girls,Accessories,Watches,2016.0,Casual,Chhota Bheem Chutki Kids-Girls Pink Watch,18534.jpg,Watches,White,Winter,33.0,4,budget,0.036260575,0,94
+15867,Unisex,Footwear,Shoes,2011.0,Casual,Warner Bros Kids Unisex SD Silly Shoe Silver Casual Shoes,15867.jpg,Sports Shoes,White,Fall,75.0,0,fashionista,0.2518574,0,98
+42965,Men,Accessories,Wallets,2012.0,Casual,French Connection Men Black Wallet,42965.jpg,Wallets,Black,Summer,20.0,2,fashionista,0.39670303,0,59
+56294,Women,Apparel,Innerwear,2017.0,Casual,Biara Women Rose  Bra,56294.jpg,Bra,Black,Summer,18.0,4,fashionista,0.040367793,0,96
+2134,Men,Apparel,Topwear,2011.0,Casual,Basics Men Purple Slim Fit Checked Shirt,2134.jpg,Shirts,Red,Fall,42.0,5,color_lover,0.034130666,0,62
+24297,Men,Accessories,Socks,2016.0,Casual,Quiksilver Men Grey Socks,24297.jpg,Socks,Grey,Summer,52.0,2,fashionista,0.094899006,0,84
+51798,Women,Apparel,Loungewear and Nightwear,2016.0,Casual,Bwitch Golden Coloured Nightdress,51798.jpg,Nightdress,White,Summer,51.0,4,color_lover,0.0729726,0,31
+35318,Women,Accessories,Jewellery,2016.0,Ethnic,Fabindia Women Anusuya Silver Earrings,35318.jpg,Earrings,Silver,Summer,26.0,1,color_lover,0.15776989,0,86
+6370,Men,Footwear,Shoes,2011.0,Casual,Numero Uno Men's Red Black Shoe,6370.jpg,Casual Shoes,Red,Summer,64.0,4,budget,0.11710719,0,32
+13889,Women,Apparel,Topwear,2011.0,Casual,Scullers Women Check Blue Shirts,13889.jpg,Shirts,Blue,Summer,57.0,2,budget,0.30400932,0,66
+58666,Women,Apparel,Topwear,2012.0,Ethnic,ALayna Women Navy Blue Kurta,58666.jpg,Kurtas,Red,Summer,37.0,1,fashionista,0.10243173,0,17
+4025,Unisex,Footwear,Shoes,2011.0,Casual,ADIDAS Unisex High Can Red Black Shoe,4025.jpg,Casual Shoes,Red,Summer,27.0,2,fashionista,0.046394963,0,24
+3350,Men,Apparel,Topwear,2011.0,Casual,Myntra Men's Work Hard/ Smart Navy Blue T-shirt,3350.jpg,Tshirts,Blue,Summer,38.0,2,fashionista,0.35477874,0,94
+51495,Men,Apparel,Bottomwear,2012.0,Casual,Denizen Men Blue Jeans,51495.jpg,Jeans,Blue,Summer,57.0,4,fashionista,0.09556028,0,53
+49749,Men,Accessories,Ties,2012.0,Casual,Park Avenue Men Brown Tie,49749.jpg,Ties,Black,Summer,53.0,4,budget,0.13823016,0,57
+43465,Women,Apparel,Loungewear and Nightwear,2017.0,Casual,SDL by Sweet Dreams Women Pink Pyjama Set,43465.jpg,Tops,White,Summer,80.0,3,color_lover,0.38402665,0,66
+29506,Women,Accessories,Watches,2016.0,Casual,Giordano Women White Dial Watch,29506.jpg,Watches,White,Winter,42.0,2,budget,0.23394153,0,45
+18902,Unisex,Accessories,Headwear,2011.0,Casual,ADIDAS Originals Unisex Black Cap,18902.jpg,Caps,Black,Fall,71.0,1,budget,0.49746424,0,23
+6307,Women,Apparel,Topwear,2011.0,Casual,UCB Women Basic Racerback Green Top,6307.jpg,Tshirts,Blue,Summer,37.0,7,fashionista,0.20233628,0,31
+56615,Women,Personal Care,Makeup,2017.0,Casual,Streetwear Stay On Mineral Rose Swirl Blusher,56615.jpg,Highlighter and Blush,Rose,Spring,21.0,3,color_lover,0.034760118,0,46
+30319,Men,Apparel,Topwear,2012.0,Casual,Myntra Men Feared Strom Drive Pink T-shirt,30319.jpg,Tshirts,White,Summer,16.0,2,fashionista,0.2926841,0,85
+4005,Men,Footwear,Flip Flops,2011.0,Casual,Spalding Men's Yellow And Green With Graphic Flip Flop,4005.jpg,Flip Flops,Yellow,Summer,83.0,2,color_lover,0.32291895,0,22
+7169,Men,Apparel,Topwear,2011.0,Casual,Scullers Men Scul Navy Blue Shirt,7169.jpg,Shirts,Grey,Summer,29.0,3,fashionista,0.052194837,0,65
+41868,Men,Footwear,Sandal,2015.0,Casual,Estd. 1977 Men Turquoise Blue Sandals,41868.jpg,Heels,Brown,Winter,88.0,0,fashionista,0.0482842,0,26
+36321,Boys,Apparel,Topwear,2012.0,Casual,Mr.Men Boys A Lot Of Work Blue T-shirt,36321.jpg,Tshirts,Blue,Summer,61.0,1,fashionista,0.3251592,0,1
+26929,Women,Apparel,Topwear,2012.0,Casual,Jealous 21 Women Dark Grey Tunic,26929.jpg,Tops,Black,Summer,15.0,3,budget,0.2894024,0,89
+4896,Women,Apparel,Topwear,2011.0,Casual,Levis Kids Girl's Diane Yellow Teens Kidswear,4896.jpg,Tops,Yellow,Summer,49.0,3,budget,0.29332846,0,16
+40609,Women,Apparel,Topwear,2012.0,Ethnic,Span Women Floral Printed Pink Kurta,40609.jpg,Kurtas,Red,Summer,69.0,2,color_lover,0.39236382,0,32
+58232,Men,Footwear,Flip Flops,2012.0,Casual,Nike Men Aquahype Red Flip Flops,58232.jpg,Flip Flops,Red,Summer,36.0,4,color_lover,0.32344452,0,8
+19074,Women,Apparel,Topwear,2011.0,Ethnic,W Women Thread Work Off White Kurta,19074.jpg,Kurtas,Cream,Summer,47.0,3,color_lover,0.23057318,0,42
+55591,Men,Apparel,Topwear,2012.0,Casual,Peter England Men Black Shirt,55591.jpg,Shirts,Black,Summer,60.0,1,fashionista,0.33654362,0,47
+16953,Men,Accessories,Eyewear,2016.0,Casual,Image Men Classic Eyewear Black Sunglasses,16953.jpg,Sunglasses,Black,Winter,21.0,4,color_lover,0.04375551,0,38
+2553,Men,Footwear,Flip Flops,2011.0,Casual,Numero Uno Men's Casual Red Graphic Flip Flop,2553.jpg,Flip Flops,Red,Summer,19.0,2,fashionista,0.20438237,0,92
+16154,Men,Footwear,Shoes,2011.0,Formal,Enroute Men Leather Black Formal Shoes,16154.jpg,Formal Shoes,Black,Winter,15.0,1,budget,0.43317658,0,41
+20777,Women,Footwear,Shoes,2011.0,Casual,Carlton London Women Classy Gold Sandals,20777.jpg,Heels,Gold,Winter,74.0,2,budget,0.47580653,0,25
+54739,Men,Footwear,Shoes,2012.0,Casual,Vans Men Grey Del Norte Canvas Shoes,54739.jpg,Casual Shoes,Grey,Summer,74.0,7,budget,0.032870796,0,98
+54066,Men,Footwear,Shoes,2012.0,Casual,ADIDAS Men Olive Shoes,54066.jpg,Casual Shoes,White,Summer,67.0,3,color_lover,0.39433804,0,49
+13151,Men,Apparel,Topwear,2011.0,Casual,Puma Men Jersey Blue Polo Tshirts,13151.jpg,Tshirts,Navy Blue,Summer,34.0,1,budget,0.5593285,1,24
+17320,Men,Accessories,Eyewear,2016.0,Casual,Pepe Jeans Men Casual Sunglasses,17320.jpg,Sunglasses,Black,Winter,67.0,4,color_lover,0.070001714,0,23
+4792,Men,Apparel,Topwear,2011.0,Sports,ADIDAS Men's Dare Light Blue T-shirt,4792.jpg,Tshirts,White,Summer,63.0,2,color_lover,0.33963344,0,12
+35412,Men,Footwear,Shoes,2012.0,Casual,Enroute Men Black Shoes,35412.jpg,Formal Shoes,Black,Summer,65.0,3,budget,0.54182875,1,59
+40691,Men,Footwear,Shoes,2012.0,Formal,Numero Uno Men Black Shoes,40691.jpg,Formal Shoes,Black,Winter,43.0,2,budget,0.34789348,0,6
+56640,Women,Apparel,Topwear,2012.0,Casual,Mumbai Slang Women Multi Coloured Tunic,56640.jpg,Kurtas,Blue,Summer,26.0,4,fashionista,0.01811678,0,56
+51150,Men,Accessories,Socks,2016.0,Casual,Parx Men Black Socks,51150.jpg,Socks,Black,Summer,90.0,2,color_lover,0.14640892,0,35
+19165,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Green T-shirt,19165.jpg,Tshirts,Green,Fall,64.0,4,color_lover,0.05391069,0,44
+12429,Men,Footwear,Shoes,2011.0,Casual,Timberland Men Casual Brown Casual Shoes,12429.jpg,Casual Shoes,Brown,Fall,93.0,2,fashionista,0.047108233,0,19
+48010,Men,Accessories,Watches,2016.0,Casual,Helix Men Blue Dial Watch,48010.jpg,Watches,Black,Winter,68.0,5,color_lover,0.011596509,0,64
+22485,Women,Apparel,Topwear,2011.0,Ethnic,Global Desi Women Printed White Top,22485.jpg,Tops,White,Fall,34.0,2,budget,0.37396622,0,7
+6804,Men,Footwear,Shoes,2011.0,Casual,Timberland Men's Driver Venetian Brown Shoe,6804.jpg,Casual Shoes,Brown,Winter,78.0,3,fashionista,0.032513596,0,15
+52412,Women,Apparel,Loungewear and Nightwear,2015.0,Casual,Red Rose Pink Nightdress 9005,52412.jpg,Dresses,Pink,Summer,55.0,4,budget,0.04494083,0,13
+37685,Unisex,Accessories,Bags,2012.0,Casual,American Tourister Unisex Black Backpack,37685.jpg,Backpacks,Black,Winter,34.0,0,color_lover,0.088866845,0,75
+11032,Women,Apparel,Topwear,2011.0,Casual,Jealous 21 Women Check Blue Shirt,11032.jpg,Shirts,Red,Fall,50.0,3,color_lover,0.08060915,0,86
+9005,Women,Accessories,Bags,2015.0,Casual,Murcia Women Silver Party Purse Silver Handbags,9005.jpg,Handbags,Black,Summer,33.0,6,budget,0.03591847,0,14
+25441,Men,Footwear,Shoes,2012.0,Casual,Nike Men Elite Blue Shoes,25441.jpg,Casual Shoes,Blue,Fall,24.0,4,color_lover,0.10634819,0,91
+17760,Men,Footwear,Shoes,2011.0,Formal,Buckaroo Men New Pampa Black Formal Shoe,17760.jpg,Formal Shoes,Black,Fall,62.0,1,color_lover,0.14643663,0,97
+13162,Unisex,Accessories,Headwear,2011.0,Casual,Puma Unisex Unisex Cat Logo White Caps,13162.jpg,Caps,White,Fall,15.0,4,fashionista,0.099719636,0,65
+15705,Men,Apparel,Bottomwear,2011.0,Sports,Nike Men Tennis Black Track Pants,15705.jpg,Track Pants,Black,Fall,79.0,4,color_lover,0.1694692,0,31
+58104,Women,Accessories,Jewellery,2012.0,Casual,Rreverie Silver Ring,58104.jpg,Ring,Silver,Summer,48.0,4,color_lover,0.06370325,0,86
+7063,Unisex,Accessories,Bags,2011.0,Sports,Nike Unisex Hayward 29 Blue Backpack,7063.jpg,Backpacks,Blue,Summer,12.0,4,fashionista,0.08339234,0,62
+15817,Men,Apparel,Innerwear,2016.0,Casual,Facit Men Bicep Tee Olive Innerwear Vest,15817.jpg,Tshirts,Black,Summer,46.0,3,color_lover,0.14792979,0,85
+38492,Boys,Apparel,Topwear,2012.0,Casual,Gini and Jony Boys Core Yellow T-shirt,38492.jpg,Tshirts,Yellow,Summer,33.0,5,fashionista,0.02715578,0,50
+43513,Women,Apparel,Dress,2012.0,Casual,French Connection Women Orange Dress,43513.jpg,Kurtas,Red,Summer,50.0,2,budget,0.44454724,0,24
+33912,Men,Accessories,Watches,2016.0,Casual,Citizen Men Black Dial Watch,33912.jpg,Watches,Black,Winter,38.0,2,budget,0.53707373,1,57
+49299,Women,Accessories,Socks,2016.0,Casual,Arrow Women Pack Of 5 Socks,49299.jpg,Socks,Grey,Summer,50.0,1,color_lover,0.29844856,0,62
+12702,Women,Footwear,Shoes,2011.0,Casual,Nike Women Capri White Casual Shoes,12702.jpg,Sports Shoes,White,Summer,35.0,2,color_lover,0.2811722,0,61
+39375,Women,Accessories,Watches,2016.0,Casual,Helix Women Silver Dial Watch,39375.jpg,Watches,White,Winter,86.0,1,color_lover,0.11326631,0,21
+7656,Men,Accessories,Socks,2016.0,Casual,Wrangler Men's Navy Ankle Length Socks,7656.jpg,Backpacks,Black,Fall,46.0,9,fashionista,0.014196389,0,57
+52837,Women,Accessories,Jewellery,2012.0,Casual,Adrika Black Earrings,52837.jpg,Earrings,Gold,Winter,73.0,2,fashionista,0.058053546,0,57
+29123,Men,Footwear,Shoes,2012.0,Sports,Puma Men Aquil White Sports Shoes,29123.jpg,Sports Shoes,White,Summer,16.0,0,color_lover,0.5310032,1,85
+52633,Women,Accessories,Bags,2012.0,Casual,Mod-acc Women Grey Handbag,52633.jpg,Handbags,Green,Winter,62.0,3,color_lover,0.025156282,0,48
+40576,Women,Apparel,Topwear,2012.0,Ethnic,W Women Maroon Kurta,40576.jpg,Kurtas,Black,Summer,80.0,3,color_lover,0.17331488,0,51
+16841,Women,Accessories,Eyewear,2016.0,Casual,Idee Women Funky Eyewear Brown Sunglasses,16841.jpg,Sunglasses,Brown,Winter,63.0,2,color_lover,0.24779777,0,41
+52132,Boys,Apparel,Topwear,2012.0,Casual,Doodle Boys White Striped T-Shirt,52132.jpg,Tshirts,Red,Summer,83.0,3,fashionista,0.1382576,0,69
+12138,Women,Apparel,Topwear,2011.0,Ethnic,Aurelia Women Solid Green Kurtas,12138.jpg,Sweatshirts,Blue,Fall,64.0,2,fashionista,0.41299504,0,14
+21762,Men,Accessories,Belts,2011.0,Casual,Fossil Men Mead Black Belt,21762.jpg,Belts,Brown,Summer,38.0,3,fashionista,0.043973994,0,53
+43769,Women,Accessories,Jewellery,2012.0,Casual,Royal Diadem Purple Earrings,43769.jpg,Earrings,Gold,Summer,66.0,2,color_lover,0.31086376,0,59
+17746,Men,Footwear,Shoes,2011.0,Sports,Puma Men Excitmo I FG White Sports Shoe,17746.jpg,Sports Shoes,White,Summer,83.0,7,budget,0.08658431,0,96
+54165,Women,Accessories,Jewellery,2012.0,Casual,Femella Bronze Necklace,54165.jpg,Pendant,Gold,Winter,45.0,2,fashionista,0.08465164,0,7
+1804,Men,Apparel,Bottomwear,2010.0,Sports,Kalenji Men Essential Baggy Black Shorts,1804.jpg,Shorts,Blue,Summer,90.0,5,budget,0.049539223,0,52
+39659,Men,Footwear,Shoes,2012.0,Casual,Lotto Men Black Shoes,39659.jpg,Casual Shoes,Black,Summer,14.0,4,fashionista,0.023816869,0,59
+14902,Women,Accessories,Wallets,2011.0,Casual,United Colors of Benetton Women Solid Black Wallets,14902.jpg,Wallets,Black,Summer,54.0,1,budget,0.4130069,0,4
+49666,Men,Accessories,Eyewear,2016.0,Casual,United Colors of Benetton Men Sunglass,49666.jpg,Sunglasses,Black,Winter,53.0,1,budget,0.40546224,0,67
+1528,Men,Apparel,Topwear,2010.0,Sports,Puma Men Ferrari Black Fleece Jacket,1528.jpg,Shirts,Blue,Fall,78.0,3,color_lover,0.050084453,0,5
+17028,Men,Footwear,Flip Flops,2013.0,Casual,GAS Men Grey Pine Flip Flops,17028.jpg,Flip Flops,Blue,Fall,10.0,2,color_lover,0.105952375,0,95
+49049,Women,Accessories,Jewellery,2012.0,Casual,Lucera Women Silver Ring,49049.jpg,Pendant,Silver,Summer,29.0,4,color_lover,0.32083178,0,93
+40687,Men,Footwear,Shoes,2012.0,Casual,Numero Uno Men White Shoes,40687.jpg,Casual Shoes,White,Summer,33.0,1,color_lover,0.41998428,0,46
+51412,Men,Apparel,Topwear,2012.0,Formal,Myntra Men Lavender Striped Shirt,51412.jpg,Shirts,Blue,Fall,74.0,3,fashionista,0.40553197,0,98
+24188,Unisex,Footwear,Shoes,2012.0,Casual,Converse Unisex Chuck Taylor All Stars Red Casual Shoes,24188.jpg,Casual Shoes,Red,Summer,73.0,4,fashionista,0.0042035826,0,54
+43922,Women,Apparel,Topwear,2012.0,Casual,Femella Women Blue Top,43922.jpg,Tshirts,Blue,Summer,73.0,4,budget,0.36962166,0,39
+7119,Unisex,Accessories,Bags,2017.0,Casual,Wildcraft Unisex Olive Green Backpack,7119.jpg,Backpacks,Blue,Summer,49.0,3,color_lover,0.26365128,0,51
+32191,Men,Footwear,Shoes,2012.0,Sports,ADIDAS Men Phantom Blue Sports Shoes,32191.jpg,Sports Shoes,White,Summer,52.0,3,fashionista,0.06296381,0,15
+54699,Women,Apparel,Topwear,2012.0,Ethnic,Shree Women Blue and White Printed Kurta,54699.jpg,Kurtas,Green,Summer,60.0,3,budget,0.38572156,0,12
+16081,Women,Accessories,Eyewear,2016.0,Casual,Mayhem Women Gradient Sunglasses MAYS-9003-202,16081.jpg,Sunglasses,Black,Winter,86.0,2,budget,0.16198255,0,29
+10692,Men,Apparel,Topwear,2011.0,Casual,Doodle Boy Casual Red Tshirts,10692.jpg,Tshirts,Red,Summer,32.0,5,color_lover,0.14389199,0,18
+9900,Men,Apparel,Bottomwear,2011.0,Casual,Spykar Men Actif Fit Low Waist Blue Jeans,9900.jpg,Jeans,Blue,Summer,10.0,5,color_lover,0.09673558,0,16
+32263,Women,Apparel,Topwear,2012.0,Ethnic,Fabindia Women Printed Orange Tunic,32263.jpg,Kurtas,Orange,Fall,11.0,3,color_lover,0.06489838,0,62
+56663,Men,Footwear,Shoes,2012.0,Casual,United Colors of Benetton Men Brown Shoes,56663.jpg,Formal Shoes,Brown,Winter,35.0,0,color_lover,0.25136703,0,18
+27298,Women,Apparel,Topwear,2011.0,Ethnic,Mother Earth Women Printed Green Kurta,27298.jpg,Kurtas,Green,Fall,39.0,0,color_lover,0.07152753,0,91
+24074,Women,Footwear,Shoes,2015.0,Casual,Catwalk Women Beige Shoes,24074.jpg,Flats,Black,Summer,37.0,1,budget,0.44639066,0,57
+8819,Men,Apparel,Topwear,2011.0,Casual,Spykar Men Ranger Solid Navy Blue Shirts,8819.jpg,Tshirts,Navy Blue,Fall,31.0,3,budget,0.7017659,1,54
+13335,Women,Apparel,Topwear,2011.0,Casual,Gini and Jony Kids Girls Printed Pink Tops,13335.jpg,Tops,Red,Summer,49.0,7,budget,0.012265942,0,89
+28814,Men,Apparel,Bottomwear,2012.0,Casual,Denizen Men Blue Jeans,28814.jpg,Jeans,Blue,Fall,74.0,3,fashionista,0.213412,0,89
+51802,Women,Apparel,Loungewear and Nightwear,2016.0,Casual,Bwitch  Navy Blue  Nightdress,51802.jpg,Tops,Black,Summer,54.0,7,fashionista,0.10336009,0,61
+43992,Women,Personal Care,Fragrance,2017.0,Casual,Police Women Passion Eau De Toilette Natural Spray,43992.jpg,Perfume and Body Mist,Red,Spring,58.0,1,budget,0.2779707,0,22
+8930,Men,Accessories,Wallets,2011.0,Casual,Puma Men Originals Billfold Black Wallet,8930.jpg,Wallets,Black,Summer,36.0,4,color_lover,0.45483315,0,8
+40606,Women,Apparel,Topwear,2012.0,Ethnic,Span Women Purple Kurta,40606.jpg,Tops,Green,Summer,72.0,1,budget,0.48475546,0,11
+10160,Men,Footwear,Shoes,2011.0,Casual,Puma Men 917 Lo Paint Splatter White Casual Shoes,10160.jpg,Casual Shoes,White,Summer,55.0,3,budget,0.37862295,0,0
+56496,Women,Personal Care,Nails,2017.0,,Streetwear Quick Dry Girly Pink Nail Polish 09,56496.jpg,Nail Polish,Pink,Spring,48.0,4,fashionista,0.019504096,0,57
+40993,Girls,Apparel,Topwear,2012.0,Casual,Gini and Jony Girls Pink Striped Top,40993.jpg,Tshirts,White,Summer,80.0,2,color_lover,0.46771094,0,0
+22255,Women,Footwear,Shoes,2012.0,Casual,Inc. 5 Women Casual Green Flats,22255.jpg,Flip Flops,Blue,Summer,71.0,3,color_lover,0.27105564,0,33
+53466,Women,Apparel,Innerwear,2018.0,Casual,Amante Maroon Full-Coverage Lace Bra BCLC12,53466.jpg,Bra,Black,Summer,43.0,2,color_lover,0.3647881,0,95
+49288,Men,Accessories,Socks,2016.0,Casual,Arrow Men Pack of 5 Socks,49288.jpg,Socks,Black,Summer,29.0,3,budget,0.29536694,0,47
+11684,Men,Apparel,Topwear,2011.0,Casual,Lee Men Striped Shirt,11684.jpg,Tshirts,White,Summer,68.0,3,budget,0.3413895,0,88
+41661,Men,Apparel,Topwear,2012.0,Formal,Mark Taylor Men Blue Striped Shirt,41661.jpg,Shirts,Blue,Fall,66.0,3,budget,0.38696814,0,0
+23309,Women,Apparel,Topwear,2011.0,Ethnic,W Women Black Kurta,23309.jpg,Tops,Black,Fall,55.0,2,color_lover,0.17435098,0,15
+19975,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Red Polo TShirt,19975.jpg,Tshirts,Red,Fall,42.0,4,fashionista,0.050567597,0,60
+42915,Women,Accessories,Belts,2012.0,Casual,French Connection Women Grey Belt,42915.jpg,Belts,Brown,Summer,45.0,4,color_lover,0.07757479,0,63
+21470,Women,Footwear,Flip Flops,2012.0,Casual,Roxy Women Bamboo Grey Flip Flops,21470.jpg,Flip Flops,Black,Summer,38.0,4,fashionista,0.09066246,0,62
+3432,Men,Apparel,Topwear,2011.0,Casual,Myntra Men's Everyone Entitled Black T-shirt,3432.jpg,Tshirts,Blue,Summer,37.0,6,budget,0.14264958,0,68
+37969,Women,Footwear,Shoes,2012.0,Casual,Clarks Women Taupe Heels,37969.jpg,Heels,Brown,Winter,62.0,6,color_lover,0.0051976386,0,21
+37848,Men,Accessories,Wallets,2012.0,Casual,Hidekraft Men Black Wallet,37848.jpg,Wallets,Black,Summer,28.0,0,fashionista,0.3940136,0,92
+12542,Women,Apparel,Topwear,2011.0,Casual,Tantra Women Blue Printed T-shirt,12542.jpg,Tshirts,Blue,Summer,88.0,1,color_lover,0.34366757,0,66
+17191,Men,Apparel,Topwear,2016.0,Casual,U.S. Polo Assn. Men Checks  Blue Shirt,17191.jpg,Shirts,Blue,Fall,34.0,5,budget,0.5229719,1,75
+46046,Women,Accessories,Jewellery,2016.0,Casual,Estelle Women Gold Earrings,46046.jpg,Earrings,Gold,Summer,79.0,4,fashionista,0.007612023,0,25
+27331,Women,Personal Care,Perfumes,2017.0,Casual,Jovan Women Black Musk Perfume,27331.jpg,Perfume and Body Mist,Gold,Spring,42.0,3,budget,0.49202585,0,15
+14792,Women,Accessories,Bags,2011.0,Casual,United Colors of Benetton Women Solid Beige Handbags,14792.jpg,Handbags,Beige,Summer,65.0,3,budget,0.3412628,0,50
+28615,Men,Apparel,Topwear,2012.0,Sports,Nike Men Black T-shirt,28615.jpg,Tshirts,Black,Summer,17.0,1,fashionista,0.3539095,0,85
+56980,Women,Footwear,Shoes,2012.0,Casual,HM Women Magenta Sandals,56980.jpg,Flip Flops,Black,Winter,76.0,1,fashionista,0.39820698,0,56
+20934,Men,Accessories,Bags,2016.0,Casual,Fastrack Men Navy Blue Backpack,20934.jpg,Backpacks,Black,Fall,10.0,3,fashionista,0.17146732,0,28
+2694,Boys,Apparel,Topwear,2011.0,Casual,Disney Kids Boy's Red Twofur Layered Kidswear,2694.jpg,Tshirts,Red,Summer,62.0,0,fashionista,0.13197704,0,77
+36835,Men,Footwear,Shoes,2012.0,Sports,Nike Men Lunarglide Grey Sports Shoes,36835.jpg,Sports Shoes,Black,Summer,71.0,6,color_lover,0.097311184,0,91
+53835,Women,Apparel,Topwear,2012.0,Ethnic,Vishudh Women Blue Printed Kurta,53835.jpg,Kurtas,Blue,Summer,62.0,8,fashionista,0.026339218,0,68
+4784,Women,Apparel,Topwear,2011.0,Sports,ADIDAS Women's V Neck With Crystal Purple T-shirt,4784.jpg,Tshirts,Pink,Summer,44.0,2,fashionista,0.15257345,0,46
+13562,Women,Footwear,Shoes,2013.0,Casual,Carlton London Women Casual Purple Flats,13562.jpg,Sandals,Brown,Fall,52.0,2,fashionista,0.082705624,0,93
+17493,Men,Footwear,Flip Flops,2011.0,Casual,Puma Men Red Winglet II Flip Flops,17493.jpg,Flip Flops,Red,Fall,51.0,2,fashionista,0.16267991,0,61
+3426,Men,Apparel,Topwear,2011.0,Casual,Myntra Mens Request denied T-shirt,3426.jpg,Tshirts,Black,Summer,57.0,0,fashionista,0.2537919,0,68
+35331,Women,Accessories,Jewellery,2016.0,Ethnic,Fabindia Women Silver Anusuya Earrings,35331.jpg,Earrings,Silver,Fall,65.0,8,budget,0.06579581,0,75
+37884,Unisex,Accessories,Socks,2016.0,Casual,Happy Socks Unisex Black Socks,37884.jpg,Socks,Black,Summer,58.0,2,color_lover,0.26400593,0,15
+57099,Women,Apparel,Bottomwear,2012.0,Casual,Elle Women Purple Capris,57099.jpg,Dresses,Blue,Summer,33.0,4,color_lover,0.25340077,0,89
+19666,Women,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Women Solid Grey Top,19666.jpg,Tshirts,Grey,Fall,39.0,0,fashionista,0.099295035,0,89
+1927,Unisex,Accessories,Bags,2011.0,Sports,Domyos Navy Blue Bag,1927.jpg,Backpacks,Blue,Summer,16.0,2,color_lover,0.52210975,1,47
+46480,Women,Accessories,Watches,2016.0,Casual,Timex Women Steel Watch,46480.jpg,Watches,Silver,Winter,37.0,3,fashionista,0.09281853,0,84
+34068,Women,Footwear,Shoes,2012.0,Formal,Clarks Women Cash Box Leather Black Heeled Shoes,34068.jpg,Heels,Black,Winter,52.0,3,color_lover,0.043101408,0,38
+3880,Men,Apparel,Topwear,2011.0,Casual,Wrangler Men's Burnt Out Grey T-shirt,3880.jpg,Tshirts,Green,Summer,52.0,2,fashionista,0.15610664,0,99
+7134,Men,Apparel,Bottomwear,2011.0,Casual,Urban Yoga Men Bottom Navy Yoga Pants,7134.jpg,Track Pants,Blue,Fall,80.0,2,color_lover,0.17684953,0,32
+30084,Men,Free Items,Free Gifts,2016.0,Casual,Ed Hardy Men Black & Green Dial Watch,30084.jpg,Watches,Black,Winter,66.0,2,color_lover,0.23775353,0,93
+31017,Men,Apparel,Topwear,2012.0,Formal,Arrow Men White Striped Shirt,31017.jpg,Shirts,White,Summer,73.0,1,fashionista,0.22228144,0,22
+2587,Women,Apparel,Topwear,2011.0,Casual,Quechua Women's Blue T-shirt,2587.jpg,Tshirts,Blue,Summer,55.0,2,fashionista,0.34982818,0,9
+32459,Men,Apparel,Topwear,2012.0,Casual,ADIDAS Men Tank Green T-shirt,32459.jpg,Tshirts,Green,Summer,64.0,5,budget,0.08353531,0,68
+3489,Men,Footwear,Shoes,2011.0,Casual,ADIDAS Men's Jawpaw Blue Shoe,3489.jpg,Sports Shoes,Blue,Summer,88.0,8,color_lover,0.16985515,0,99
+26875,Women,Apparel,Topwear,2012.0,Casual,Jealous 21 Women Pink Printed T-shirt,26875.jpg,Tops,White,Summer,56.0,2,color_lover,0.33000413,0,33
+8121,Men,Accessories,Belts,2016.0,Casual,Fastrack Men Brown Belt,8121.jpg,Belts,Brown,Summer,50.0,4,budget,0.115882784,0,51
+57483,Men,Footwear,Shoes,2012.0,Casual,ID Men Navy Blue Casual Shoes,57483.jpg,Casual Shoes,White,Summer,70.0,2,budget,0.33750552,0,94
+53734,Men,Footwear,Shoes,2012.0,Casual,Puma Men Grey Vintage Ferrari Shoes,53734.jpg,Casual Shoes,Black,Fall,61.0,3,color_lover,0.05540652,0,9
+59975,Women,Apparel,Dress,2012.0,Casual,Avirate Black & Purple Dress,59975.jpg,Dresses,Black,Summer,53.0,4,fashionista,0.036299672,0,18
+11665,Women,Apparel,Topwear,2011.0,Casual,Lee Women Printed Blue Tshirts,11665.jpg,Tshirts,Blue,Summer,17.0,3,fashionista,0.4313443,0,57
+11096,Women,Apparel,Topwear,2011.0,Casual,Scullers Women Stripes Purple Sweaters,11096.jpg,Sweaters,Green,Fall,46.0,3,color_lover,0.07093879,0,95
+40197,Women,Apparel,Topwear,2012.0,Ethnic,Mumbai Slang Women Peach Kurti,40197.jpg,Tops,Green,Summer,59.0,1,color_lover,0.30797827,0,0
+9774,Men,Apparel,Topwear,2011.0,Casual,ADIDAS Men Co Graphic White Tshirts,9774.jpg,Tshirts,White,Summer,43.0,3,color_lover,0.14320679,0,68
+22742,Women,Apparel,Topwear,2011.0,Ethnic,BIBA Women Printed Red Kurta,22742.jpg,Kurtas,Red,Fall,58.0,1,budget,0.3937067,0,3
+57330,Women,Apparel,Innerwear,2015.0,Casual,Amante Cream-Coloured Demi-Cup Balconette Bra BCPP01,57330.jpg,Bra,White,Summer,21.0,4,fashionista,0.043407496,0,15
+54050,Women,Apparel,Bottomwear,2012.0,Casual,Myntra Women Black Jeggings,54050.jpg,Jeans,Multi,Summer,38.0,2,fashionista,0.09896698,0,23
+11371,Men,Apparel,Topwear,2011.0,Casual,United Colors Of Benetton Men Summer Black Shirts,11371.jpg,Tshirts,Black,Fall,37.0,6,fashionista,0.3355711,0,79
+37887,Unisex,Accessories,Socks,2016.0,Casual,Happy Socks Unisex Red Socks,37887.jpg,Socks,Multi,Summer,47.0,2,color_lover,0.25954357,0,1
+17004,Women,Footwear,Shoes,2012.0,Casual,Rocia Women Brown Ballerinas,17004.jpg,Casual Shoes,Black,Winter,41.0,2,fashionista,0.33410165,0,91
+3728,Women,Apparel,Topwear,2011.0,Sports,Mumbai Indians Womens Match Jersey,3728.jpg,Tshirts,Blue,Summer,41.0,2,fashionista,0.41849035,0,31
+33998,Women,Apparel,Bottomwear,2012.0,Casual,Femella Women Blue Leggings,33998.jpg,Leggings,Blue,Summer,48.0,6,fashionista,0.02593198,0,90
+41563,Women,Apparel,Dress,2012.0,Casual,AND Women Grey Dress,41563.jpg,Kurtas,Black,Summer,19.0,3,budget,0.26585877,0,83
+31185,Men,Accessories,Accessories,2015.0,Casual,Cabarelli Men Accessory Gift Set,31185.jpg,Accessory Gift Set,Black,Summer,42.0,2,color_lover,0.57102406,1,23
+6482,Men,Apparel,Topwear,2011.0,Casual,ADIDAS Men's Strip Polo Black Green T-shirt,6482.jpg,Tshirts,Green,Summer,32.0,1,color_lover,0.29464942,0,11
+17550,Men,Apparel,Topwear,2011.0,Formal,Mark Taylor Men Red & White Striped Shirt,17550.jpg,Shirts,White,Fall,29.0,4,budget,0.22911394,0,49
+39592,Women,Footwear,Shoes,2015.0,Casual,Catwalk Women Yellow Wedges,39592.jpg,Heels,Brown,Summer,58.0,6,budget,0.04554071,0,34
+18555,Women,Footwear,Shoes,2015.0,Casual,Catwalk Women Casual Brown Flats,18555.jpg,Heels,Brown,Winter,10.0,5,budget,0.16409236,0,32
+56375,Men,Personal Care,Fragrance,2017.0,Casual,dunhill Men Pure Deoorant Stick,56375.jpg,Perfume and Body Mist,White,Spring,114.0,5,budget,0.11672378,0,32
+21166,Women,Apparel,Topwear,2011.0,Casual,s.Oliver Women Solid Black Top,21166.jpg,Shirts,Black,Fall,50.0,3,color_lover,0.08782974,0,60
+46637,Women,Personal Care,Fragrance,2017.0,Casual,Rasasi Women Feelings Deo,46637.jpg,Deodorant,Blue,Spring,60.0,5,color_lover,0.047557116,0,50
+28263,Men,Personal Care,Fragrance,2017.0,Casual,Gatsby Men Aqua Deo,28263.jpg,Deodorant,Blue,Spring,49.0,3,color_lover,0.098094724,0,42
+36457,Men,Footwear,Shoes,2013.0,Sports,Spinn Men Temptation Grey Sport Shoes,36457.jpg,Casual Shoes,Grey,Fall,72.0,4,fashionista,0.035697006,0,11
+18058,Women,Accessories,Wallets,2015.0,Casual,Lino Perros Women Solid Purple Wallet,18058.jpg,Wallets,Black,Summer,41.0,0,color_lover,0.3019819,0,66
+45710,Women,Personal Care,Fragrance,2017.0,Casual,Paris Hilton Just Me Women Perfume,45710.jpg,Perfume and Body Mist,White,Spring,68.0,3,color_lover,0.069179036,0,64
+22578,Men,Apparel,Topwear,2011.0,Casual,Highlander Men Check Grey Shirt,22578.jpg,Shirts,Blue,Fall,55.0,7,budget,0.1532431,0,32
+22877,Men,Footwear,Shoes,2012.0,Casual,Woodland Men Olive Casual Shoes,22877.jpg,Casual Shoes,Brown,Summer,36.0,5,color_lover,0.26251155,0,39
+7884,Men,Apparel,Bottomwear,2011.0,Casual,Proline Men Black Track Pants,7884.jpg,Trousers,Blue,Fall,68.0,0,color_lover,0.07642646,0,73
+11583,Women,Apparel,Topwear,2011.0,Ethnic,W Women Printed White Kurtas,11583.jpg,Kurtas,White,Summer,59.0,6,fashionista,0.005004184,0,42
+40991,Girls,Apparel,Topwear,2012.0,Casual,Gini and Jony Girls Milan Yellow Top,40991.jpg,Tops,Yellow,Summer,83.0,3,budget,0.41276762,0,43
+8113,Men,Accessories,Belts,2016.0,Casual,Fastrack Men Coffee Canvas Beige Stiches Belt,8113.jpg,Belts,Brown,Summer,87.0,3,fashionista,0.037607636,0,28
+54612,Men,Apparel,Innerwear,2016.0,Casual,Jockey ELANCE Men White Briefs 1009,54612.jpg,Briefs,White,Summer,54.0,2,fashionista,0.07527776,0,12
+18345,Men,Accessories,Socks,2011.0,Casual,Fila Men Ankel White Socks,18345.jpg,Socks,White,Summer,43.0,3,budget,0.23259501,0,11
+41030,Men,Accessories,Watches,2016.0,Casual,Nautica Men Silver Dial Watch,41030.jpg,Watches,White,Winter,72.0,3,fashionista,0.04805257,0,94
+30601,Men,Apparel,Topwear,2012.0,Sports,Nike Men Sports Reversible Black T-shirt,30601.jpg,Tshirts,Red,Summer,36.0,2,color_lover,0.4160017,0,45
+40128,Girls,Apparel,Topwear,2012.0,Casual,Gini and Jony Girls Roseatte Orange Top,40128.jpg,Tops,White,Summer,59.0,3,budget,0.25643706,0,1
+24515,Women,Apparel,Topwear,2011.0,Ethnic,Mother Earth Women Orange Printed Kurta,24515.jpg,Kurtas,Red,Fall,31.0,2,fashionista,0.13420986,0,34
+28496,Men,Apparel,Bottomwear,2012.0,Casual,Urban Yoga Men Solid Grey Track Pants,28496.jpg,Track Pants,Blue,Summer,13.0,7,color_lover,0.5103991,1,86
+50429,Unisex,Accessories,Accessories,2012.0,Casual,Lino Perros Unisex Blue Satchel,50429.jpg,Handbags,Black,Summer,25.0,5,fashionista,0.009361258,0,80
+59641,Women,Apparel,Saree,2012.0,Ethnic,FNF Orange & Cream Collection For Wedding Sari,59641.jpg,Sarees,Pink,Fall,31.0,1,budget,0.4587967,0,89
+30255,Men,Footwear,Shoes,2018.0,Casual,Red Tape Men Black Shoes,30255.jpg,Formal Shoes,Black,Summer,49.0,1,color_lover,0.3093173,0,7
+28010,Men,Apparel,Innerwear,2016.0,Casual,Jockey ZONE Men Grey Modern Trunks US19,28010.jpg,Briefs,Black,Summer,27.0,1,color_lover,0.20069358,0,92
+29063,Unisex,Footwear,Shoes,2011.0,Casual,Converse Unisex Navy Blue White Casual Shoes,29063.jpg,Casual Shoes,Black,Summer,72.0,3,fashionista,0.116186865,0,25
+7686,Men,Apparel,Topwear,2011.0,Sports,Puma Men Alonso Track Red Ferrari Jacket,7686.jpg,Sweatshirts,Red,Fall,49.0,5,color_lover,0.010374803,0,73
+59923,Women,Apparel,Topwear,2012.0,Ethnic,Diva Women Cream Kurta,59923.jpg,Kurtas,White,Summer,53.0,4,color_lover,0.12828739,0,89
+50632,Men,Apparel,Innerwear,2016.0,Casual,Chromozome Men Grey & Black Trunks,50632.jpg,Trunk,Navy Blue,Summer,58.0,3,color_lover,0.23109393,0,33
+42046,Women,Accessories,Wallets,2013.0,Casual,Bulchee Women Black Long Envelope Wallet,42046.jpg,Wallets,Black,Summer,45.0,2,fashionista,0.37138316,0,6
+44906,Men,Apparel,Bottomwear,2012.0,Casual,Puma Men White 3/4 Length Pants,44906.jpg,Lounge Pants,White,Summer,87.0,1,fashionista,0.42216077,0,67
+42718,Women,Footwear,Shoes,2012.0,Casual,Rocia Women Brown Sandals,42718.jpg,Heels,Brown,Summer,48.0,1,fashionista,0.06469223,0,57
+13522,Women,Apparel,Topwear,2011.0,Casual,Jealous 21 Women Solid Green Tops,13522.jpg,Tops,Black,Fall,28.0,5,budget,0.5866794,1,74
+29964,Men,Accessories,Eyewear,2016.0,Casual,Cat Men Sheet Sunglasses,29964.jpg,Sunglasses,Black,Winter,53.0,2,color_lover,0.17630802,0,28
+55429,Women,Personal Care,Lips,2017.0,Casual,Revlon MoistureStay Dusk Lipcolor 11,55429.jpg,Lip Gloss,Pink,Spring,21.0,5,fashionista,0.0086257765,0,35
+55211,Women,Personal Care,Lips,2017.0,Casual,Lakme Lip Love Haze Lipstick,55211.jpg,Lipstick,Red,Spring,76.0,6,color_lover,0.0084452,0,88
+3100,Men,Apparel,Topwear,2011.0,Casual,Probase Men's Spirit Blue T-shirt,3100.jpg,Tshirts,Blue,Summer,13.0,3,fashionista,0.32221544,0,20
+14779,Men,Apparel,Topwear,2011.0,Formal,Arrow Men Stripes Green Shirts,14779.jpg,Shirts,Blue,Fall,37.0,5,color_lover,0.2925157,0,35
+28111,Men,Apparel,Innerwear,2016.0,Casual,Jockey MODERN CLASSIC Men white Boxer 8009,28111.jpg,Trunk,White,Summer,55.0,3,color_lover,0.36834398,0,9
+42820,Women,Apparel,Innerwear,2012.0,Casual,Little Miss Intimates Women Blue Brief,42820.jpg,Briefs,Blue,Summer,53.0,4,budget,0.10736126,0,72
+52473,Women,Apparel,Loungewear and Nightwear,2017.0,Casual,Red Rose Women Pink & White Bath Robes,52473.jpg,Bath Robe,Pink,Summer,53.0,2,color_lover,0.21851593,0,23
+17829,Men,Footwear,Shoes,2011.0,Sports,Nike Men Dual Fusion ST 2 White Sports Shoe,17829.jpg,Sports Shoes,White,Fall,34.0,0,budget,0.4205254,0,63
+7128,Women,Apparel,Bottomwear,2011.0,Casual,Urban Yoga Women Bottom Black Track Pant,7128.jpg,Track Pants,Black,Summer,42.0,5,fashionista,0.09591209,0,98
+12367,Men,Apparel,Topwear,2011.0,Formal,Reid & Taylor Men White Shirt,12367.jpg,Shirts,White,Summer,64.0,2,fashionista,0.13379923,0,48
+43041,Girls,Apparel,Topwear,2012.0,Casual,Gini and Jony Girls Pink Top,43041.jpg,Tops,White,Summer,17.0,5,budget,0.1223724,0,98
+18799,Unisex,Accessories,Bags,2010.0,Casual,Peter England Unisex Casual Khakhi Bag,18799.jpg,Handbags,Blue,Summer,68.0,3,color_lover,0.09598946,0,35
+21989,Women,Accessories,Bags,2015.0,Casual,Murcia Women Leatherette Pink Handbag,21989.jpg,Handbags,Red,Summer,50.0,3,budget,0.09866018,0,81
+13203,Men,Footwear,Shoes,2011.0,Sports,ASICS Men Gel Cumulus Running Grey Sports Shoes,13203.jpg,Sports Shoes,White,Fall,48.0,3,color_lover,0.053692903,0,95
+6717,Men,Apparel,Topwear,2011.0,Casual,Locomotive Men's Ribbed Neck Blue T-shirt,6717.jpg,Tshirts,Blue,Summer,68.0,5,fashionista,0.0652469,0,23
+30709,Women,Accessories,Bags,2012.0,Ethnic,Fabindia Red Silk Sling Purse,30709.jpg,Handbags,Red,Fall,68.0,6,budget,0.023221338,0,22
+58270,Women,Accessories,Bags,2012.0,Casual,Baggit Women Gold Clutch,58270.jpg,Wallets,Grey,Summer,44.0,5,color_lover,0.048100024,0,61
+26589,Men,Footwear,Shoes,2012.0,Sports,Puma Men Powercat Black Sports Shoes,26589.jpg,Sports Shoes,Black,Summer,86.0,3,color_lover,0.10395556,0,95
+19277,Women,Accessories,Watches,2016.0,Casual,Guess Women Candy Pop Black Watch,19277.jpg,Watches,Black,Winter,10.0,6,budget,0.15947202,0,36
+18944,Men,Accessories,Socks,2016.0,Casual,Levis Men Scottish Stripes Flat Knit Pack of 3 Socks,18944.jpg,Socks,Black,Summer,81.0,3,color_lover,0.08228867,0,11
+50688,Men,Apparel,Innerwear,2016.0,Casual,Chromozome Men White Trunks,50688.jpg,Briefs,White,Summer,33.0,6,color_lover,0.1474661,0,54
+6617,Men,Apparel,Topwear,2011.0,Casual,Spykar Men Black and white Check Shirt,6617.jpg,Shirts,Black,Summer,13.0,1,fashionista,0.37109756,0,12
+8243,Women,Accessories,Bags,2016.0,Casual,Fastrack Women Yellow Sling Bag,8243.jpg,Handbags,Gold,Summer,32.0,2,fashionista,0.021290025,0,22
+49640,Women,Apparel,Topwear,2012.0,Casual,Mineral Women Turquoise Blue Top,49640.jpg,Tops,Blue,Summer,26.0,3,color_lover,0.2325014,0,88
+19879,Women,Footwear,Flip Flops,2011.0,Casual,ADIDAS Women Psychedlic White Flip Flops,19879.jpg,Flip Flops,White,Summer,44.0,3,budget,0.29734582,0,98
+25937,Women,Accessories,Scarves,2012.0,Casual,Femella Women Blue Scarf,25937.jpg,Scarves,Blue,Fall,75.0,6,budget,0.39812198,0,29
+45358,Women,Footwear,Shoes,2016.0,Casual,Cobblerz Women Brown Sandals,45358.jpg,Heels,Brown,Winter,52.0,1,fashionista,0.08271737,0,16
+18872,Men,Footwear,Shoes,2012.0,Formal,Franco Leone Men Formal Black Shoes,18872.jpg,Formal Shoes,Black,Summer,46.0,4,budget,0.0802897,0,61
+11565,Women,Apparel,Topwear,2011.0,Ethnic,W Women Printed Green Kurtas,11565.jpg,Kurtas,White,Summer,43.0,3,fashionista,0.04163427,0,83
+13315,Men,Apparel,Topwear,2011.0,Casual,Gini and Jony Kids Boys Check Blue Shirts,13315.jpg,Shirts,White,Summer,94.0,3,color_lover,0.41015956,0,88
+45269,Men,Accessories,Watches,2017.0,Casual,CASIO Youth Series Digital Men Black Small Dial Digital Watch W-210-1CVDF I065,45269.jpg,Watches,Black,Winter,54.0,3,color_lover,0.028006036,0,85
+29200,Men,Accessories,Socks,2012.0,Sports,Fila Men Navy Blue Socks,29200.jpg,Socks,Black,Summer,29.0,2,budget,0.47319213,0,12
+48110,Women,Apparel,Bottomwear,2012.0,Casual,French Connection Women Red Shorts,48110.jpg,Trousers,Red,Summer,49.0,4,color_lover,0.06037558,0,58
+30200,Unisex,Accessories,Bags,2012.0,Casual,Nike Unisex Casual Blue Backpack,30200.jpg,Backpacks,Black,Winter,70.0,2,fashionista,0.15633541,0,18
+9868,Men,Apparel,Topwear,2011.0,Casual,Status Quo Men Navy Blue Polo Tshirts,9868.jpg,Tshirts,Black,Fall,38.0,1,fashionista,0.16064356,0,48
+16994,Women,Footwear,Shoes,2012.0,Casual,Rocia Women Casual Black Heels,16994.jpg,Heels,Black,Summer,46.0,3,fashionista,0.1846759,0,99
+40316,Men,Footwear,Shoes,2012.0,Casual,ADIDAS Men Black Zeitfrei Shoes,40316.jpg,Casual Shoes,Black,Summer,22.0,1,color_lover,0.24935398,0,11
+29053,Men,Apparel,Topwear,2012.0,Casual,ADIDAS Men Junkie White T-shirt,29053.jpg,Tshirts,White,Fall,51.0,3,color_lover,0.08791312,0,60
+11376,Women,Apparel,Topwear,2011.0,Casual,United Colors Of Benetton Women Light Winter Grey Tops,11376.jpg,Shirts,Blue,Fall,48.0,2,budget,0.39898953,0,18
+33451,Women,Accessories,Wallets,2012.0,Casual,Baggit Women Temptation Moly Red Wallet,33451.jpg,Wallets,Brown,Summer,68.0,3,color_lover,0.15583311,0,75
+19641,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Solid Black Sweatshirt,19641.jpg,Sweatshirts,Black,Fall,68.0,1,fashionista,0.3066431,0,8
+10604,Unisex,Accessories,Headwear,2011.0,Sports,Nike Unisex Tennis Red Caps,10604.jpg,Caps,Red,Summer,51.0,3,budget,0.35856223,0,70
+57165,Women,Apparel,Topwear,2012.0,Casual,Elle Women Magenta Clash Top,57165.jpg,Tops,Black,Summer,64.0,4,budget,0.29705995,0,27
+28928,Men,Apparel,Topwear,2012.0,Casual,Mr. Men Printed Charcoal T-shirt,28928.jpg,Tshirts,Grey,Summer,51.0,5,color_lover,0.06894814,0,77
+20154,Men,Apparel,Topwear,2011.0,Casual,Wrangler Men Tylor Navy Blue Shirt,20154.jpg,Shirts,Navy Blue,Fall,50.0,3,budget,0.3986561,0,94
+19682,Women,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Women Purple Sweatshirt,19682.jpg,Tshirts,Black,Fall,65.0,4,fashionista,0.27490535,0,51
+40135,Boys,Apparel,Topwear,2012.0,Casual,Gini and Jony Boys Aviator White T-shirt,40135.jpg,Tshirts,White,Summer,48.0,1,color_lover,0.26090887,0,82
+17927,Men,Apparel,Bottomwear,2011.0,Sports,Nike Men Trainng Black Track Pant,17927.jpg,Track Pants,Black,Fall,31.0,0,color_lover,0.13307361,0,15
+8921,Men,Accessories,Belts,2011.0,Casual,Puma Men high shine White Belt,8921.jpg,Belts,White,Winter,38.0,1,fashionista,0.05300525,0,68
+53720,Women,Accessories,Bags,2012.0,Casual,Kiara Women Green Handbag,53720.jpg,Handbags,Black,Winter,63.0,1,budget,0.17249219,0,98
+10491,Women,Apparel,Topwear,2011.0,Casual,Flying Machine Women HS White Tshirts,10491.jpg,Tops,White,Fall,48.0,0,budget,0.28812876,0,11
+19259,Women,Accessories,Watches,2016.0,Casual,Guess Women Trapeze Gold Watch,19259.jpg,Watches,Gold,Winter,89.0,2,color_lover,0.0432839,0,24
+49328,Women,Accessories,Watches,2016.0,Casual,DKNY Women White Dial Watch NY8283,49328.jpg,Watches,White,Winter,42.0,1,fashionista,0.04839579,0,51
+23521,Men,Accessories,Watches,2016.0,Casual,ADIDAS Men Black Dial Watch,23521.jpg,Watches,Black,Winter,81.0,1,fashionista,0.33223298,0,84
+6928,Men,Apparel,Topwear,2011.0,Casual,Timberland Men's Rugby Pique Golden Rod T-shirt,6928.jpg,Tshirts,Blue,Summer,28.0,4,color_lover,0.55860025,1,99
+34071,Women,Footwear,Shoes,2012.0,Casual,Clarks Women Saturn Whizz Leather Black Sandals,34071.jpg,Heels,Black,Winter,66.0,1,fashionista,0.5586979,1,52
+26958,Women,Apparel,Topwear,2012.0,Casual,Jealous 21 Women Teal Shirt,26958.jpg,Tops,Blue,Summer,65.0,2,fashionista,0.44751176,0,22
+12297,Men,Apparel,Topwear,2011.0,Formal,Genesis Men Stripes Blue Shirts,12297.jpg,Shirts,Blue,Fall,50.0,5,color_lover,0.076805465,0,15
+44113,Women,Personal Care,Fragrance,2017.0,Casual,Boss Women Sunset Perfume,44113.jpg,Perfume and Body Mist,Orange,Spring,52.0,0,budget,0.48536557,0,56
+33030,Women,Apparel,Topwear,2012.0,Ethnic,Mother Earth Women Printed Black Kurta,33030.jpg,Kurtas,Black,Summer,19.0,0,fashionista,0.18230003,0,38
+55441,Women,Personal Care,Lips,2017.0,Casual,Revlon Fuschia Colorburst Lipstick 030,55441.jpg,Lipstick,Red,Spring,27.0,5,budget,0.13359542,0,52
+41979,Boys,Apparel,Topwear,2012.0,Casual,Gini and Jony Boys Around The World Grey T-shirt,41979.jpg,Tshirts,White,Summer,41.0,1,fashionista,0.10990466,0,41
+59593,Women,Apparel,Saree,2012.0,Ethnic,FNF Blue & Purple Collection for Wedding Sari,59593.jpg,Sarees,Red,Fall,30.0,3,color_lover,0.27897623,0,57
+51333,Men,Apparel,Topwear,2015.0,Casual,Wildcraft Men Beige Wind Cheater Jackets,51333.jpg,Tshirts,White,Fall,76.0,2,fashionista,0.21989907,0,38
+34996,Women,Apparel,Saree,2012.0,Ethnic,Fabindia Women H& Printed Rust Sari,34996.jpg,Sarees,White,Summer,61.0,2,fashionista,0.0938718,0,13
+46763,Women,Personal Care,Fragrance,2017.0,Casual,Valentino Perfumes Women 50 ml Eau de Parfum,46763.jpg,Perfume and Body Mist,Gold,Spring,53.0,3,budget,0.46957943,0,94
+36368,Men,Accessories,Ties,2012.0,Formal,Reid & Taylor Men Blue Tie,36368.jpg,Ties,Blue,Summer,63.0,0,budget,0.5691512,1,4
+58481,Men,Accessories,Wallets,2016.0,Casual,Fossil Men Black Wallet,58481.jpg,Wallets,Black,Summer,56.0,4,budget,0.123771496,0,34
+34883,Women,Accessories,Bags,2012.0,Casual,Envirosax Women Multi Coloured Bag,34883.jpg,Tops,White,Summer,65.0,3,budget,0.49918753,0,86
+6085,Women,Apparel,Topwear,2011.0,Casual,UCB Women's Halftone Print White T-shirt,6085.jpg,Tshirts,White,Summer,53.0,4,fashionista,0.033200458,0,92
+10299,Women,Footwear,Shoes,2013.0,Casual,Clarks Women Black Leather Wedges,10299.jpg,Heels,Brown,Fall,49.0,5,fashionista,0.011257031,0,74
+52652,Women,Accessories,Bags,2012.0,Casual,Mod-acc Women Pink Handbag,52652.jpg,Handbags,Red,Summer,68.0,5,fashionista,0.0025738666,0,17
+41851,Men,Accessories,Socks,2015.0,Casual,Genesis Men Pack of 3 Socks,41851.jpg,Socks,Black,Summer,25.0,2,budget,0.4457695,0,75
+2584,Unisex,Apparel,Bottomwear,2010.0,Sports,Kalenji Unisex Tight Black Track Pant,2584.jpg,Leggings,Blue,Summer,49.0,2,budget,0.4490871,0,8
+9852,Men,Apparel,Bottomwear,2011.0,Formal,Indian Terrain Men Jason Beige Trousers,9852.jpg,Trousers,Blue,Fall,42.0,1,fashionista,0.32755846,0,73
+8883,Men,Apparel,Bottomwear,2011.0,Formal,Scullers Men Scul Grey Trousers,8883.jpg,Track Pants,Blue,Fall,74.0,3,budget,0.7627844,1,57
+43322,Women,Apparel,Topwear,2012.0,Casual,United Colors of Benetton Women Navy Blue Top,43322.jpg,Tops,Navy Blue,Summer,36.0,2,fashionista,0.13269557,0,16
+21260,Unisex,Accessories,Bags,2011.0,Casual,Skybags Unisex Brown Backpack,21260.jpg,Backpacks,Black,Summer,36.0,0,budget,0.32184282,0,6
+57380,Women,Apparel,Innerwear,2015.0,Casual,Amante Women Grey Briefs PFCL06,57380.jpg,Briefs,White,Summer,53.0,4,budget,0.051594596,0,45
+49927,Women,Apparel,Saree,2012.0,Ethnic,Fabindia Beige Hand Printed Sari,49927.jpg,Sarees,Black,Fall,56.0,1,color_lover,0.087861955,0,12
+58298,Men,Accessories,Socks,2016.0,Sports,Jockey LCESCBRA Men Pack of 3 Socks 2004,58298.jpg,Socks,Navy Blue,Summer,69.0,3,budget,0.21789357,0,39
+19785,Men,Apparel,Topwear,2016.0,Casual,U.S. Polo Assn. Men Solid Red Tshirt,19785.jpg,Tshirts,Red,Summer,46.0,4,color_lover,0.06468784,0,41
+17573,Men,Apparel,Topwear,2011.0,Formal,Mark Taylor Men Blue & White Striped Shirt,17573.jpg,Shirts,Blue,Fall,52.0,1,budget,0.48310554,0,8
+56631,Women,Personal Care,Skin Care,2017.0,Casual,Olay Regenerist Cream Cleanser,56631.jpg,Deodorant,Black,Spring,43.0,4,fashionista,0.041663185,0,49
+44556,Men,Footwear,Sandal,2012.0,Casual,Coolers Men Black Sandals,44556.jpg,Formal Shoes,Black,Summer,39.0,2,fashionista,0.25270408,0,26
+1860,Men,Apparel,Topwear,2011.0,Casual,Inkfruit Mens Shiva T-shirt,1860.jpg,Tshirts,Grey,Summer,82.0,6,budget,0.15089926,0,65
+54581,Women,Apparel,Topwear,2012.0,Ethnic,Sushilas Women Printed Green Kurta,54581.jpg,Kurtas,Green,Fall,39.0,2,budget,0.43381763,0,4
+14165,Men,Accessories,Belts,2011.0,Formal,Belmonte Men Snake Skin Look Black Belts,14165.jpg,Belts,Black,Fall,64.0,0,fashionista,0.049231462,0,28
+30305,Men,Apparel,Topwear,2012.0,Casual,Myntra Men I M The Captain Off White T-shirt,30305.jpg,Tshirts,White,Summer,38.0,3,color_lover,0.18691862,0,36
+24294,Men,Accessories,Socks,2016.0,Casual,Quiksilver Men High Navy Blue Socks,24294.jpg,Socks,Black,Summer,30.0,3,budget,0.30990508,0,37
+40261,Men,Apparel,Topwear,2012.0,Casual,Scullers Men Check Purple & Green Shirt,40261.jpg,Shirts,Blue,Summer,26.0,3,fashionista,0.13483275,0,82
+10738,Women,Accessories,Watches,2016.0,Casual,Puma Women Slick Ladies 3HD Pink Pink Watches,10738.jpg,Watches,Blue,Winter,53.0,3,color_lover,0.029227892,0,7
+49125,Women,Personal Care,Nails,2017.0,Casual,Deborah Shine Tech Ruibes Nail Polish 34,49125.jpg,Nail Polish,Gold,Spring,72.0,1,fashionista,0.19774453,0,64
+50010,Women,Apparel,Innerwear,2015.0,Casual,Hanes Grey & Pink Contour Bra 83U203,50010.jpg,Bra,White,Summer,64.0,4,budget,0.1536897,0,85
+45440,Men,Apparel,Topwear,2012.0,Casual,Fila Men Blue T-shirt,45440.jpg,Tshirts,Blue,Fall,83.0,5,color_lover,0.032868076,0,16
+54881,Women,Accessories,Jewellery,2012.0,Casual,Ivory Tag Women Sparkling Coral Red Necklace,54881.jpg,Necklace and Chains,Gold,Winter,10.0,5,color_lover,0.02479797,0,70
+45013,Men,Accessories,Watches,2016.0,Sports,Maxima Men Digital Watch,45013.jpg,Watches,Black,Winter,62.0,0,budget,0.40165684,0,88
+54228,Women,Footwear,Flip Flops,2012.0,Casual,Puma Women Black Sicily Flip Flops,54228.jpg,Flip Flops,Black,Summer,36.0,4,fashionista,0.090632394,0,44
+3545,Men,Footwear,Shoes,2015.0,Casual,Skechers Men's Grey Lifestyle Shoe,3545.jpg,Casual Shoes,Black,Summer,29.0,1,budget,0.30295935,0,3
+36718,Boys,Apparel,Topwear,2012.0,Casual,Gini and Jony Boys Printed Yellow T-Shirt,36718.jpg,Tshirts,Yellow,Summer,66.0,3,budget,0.41570485,0,35
+32444,Men,Apparel,Bottomwear,2015.0,Sports,ADIDAS Men Navy Blue Shorts,32444.jpg,Shorts,Black,Summer,68.0,1,color_lover,0.25584063,0,69
+5772,Women,Apparel,Topwear,2011.0,Casual,Jealous 21 Women's Purple Graphic Top,5772.jpg,Tops,White,Summer,23.0,3,budget,0.32965246,0,30
+19628,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Printed Black Tshirt,19628.jpg,Tshirts,Black,Summer,37.0,4,fashionista,0.21886832,0,18
+43326,Women,Apparel,Topwear,2012.0,Casual,United Colors of Benetton Women Blue Slim Fit T-shirt,43326.jpg,Tshirts,Black,Summer,69.0,8,budget,0.10084716,0,60
+26141,Men,Apparel,Bottomwear,2012.0,Formal,John Miller Men Striped Navy Blue Trousers,26141.jpg,Trousers,Grey,Fall,57.0,1,budget,0.3336862,0,53
+8427,Unisex,Sporting Goods,Sports Equipment,2011.0,Sports,Spalding Unisex Blue Basketball,8427.jpg,Footballs,Blue,Summer,49.0,3,color_lover,0.29657254,0,38
+51164,Men,Accessories,Socks,2016.0,Casual,Raymond Men Black Socks,51164.jpg,Socks,Black,Summer,74.0,2,budget,0.53094494,1,90
+30344,Men,Apparel,Topwear,2012.0,Casual,Myntra Men Flash Off White T-shirt,30344.jpg,Tshirts,Off White,Summer,48.0,2,color_lover,0.3558954,0,73
+44615,Women,Footwear,Flip Flops,2012.0,Casual,Fila Women Blue Flip Flops,44615.jpg,Flip Flops,Blue,Summer,63.0,1,color_lover,0.21043497,0,89
+43806,Women,Accessories,Jewellery,2012.0,Casual,Royal Diadem White Earrings,43806.jpg,Earrings,Gold,Summer,12.0,0,fashionista,0.17570537,0,18
+11446,Women,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Women White Light Winter Top,11446.jpg,Sweatshirts,White,Summer,49.0,1,budget,0.3861447,0,38
+33691,Men,Footwear,Shoes,2012.0,Formal,Cobblerz Men Brown Leather Formal Shoes,33691.jpg,Formal Shoes,Black,Summer,65.0,2,fashionista,0.43190822,0,66
+12711,Women,Footwear,Shoes,2011.0,Sports,Nike Women Lunarshift Grey Sports Shoes,12711.jpg,Sports Shoes,Green,Fall,21.0,6,color_lover,0.02640469,0,44
+21476,Women,Apparel,Topwear,2012.0,Casual,Roxy Women Grey Printed Sweatshirt,21476.jpg,Kurtis,Pink,Fall,15.0,4,budget,0.047598798,0,12
+59653,Women,Apparel,Saree,2012.0,Ethnic,FNF Green & Pink Evening Wear Sari,59653.jpg,Sarees,Multi,Fall,84.0,6,budget,0.13724807,0,91
+27448,Women,Apparel,Topwear,2015.0,Casual,Jockey Women White Round Neck T-Shirt,27448.jpg,Tshirts,White,Summer,67.0,1,fashionista,0.090554,0,57
+31038,Men,Apparel,Topwear,2012.0,Casual,Arrow Sport Men blue Printed T-shirt,31038.jpg,Tshirts,Blue,Summer,74.0,4,budget,0.4026925,0,19
+32456,Men,Apparel,Bottomwear,2013.0,Sports,ADIDAS Men Black Track Pants,32456.jpg,Trousers,Black,Summer,39.0,5,fashionista,0.081419505,0,91
+51126,Women,Free Items,Free Gifts,2012.0,Ethnic,Satya Paul Pink Saree,51126.jpg,Free Gifts,Green,Summer,25.0,3,budget,0.10341974,0,71
+7932,Women,Apparel,Loungewear and Nightwear,2011.0,Sports,Puma Women's Jersey Black Track Pant,7932.jpg,Track Pants,Navy Blue,Fall,73.0,1,color_lover,0.13742897,0,60
+37411,Women,Accessories,Bags,2012.0,Casual,Murcia Women Basket Thatch Brown Handbag,37411.jpg,Handbags,Brown,Summer,35.0,4,color_lover,0.175578,0,38
+20005,Women,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Women Blue Printed Top,20005.jpg,Sweatshirts,Blue,Fall,53.0,1,fashionista,0.38814077,0,0
+33741,Women,Apparel,Topwear,2012.0,Casual,Vero Moda Women Multi Coloured Top,33741.jpg,Kurtis,Blue,Summer,10.0,1,budget,0.14471684,0,2
+14801,Women,Accessories,Bags,2011.0,Casual,United Colors of Benetton Women Solid Black Handbags,14801.jpg,Handbags,Black,Winter,57.0,4,budget,0.03328699,0,76
+54585,Women,Apparel,Topwear,2012.0,Ethnic,Sushilas Women Pink Kurta,54585.jpg,Kurtas,Red,Fall,74.0,3,color_lover,0.054956123,0,91
+29184,Men,Apparel,Topwear,2012.0,Casual,United Colors of Benetton Men Blue Shirt,29184.jpg,Shirts,Blue,Fall,35.0,0,budget,0.39860168,0,61
+50955,Women,Apparel,Bottomwear,2011.0,Casual,Lee Womens Blue Roxy Fit Jeans,50955.jpg,Jeans,White,Fall,34.0,3,color_lover,0.15896703,0,62
+58988,Women,Personal Care,Fragrance,2017.0,Casual,Cavallini Women Deo,58988.jpg,Deodorant,Green,Spring,56.0,1,budget,0.3838232,0,24
+50874,Women,Apparel,Saree,2012.0,Ethnic,Prafful Purple & Green Printed Sari,50874.jpg,Sarees,Red,Fall,73.0,3,budget,0.42134804,0,55
+43646,Women,Apparel,Dress,2012.0,Casual,ONLY Women Blue Dress,43646.jpg,Tops,Blue,Summer,25.0,2,budget,0.32067996,0,32
+17060,Women,Accessories,Belts,2015.0,Casual,Lino Perros Women Flower Print Red Belt,17060.jpg,Belts,Multi,Winter,62.0,4,budget,0.09230473,0,37
+21123,Men,Apparel,Topwear,2011.0,Casual,s.Oliver Men Check Purple Sweater,21123.jpg,Shirts,Blue,Fall,65.0,1,budget,0.48069623,0,5
+3370,Women,Footwear,Shoes,2012.0,Sports,Asics Women Gel Cushioning Running Grey Pink Shoe,3370.jpg,Casual Shoes,White,Fall,28.0,1,color_lover,0.10995099,0,57
+2142,Men,Apparel,Topwear,2011.0,Casual,Basics Men Grey Tshirt,2142.jpg,Tshirts,Grey,Fall,51.0,3,budget,0.51328385,1,43
+53461,Women,Apparel,Innerwear,2015.0,Casual,Amante Black T-Shirt Bra,53461.jpg,Bra,Black,Summer,31.0,7,budget,0.07915223,0,44
+5178,Men,Apparel,Topwear,2011.0,Casual,Rolling Stone Men's The Rolling Stones Navy T-shirt,5178.jpg,Tshirts,Black,Summer,56.0,0,color_lover,0.27884546,0,31
+40990,Girls,Apparel,Topwear,2012.0,Casual,Palm Tree Girls Milan White Top,40990.jpg,Tops,White,Summer,16.0,2,color_lover,0.68255335,1,44
+55873,Women,Personal Care,Nails,2017.0,Casual,Colorbar Pretty Please 2 Nail Lacquer 79V,55873.jpg,Nail Polish,Pink,Spring,55.0,1,color_lover,0.13486283,0,60
+40087,Men,Apparel,Topwear,2012.0,Casual,ADIDAS Men Black Polo T-Shirt,40087.jpg,Tshirts,Black,Summer,105.0,2,color_lover,0.36071855,0,46
+52570,Women,Accessories,Bags,2012.0,Casual,Mod'acc Women Grey Clutch,52570.jpg,Clutches,Blue,Summer,63.0,4,color_lover,0.11014953,0,20
+34052,Boys,Apparel,Bottomwear,2012.0,Casual,Gini and Jony Boys Yellow 3/4 Length Pants,34052.jpg,Capris,Yellow,Summer,24.0,5,budget,0.019180708,0,79
+33713,Men,Footwear,Flip Flops,2012.0,Casual,Cobblerz Men Red Flip Flops,33713.jpg,Flip Flops,Brown,Summer,95.0,3,fashionista,0.012732367,0,84
+36699,Men,Personal Care,Fragrance,2017.0,Casual,Hugo Boss Men Perfume,36699.jpg,Perfume and Body Mist,White,Spring,36.0,5,budget,0.1387547,0,74
+45896,Men,Accessories,Watches,2016.0,Casual,Maxima Ssteele Men White Dial Watch,45896.jpg,Watches,Silver,Winter,48.0,5,fashionista,0.0026257557,0,35
+56542,Women,Personal Care,Eyes,2017.0,,Streetwear Wonder Lash Mascara,56542.jpg,Lipstick,Black,Spring,68.0,3,fashionista,0.14745282,0,98
+56989,Women,Footwear,Shoes,2012.0,Casual,HM Women Brown Flats,56989.jpg,Heels,Black,Fall,41.0,0,color_lover,0.06018282,0,18
+19973,Men,Accessories,Headwear,2011.0,Casual,United Colors of Benetton Men Solid Grey Cap,19973.jpg,Caps,Blue,Summer,10.0,2,color_lover,0.26315236,0,19
+46382,Men,Apparel,Topwear,2012.0,Casual,ADIDAS Men Blue Printed T-shirt,46382.jpg,Tshirts,Blue,Summer,50.0,3,budget,0.2934344,0,56
+4521,Men,Footwear,Shoes,2011.0,Sports,Puma Men's Axis White Black Lime Shoe,4521.jpg,Sports Shoes,White,Summer,40.0,3,color_lover,0.1738332,0,17
+36673,Women,Accessories,Bags,2012.0,Casual,Paridhan Women Purple Handbag,36673.jpg,Handbags,Red,Summer,71.0,1,color_lover,0.21143062,0,46
+15892,Girls,Footwear,Shoes,2013.0,Casual,Warner Bros Tweety Girls Blue and White Casual Shoes,15892.jpg,Casual Shoes,White,Fall,92.0,2,fashionista,0.22047661,0,48
+27042,Women,Accessories,Bags,2012.0,Casual,Yelloe Black Animal Print Clutch,27042.jpg,Clutches,Black,Summer,56.0,1,fashionista,0.52675056,1,13
+22984,Men,Footwear,Shoes,2011.0,Sports,FILA Men White Temptation Sports Shoes,22984.jpg,Sports Shoes,White,Fall,102.0,5,fashionista,0.07028758,0,14
+17270,Men,Apparel,Topwear,2011.0,Casual,U.S. Polo Assn. Men Black Polo Tshirt,17270.jpg,Tshirts,Black,Fall,59.0,3,budget,0.30595124,0,30
+21316,Women,Accessories,Eyewear,2016.0,Casual,Celine Dion Women Brown Frame Sunglasses,21316.jpg,Sunglasses,Black,Winter,34.0,1,color_lover,0.121964544,0,0
+28516,Men,Apparel,Topwear,2012.0,Sports,Nike Men Home Red Jersey,28516.jpg,Tshirts,Red,Summer,47.0,2,color_lover,0.32147318,0,53
+17100,Women,Accessories,Wallets,2015.0,Casual,Lino Perros Women Flower Rust Wallet,17100.jpg,Wallets,Brown,Summer,29.0,0,fashionista,0.10822232,0,2
+21626,Women,Apparel,Innerwear,2014.0,Casual,Enamor Women Smooth White Bra,21626.jpg,Bra,White,Winter,13.0,3,budget,0.5683868,1,15
+23047,Women,Apparel,Topwear,2011.0,Casual,Arrow Woman Charcoal Solid Sweater,23047.jpg,Sweaters,Navy Blue,Fall,83.0,6,color_lover,0.011821428,0,86
+34516,Women,Footwear,Flip Flops,2012.0,Casual,ADIDAS Women Caroni Purple Flip Flops,34516.jpg,Flip Flops,Blue,Summer,86.0,5,budget,0.047800083,0,56
+10507,Women,Apparel,Topwear,2011.0,Casual,Flying Machine Women Pink Polo Tshirts,10507.jpg,Tshirts,Black,Summer,45.0,4,color_lover,0.16644306,0,74
+59941,Men,Footwear,Shoes,2013.0,Casual,Vans Men Navy Blue Casual Shoes,59941.jpg,Casual Shoes,Black,Fall,70.0,3,fashionista,0.091214985,0,11
+13459,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Check Blue Shirts,13459.jpg,Shirts,Green,Fall,91.0,3,budget,0.31132928,0,73
+15913,Men,Apparel,Topwear,2011.0,Formal,Black Coffee Men Stripes White Shirt,15913.jpg,Shirts,White,Fall,49.0,2,color_lover,0.066079296,0,95
+53628,Men,Accessories,Watches,2016.0,Casual,Q&Q Men Black Dial Analogue Watch C152J202Y,53628.jpg,Watches,Black,Winter,80.0,1,color_lover,0.093713574,0,15
+59973,Women,Apparel,Dress,2012.0,Casual,Avirate Women Navy Blue Dress,59973.jpg,Dresses,Black,Summer,49.0,4,color_lover,0.0793312,0,71
+28100,Men,Apparel,Innerwear,2016.0,Casual,Jockey COMFPLUS Men Black Y Front Briefs 8004,28100.jpg,Briefs,Navy Blue,Summer,17.0,3,color_lover,0.26695204,0,75
+31267,Men,Apparel,Topwear,2012.0,Casual,Puma Men Hamburg Graphic Red T-shirt,31267.jpg,Tshirts,Red,Fall,15.0,5,budget,0.026435317,0,23
+42832,Women,Accessories,Bags,2012.0,Casual,French Connection Women Taupe & Brown Handbag,42832.jpg,Handbags,Brown,Winter,10.0,2,color_lover,0.19484547,0,27
+20069,Women,Accessories,Belts,2011.0,Casual,United Colors of Benetton Women Solid Black Belt,20069.jpg,Wallets,Black,Summer,34.0,3,budget,0.34855738,0,7
+48862,Women,Accessories,Jewellery,2012.0,Casual,Lucera Women Silver Pendant,48862.jpg,Pendant,Silver,Summer,61.0,2,budget,0.19217567,0,91
+6891,Women,Apparel,Topwear,2011.0,Casual,Forever New Women Long Black Jacket,6891.jpg,Jackets,Brown,Summer,63.0,4,fashionista,0.018389024,0,35
+55574,Women,Personal Care,Makeup,2017.0,Casual,Revlon Photo Ready Medium/ Deep Compact 03,55574.jpg,Compact,Skin,Spring,25.0,1,color_lover,0.079527155,0,89
+44125,Women,Personal Care,Fragrance,2017.0,Casual,Hugo Women Deep Red Perfume,44125.jpg,Perfume and Body Mist,Red,Summer,81.0,1,budget,0.3125956,0,7
+48320,Women,Accessories,Jewellery,2012.0,Casual,Pitaraa Silver Omelette Thin Bracelet,48320.jpg,Bracelet,Silver,Summer,28.0,4,fashionista,0.041898526,0,57
+59221,Women,Accessories,Watches,2016.0,Casual,Titan Women Gold Watch,59221.jpg,Watches,White,Winter,43.0,5,budget,0.013105757,0,59
+20128,Women,Apparel,Topwear,2011.0,Casual,Wrangler Women Checkerd Blue Shirt,20128.jpg,Shirts,Blue,Fall,27.0,0,color_lover,0.08100867,0,49
+49129,Women,Personal Care,Makeup,2017.0,Casual,Deborah Medium Beige 24 Ore Perfect Concealer 4,49129.jpg,Lipstick,Skin,Spring,61.0,4,budget,0.04178653,0,27
+51031,Women,Apparel,Innerwear,2017.0,Casual,Enamor White Bra,51031.jpg,Bra,Skin,Summer,44.0,6,fashionista,0.0018212005,0,91
+18716,Women,Apparel,Topwear,2011.0,Casual,Arrow Woman Shanna Black Top,18716.jpg,Tops,Black,Summer,28.0,3,fashionista,0.41756997,0,40
+55970,Women,Personal Care,Lips,2019.0,Casual,Colorbar Velvet Matte Hearts & Tarts Lipstick 80V,55970.jpg,Lipstick,Pink,Spring,48.0,6,fashionista,0.0059082117,0,99
+54325,Women,Apparel,Innerwear,2017.0,Casual,Garfield Women White & Pink Bra,54325.jpg,Bra,White,Winter,88.0,2,fashionista,0.3466181,0,63
+12477,Men,Footwear,Shoes,2012.0,Formal,Clarks Men Leather Brown Formal Shoes,12477.jpg,Casual Shoes,Black,Winter,47.0,2,budget,0.4905621,0,26
+33147,Girls,Apparel,Bottomwear,2012.0,Casual,Gini and Jony Girls Blue Jeans,33147.jpg,Jeans,Blue,Summer,50.0,5,color_lover,0.08923772,0,62
+28095,Men,Apparel,Innerwear,2016.0,Casual,Jockey MC Men Grey Melange Y Front Briefs 8003,28095.jpg,Briefs,Grey Melange,Summer,32.0,6,budget,0.0862326,0,16
+12220,Men,Apparel,Bottomwear,2013.0,Formal,Basics Men Solid Black Trousers,12220.jpg,Trousers,Black,Fall,49.0,5,color_lover,0.08223879,0,72
+45037,Men,Accessories,Watches,2016.0,Casual,Maxima Attivo Men White Dial Watch,45037.jpg,Watches,White,Winter,80.0,2,budget,0.3258223,0,32
+31824,Men,Accessories,Watches,2016.0,Casual,Titan Men Black Dial Watch,31824.jpg,Watches,Black,Winter,32.0,1,color_lover,0.1505508,0,83
+34590,Women,Apparel,Topwear,2012.0,Casual,Tonga Women Printed Red Top,34590.jpg,Tops,Blue,Summer,47.0,4,fashionista,0.1426954,0,76
+15574,Boys,Apparel,Topwear,2011.0,Casual,Chhota Bheem Kids Boys Best Friends Group TShirt,15574.jpg,Tshirts,Navy Blue,Summer,43.0,2,fashionista,0.22060011,0,91
+27943,Men,Apparel,Innerwear,2016.0,Casual,Jockey Men Comfort Stretch Charcoal Bikini Brief,27943.jpg,Briefs,Charcoal,Summer,25.0,5,fashionista,0.012340825,0,28
+41527,Men,Accessories,Bags,2012.0,Casual,Basics Men Brown Messenger Bag,41527.jpg,Handbags,Black,Summer,28.0,1,budget,0.15879826,0,12
+38020,Women,Accessories,Watches,2016.0,Casual,Q&Q Women Steel Dial Watch,38020.jpg,Watches,White,Winter,39.0,4,color_lover,0.020451955,0,45
+55822,Women,Apparel,Loungewear and Nightwear,2017.0,Casual,SDL by Sweet Dreams Women White & Pink Printed Night Suit S11-3231,55822.jpg,Briefs,White,Summer,64.0,2,fashionista,0.13957028,0,34
+11369,Women,Apparel,Topwear,2011.0,Casual,United Colors Of Benetton Women Light Winter Pink Tops,11369.jpg,Tops,Maroon,Summer,50.0,6,budget,0.024907082,0,5
+43562,Men,Accessories,Socks,2012.0,Casual,Puma Men White Pack of 3 Socks,43562.jpg,Socks,White,Summer,127.0,2,fashionista,0.18164441,0,81
+6684,Women,Apparel,Topwear,2011.0,Casual,UCB Women's Pleat At Back Yellow T-shirt,6684.jpg,Tshirts,White,Summer,10.0,3,fashionista,0.16287442,0,68
+36789,Men,Accessories,Watches,2016.0,Casual,Maxima Men Silver Dial Attivo Watch,36789.jpg,Watches,Silver,Winter,21.0,5,budget,0.029209042,0,46
+29100,Unisex,Accessories,Bags,2012.0,Casual,Puma Unisex Black Backpack,29100.jpg,Handbags,Black,Summer,10.0,2,color_lover,0.2659411,0,24
+4162,Women,Apparel,Topwear,2011.0,Casual,Inkfruit Women's To do List Sea Green T-shirt,4162.jpg,Tshirts,Green,Summer,69.0,4,fashionista,0.036445495,0,65
+3167,Women,Footwear,Shoes,2011.0,Sports,Nike Women Main Draw White Blue Shoe,3167.jpg,Casual Shoes,White,Fall,48.0,2,budget,0.3003593,0,9
+4239,Men,Apparel,Topwear,2011.0,Casual,Probase Men's Musical Figures Grey T-shirt,4239.jpg,Tshirts,Navy Blue,Summer,65.0,5,color_lover,0.08314472,0,55
+56114,Women,Personal Care,Lips,2017.0,Casual,Colorbar Feelin Rosey Lip Pot 011,56114.jpg,Lip Gloss,White,Spring,55.0,5,color_lover,0.008905061,0,29
+21526,Women,Accessories,Bags,2015.0,Casual,Kiara Women Glossy Red Handbag,21526.jpg,Handbags,Red,Summer,55.0,0,fashionista,0.043715004,0,4
+9351,Men,Accessories,Socks,2011.0,Casual,Puma Men Sport Pack of 3 Pairs Black Sock,9351.jpg,Socks,Black,Summer,36.0,1,fashionista,0.39078012,0,32
+32066,Men,Apparel,Innerwear,2016.0,Casual,Playboy Men Navy Blue Brief,32066.jpg,Briefs,Black,Summer,37.0,4,fashionista,0.08542993,0,64
+22686,Unisex,Accessories,Wallets,2015.0,Casual,Wildcraft Unisex Nylon Grey Passport Pouch,22686.jpg,Laptop Bag,Black,Summer,12.0,2,color_lover,0.27397692,0,17
+27301,Women,Apparel,Topwear,2011.0,Ethnic,Mother Earth Women Printed Orange Kurta,27301.jpg,Kurtas,Red,Fall,79.0,1,fashionista,0.029932933,0,95
+26587,Men,Footwear,Shoes,2012.0,Sports,Puma Men Vibrant VI Black Sports Shoes,26587.jpg,Casual Shoes,Black,Summer,34.0,5,fashionista,0.09843583,0,48
+4916,Women,Apparel,Topwear,2011.0,Casual,Gini and Jony Girl's Vollie White Infant Kidswear,4916.jpg,Tshirts,White,Summer,70.0,2,fashionista,0.0914656,0,10
+16298,Men,Apparel,Topwear,2011.0,Casual,Peter England Men Check Navy Blue Shirt,16298.jpg,Shirts,Blue,Fall,76.0,5,fashionista,0.11416775,0,84
+1592,Men,Footwear,Shoes,2011.0,Sports,Kipsta Men's Superfit Football Red Shoe,1592.jpg,Casual Shoes,Red,Summer,36.0,2,fashionista,0.07134627,0,25
+25402,Men,Accessories,Mufflers,2012.0,Casual,Nike Men Striped Manchester United Red Scarf,25402.jpg,Mufflers,Red,Summer,74.0,4,color_lover,0.061918635,0,62
+18624,Men,Apparel,Topwear,2011.0,Casual,Puma Men Lifestyle Knitted Cream Sweaters,18624.jpg,Tshirts,White,Fall,65.0,4,color_lover,0.030821865,0,88
+51870,Men,Apparel,Topwear,2012.0,Casual,Mark Taylor Beige Printed T-shirt,51870.jpg,Tshirts,White,Summer,80.0,1,budget,0.46293,0,85
+1802,Men,Footwear,Shoes,2011.0,Sports,Quechua Men's Arpenaz Flex Yellow Shoe,1802.jpg,Casual Shoes,Brown,Summer,61.0,5,fashionista,0.007718866,0,58
+4872,Men,Apparel,Topwear,2016.0,Casual,Levis Kids Boy's Danio Grey Teens Kidswear,4872.jpg,Tshirts,White,Summer,60.0,4,budget,0.029071774,0,26
+45972,Women,Apparel,Topwear,2012.0,Casual,Tokyo Talkies Women Red Printed Top,45972.jpg,Tshirts,Red,Summer,64.0,5,fashionista,0.007262489,0,48
+35313,Women,Accessories,Jewellery,2016.0,Ethnic,Fabindia Women Anusuya Silver Earrings,35313.jpg,Earrings,Silver,Winter,76.0,5,budget,0.04103034,0,76
+24274,Men,Apparel,Topwear,2012.0,Casual,Quiksilver Men Basic Navy Blue T-shirt,24274.jpg,Tshirts,Blue,Fall,59.0,3,fashionista,0.36616203,0,32
+27739,Women,Accessories,Bags,2015.0,Casual,Murcia Black Handbag,27739.jpg,Handbags,Black,Winter,90.0,0,budget,0.24279422,0,97
+7120,Unisex,Accessories,Bags,2015.0,Casual,Wildcraft Unisex Green Printed Backpack,7120.jpg,Handbags,Green,Fall,50.0,0,budget,0.22137624,0,98
+55268,Women,Personal Care,Makeup,2017.0,Casual,Lakme Absolute Shine Line Smoky Grey Eye Liner,55268.jpg,Kajal and Eyeliner,Brown,Spring,60.0,4,budget,0.23237437,0,0
+35288,Unisex,Accessories,Watches,2016.0,Casual,Suunto Vector HR White Watch,35288.jpg,Watches,Black,Winter,44.0,3,fashionista,0.09007239,0,20
+15945,Men,Accessories,Wallets,2011.0,Casual,Turtle Men Leather Brown Wallets,15945.jpg,Wallets,Brown,Summer,46.0,1,budget,0.4603515,0,54
+58941,Women,Accessories,Watches,2016.0,Casual,Tommy Hilfiger Women White Dial Watch TH1780808-D,58941.jpg,Watches,White,Winter,78.0,2,budget,0.19545765,0,5
+26612,Men,Footwear,Shoes,2012.0,Sports,Puma Men Cell Turin Perf 2 Black Sports Shoes,26612.jpg,Casual Shoes,Black,Fall,54.0,2,color_lover,0.17931233,0,91
+40669,Women,Apparel,Topwear,2012.0,Casual,Lee Women Navy Blue Printed Shirt,40669.jpg,Tops,Black,Summer,39.0,3,fashionista,0.19593313,0,80
+32926,Men,Apparel,Topwear,2012.0,Casual,Status Quo Men Printed Purple T-shirt,32926.jpg,Tshirts,Black,Summer,40.0,1,fashionista,0.3272697,0,68
+1947,Men,Apparel,Topwear,2010.0,Sports,Puma Mens Cricket Way of Life T-shirt,1947.jpg,Tshirts,Blue,Summer,36.0,7,color_lover,0.40083572,0,94
+34829,Men,Footwear,Shoes,2012.0,Sports,ADIDAS Men Bolt Navy Blue Sports Shoes,34829.jpg,Sports Shoes,White,Summer,75.0,2,fashionista,0.16512,0,4
+32639,Men,Apparel,Topwear,2012.0,Sports,Nike Men Epaulet UV Crew Red T-shirt,32639.jpg,Tshirts,Red,Summer,53.0,1,budget,0.47316265,0,2
+25204,Women,Accessories,Bags,2015.0,Casual,Lino Perros Women Leatherette Light Brown Handbag,25204.jpg,Handbags,Black,Winter,18.0,0,color_lover,0.17358015,0,52
+51956,Women,Accessories,Bags,2012.0,Casual,Yelloe Women Olive Sling Bag,51956.jpg,Handbags,Red,Summer,48.0,4,budget,0.011503582,0,22
+37243,Men,Footwear,Shoes,2012.0,Casual,United Colors of Benetton Men Brown Shoes,37243.jpg,Casual Shoes,Black,Summer,81.0,4,color_lover,0.021690289,0,52
+59964,Women,Apparel,Dress,2012.0,Casual,Avirate Women Black Dress,59964.jpg,Baby Dolls,Pink,Summer,72.0,5,budget,0.06282487,0,36
+4051,Men,Apparel,Topwear,2011.0,Casual,Myntra Men's Eagle Emblem Yellow T-shirt,4051.jpg,Tshirts,White,Summer,50.0,4,budget,0.029454263,0,73
+24924,Women,Apparel,Topwear,2012.0,Casual,United Colors of Benetton Women Blue Top,24924.jpg,Tops,White,Summer,71.0,3,budget,0.65487087,1,73
+38132,Unisex,Accessories,Bags,2015.0,Casual,Wildcraft Unisex Red Zen Backpack,38132.jpg,Backpacks,Red,Fall,37.0,4,fashionista,0.007826446,0,82
+22157,Men,Footwear,Shoes,2011.0,Casual,Lee Cooper Men Black Casual Shoes,22157.jpg,Casual Shoes,Black,Summer,40.0,4,fashionista,0.10425317,0,16
+31314,Women,Apparel,Topwear,2012.0,Ethnic,W Women Red & Blue Printed Kurta,31314.jpg,Kurtas,Red,Summer,63.0,5,color_lover,0.031481676,0,84
+29070,Unisex,Accessories,Bags,2018.0,Casual,Fastrack Unisex Blue Backpack,29070.jpg,Backpacks,Black,Summer,61.0,4,color_lover,0.11196175,0,77
+54079,Women,Apparel,Topwear,2012.0,Ethnic,Mumbai Slang Women Black Kurti,54079.jpg,Kurtas,Black,Summer,76.0,1,fashionista,0.32877505,0,72
+55359,Women,Personal Care,Nails,2017.0,Casual,Revlon Golden Touch Nail Enamel 384,55359.jpg,Nail Polish,Brown,Spring,49.0,5,fashionista,0.011477893,0,0
+57424,Women,Apparel,Topwear,2015.0,Casual,Angry Birds Women Charcoal T-shirt,57424.jpg,Tshirts,Blue,Summer,46.0,3,color_lover,0.17869708,0,50
+37341,Boys,Apparel,Topwear,2008.0,Casual,U.S. Polo Assn. Kids Boys Orange T-shirt,37341.jpg,Tshirts,Blue,Summer,61.0,2,color_lover,0.3036286,0,44
+46775,Men,Personal Care,Fragrance,2017.0,Casual,Euroluxe Men Ammir Perfume,46775.jpg,Perfume and Body Mist,White,Spring,36.0,6,fashionista,0.018591587,0,76
+13654,Men,Footwear,Shoes,2011.0,Casual,ADIDAS Black Speed Boat Casual Shoe,13654.jpg,Sports Shoes,Blue,Summer,50.0,6,fashionista,0.050494846,0,3
+18033,Women,Accessories,Bags,2015.0,Casual,Lino Perros Women Solid Brown Handbag,18033.jpg,Handbags,Brown,Winter,45.0,3,budget,0.19657373,0,61
+8665,Unisex,Accessories,Eyewear,2016.0,Casual,Fastrack Unisex Army collection Brown Sunglasses,8665.jpg,Sunglasses,Black,Winter,64.0,6,budget,0.124589145,0,64
+45655,Men,Apparel,Innerwear,2016.0,Casual,Park Avenue White Brief,45655.jpg,Trunk,White,Summer,91.0,1,color_lover,0.34201804,0,31
+16088,Men,Accessories,Eyewear,2016.0,Casual,M tv Men My Fab Eyewear Black Sunglasses,16088.jpg,Sunglasses,Black,Winter,13.0,0,fashionista,0.2932195,0,33
+53361,Women,Accessories,Bags,2012.0,Casual,Puma Women Pink & Grey Backpack,53361.jpg,Backpacks,Red,Summer,54.0,1,fashionista,0.0165581,0,91
+24424,Men,Footwear,Shoes,2012.0,Sports,ADIDAS Men Vanquish 5 White Sports Shoes,24424.jpg,Sports Shoes,White,Summer,34.0,0,color_lover,0.35650775,0,94
+12716,Men,Footwear,Shoes,2011.0,Sports,Nike Men Air Visi Pro Grey Sports Shoes,12716.jpg,Casual Shoes,White,Fall,27.0,7,fashionista,0.035784274,0,71
+31605,Women,Apparel,Bottomwear,2012.0,Sports,Nike Women Running Black Skirt with Capris,31605.jpg,Skirts,Blue,Summer,89.0,2,fashionista,0.1419335,0,38
+58487,Men,Accessories,Wallets,2016.0,Casual,Fossil Men Brown Wallet,58487.jpg,Wallets,Brown,Summer,35.0,3,budget,0.36183766,0,25
+37753,Men,Apparel,Topwear,2012.0,Casual,John Players Men Stripes Blue Shirt,37753.jpg,Shirts,Blue,Summer,52.0,9,budget,0.020339454,0,33
+52505,Women,Apparel,Loungewear and Nightwear,2015.0,Casual,Red Rose Off-White Printed Bath Robe,52505.jpg,Kurtas,White,Summer,43.0,4,color_lover,0.10271445,0,53
+54020,Women,Accessories,Bags,2012.0,Casual,Kiara Women Brown Handbag,54020.jpg,Handbags,White,Summer,62.0,0,color_lover,0.31138292,0,2
+55120,Women,Personal Care,Nails,2017.0,Casual,Lakme Truewear Color Crush Nail Polish 20,55120.jpg,Nail Polish,Pink,Spring,45.0,2,color_lover,0.105129294,0,49
+6937,Men,Apparel,Topwear,2011.0,Casual,Tantra Men's Destination Mustard T-shirt,6937.jpg,Tshirts,Yellow,Summer,51.0,2,color_lover,0.28441882,0,11
+52972,Women,Apparel,Saree,2012.0,Ethnic,FNF Multi Coloured Sari,52972.jpg,Sarees,Red,Fall,50.0,0,fashionista,0.14154212,0,64
+23139,Men,Apparel,Topwear,2011.0,Casual,Quechua Men Fleece Olive Sweatshirt,23139.jpg,Shirts,Grey,Fall,52.0,2,budget,0.35243574,0,53
+4011,Unisex,Sporting Goods,Sports Equipment,2011.0,Sports,Spalding Buror Grey Basketball,4011.jpg,Footballs,Blue,Fall,52.0,4,fashionista,0.22464573,0,4
+20263,Men,Apparel,Topwear,2011.0,Casual,Wrangler Men Rust Red T-shirt,20263.jpg,Tshirts,Maroon,Summer,25.0,4,fashionista,0.049898494,0,93
+46476,Women,Accessories,Watches,2016.0,Casual,Timex Women White Dial Watch,46476.jpg,Watches,White,Winter,50.0,2,color_lover,0.052087843,0,93
+5043,Men,Footwear,Shoes,2013.0,Casual,Fila Men's Sniper White Green Shoe,5043.jpg,Casual Shoes,White,Fall,64.0,1,budget,0.33012313,0,56
+36277,Women,Apparel,Loungewear and Nightwear,2017.0,Casual,SDL by Sweet Dreams Women Grey & Black Night suits,36277.jpg,Night suits,Black,Summer,59.0,1,color_lover,0.25052208,0,16
+58969,Men,Personal Care,Fragrance,2017.0,Casual,Colour Me Men Blue Perfume,58969.jpg,Deodorant,Blue,Spring,53.0,3,budget,0.28253067,0,46
+16951,Men,Accessories,Eyewear,2016.0,Casual,Image Men Classic Eyewear Black Sunglasses,16951.jpg,Sunglasses,Black,Winter,96.0,2,fashionista,0.112008385,0,22
+16203,Men,Apparel,Topwear,2011.0,Casual,Puma Men Logo Hooded Blue SweatShirt,16203.jpg,Sweatshirts,Blue,Fall,54.0,4,fashionista,0.6857443,1,78
+54113,Women,Footwear,Shoes,2012.0,Casual,Rocia Women Silver Flats,54113.jpg,Heels,Gold,Winter,34.0,2,budget,0.7674281,1,84
+36020,Men,Accessories,Belts,2015.0,Casual,OTLS Men Brown Leather Belt,36020.jpg,Belts,Black,Summer,45.0,4,color_lover,0.07437782,0,13
+28301,Men,Accessories,Eyewear,2016.0,Casual,Fastrack Men Black Sunglasses M069BK3,28301.jpg,Sunglasses,Black,Winter,53.0,2,budget,0.59216726,1,65
+53738,Men,Apparel,Bottomwear,2012.0,Casual,ADIDAS Men White Track Pant,53738.jpg,Lounge Pants,White,Fall,39.0,1,budget,0.37919003,0,74
+10255,Men,Apparel,Topwear,2011.0,Casual,Locomotive Men Stripes Blue Shirts,10255.jpg,Shirts,Blue,Summer,42.0,2,budget,0.42515853,0,50
+57952,Women,Apparel,Saree,2012.0,Ethnic,Prafful Off White Printed Sari,57952.jpg,Sarees,Green,Fall,54.0,2,color_lover,0.08124578,0,37
+9865,Men,Apparel,Topwear,2011.0,Casual,Status Quo Men Grey & Blue Striped T-shirt,9865.jpg,Tshirts,White,Fall,10.0,5,color_lover,0.10014297,0,63
+26350,Women,Accessories,Watches,2016.0,Casual,DKNY Women White Dial Watch NY8471,26350.jpg,Watches,White,Winter,64.0,5,fashionista,0.005683643,0,97
+33244,Men,Apparel,Topwear,2012.0,Formal,Arrow Men Blue Slim Fit Shirt,33244.jpg,Shirts,Navy Blue,Fall,51.0,1,color_lover,0.10169425,0,37
+1595,Men,Apparel,Topwear,2010.0,Sports,Domyos Men Good Stroke Black T-shirt,1595.jpg,Tshirts,Black,Fall,51.0,0,color_lover,0.14949992,0,49
+34227,Men,Apparel,Topwear,2013.0,Casual,Proline Men Grey T-shirt,34227.jpg,Tshirts,Blue,Fall,51.0,5,color_lover,0.1603562,0,97
+21858,Boys,Apparel,Topwear,2011.0,Casual,Chhota Bheem Kids Boys I Like to Paint Navy Blue T-shirt,21858.jpg,Tshirts,Navy Blue,Summer,60.0,5,color_lover,0.047912024,0,81
+32369,Men,Accessories,Watches,2016.0,Casual,Q&Q Men Black Dial Watch,32369.jpg,Watches,Black,Winter,74.0,1,budget,0.6010729,1,29
+25106,Women,Accessories,Belts,2015.0,Casual,Lino Perros Women Brown Belt,25106.jpg,Belts,Black,Summer,51.0,5,budget,0.035921678,0,78
+19982,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Printed Black TShirt,19982.jpg,Tshirts,Black,Summer,69.0,3,fashionista,0.21601151,0,90
+21567,Men,Footwear,Shoes,2012.0,Casual,Numero Uno Men Casual White Shoes,21567.jpg,Casual Shoes,White,Fall,69.0,2,budget,0.25298235,0,50
+36809,Women,Personal Care,Fragrance,2017.0,Casual,Mont Blanc Women Femme Individuelle Perfume,36809.jpg,Pendant,White,Summer,48.0,6,budget,0.024679113,0,62
+24155,Women,Apparel,Topwear,2011.0,Ethnic,Aurelia Women Green Kurta,24155.jpg,Kurtas,Green,Fall,10.0,0,fashionista,0.020040065,0,97
+49914,Men,Accessories,Watches,2016.0,Casual,Q&Q Men Black Analog Watch,49914.jpg,Watches,Black,Winter,42.0,0,fashionista,0.2705397,0,51
+14501,Men,Footwear,Shoes,2011.0,Casual,Flying Machine Men Casual Grey Casual Shoes,14501.jpg,Casual Shoes,Black,Summer,69.0,1,fashionista,0.34192714,0,37
+49067,Women,Accessories,Bags,2012.0,Casual,Lino Perros Women Olive Handbag,49067.jpg,Handbags,Black,Summer,64.0,0,color_lover,0.21214204,0,96
+26960,Women,Apparel,Topwear,2012.0,Casual,Jealous 21 Women Purple Shirt,26960.jpg,Shirts,Black,Summer,109.0,3,color_lover,0.025070429,0,87
+33582,Men,Apparel,Topwear,2012.0,Casual,Wrangler Men True Rider White T-shirt,33582.jpg,Tshirts,White,Summer,41.0,3,fashionista,0.056501344,0,78
+19578,Women,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Women Solid Purple Top,19578.jpg,Tops,Black,Summer,14.0,2,color_lover,0.35604936,0,29
+43512,Women,Apparel,Dress,2012.0,Casual,French Connection Women Blue Dress,43512.jpg,Kurtas,White,Summer,58.0,0,fashionista,0.12941843,0,50
+21313,Women,Accessories,Eyewear,2016.0,Casual,Celine Dion Women Black Frame Sunglasses,21313.jpg,Sunglasses,Black,Winter,22.0,3,fashionista,0.08556165,0,80
+16485,Men,Apparel,Topwear,2011.0,Casual,Locomotive Men Check Grey Shirt,16485.jpg,Shirts,Grey,Fall,73.0,4,fashionista,0.07094561,0,4
+13547,Women,Footwear,Shoes,2011.0,Casual,Carlton London Women Casual Red Casual Shoes,13547.jpg,Casual Shoes,Red,Summer,80.0,5,color_lover,0.035509024,0,28
+43319,Women,Apparel,Topwear,2012.0,Casual,United Colors of Benetton Women White T-shirt,43319.jpg,Tshirts,White,Summer,46.0,4,budget,0.030687489,0,3
+45811,Women,Footwear,Shoes,2012.0,Casual,Senorita Women Yellow Flats,45811.jpg,Flats,Gold,Winter,13.0,2,color_lover,0.2046511,0,9
+57869,Women,Personal Care,Skin,2017.0,Casual,Biotique Bio Saffron Dew Face & Body Cream,57869.jpg,Sunscreen,Pink,Spring,47.0,3,color_lover,0.06257737,0,55
+48009,Women,Accessories,Watches,2016.0,Casual,Helix Women Silver Dial Watch,48009.jpg,Watches,White,Winter,49.0,2,fashionista,0.051566094,0,16
+33057,Men,Apparel,Topwear,2012.0,Casual,U.S. Polo Assn. Denim Co. Men Black Shirt,33057.jpg,Tshirts,Navy Blue,Summer,48.0,2,fashionista,0.11017737,0,73
+40660,Women,Apparel,Topwear,2012.0,Ethnic,Span Women Multi Coloured Kurta,40660.jpg,Kurtas,Multi,Fall,33.0,3,color_lover,0.19672437,0,16
+57196,Women,Apparel,Topwear,2012.0,Casual,Elle Women Red Tunic,57196.jpg,Kurtas,Red,Summer,61.0,5,budget,0.034687612,0,83
+14347,Men,Footwear,Shoes,2011.0,Sports,Nike Men Dual Fusion ST 2 Black Sports Shoes,14347.jpg,Sports Shoes,Black,Fall,21.0,1,budget,0.5907436,1,87
+55468,Women,Personal Care,Lips,2017.0,Casual,Revlon Super Lusterous Coffee Break Lipstick 303,55468.jpg,Lipstick,Pink,Spring,44.0,2,budget,0.33439773,0,68
+26931,Women,Apparel,Topwear,2012.0,Casual,Jealous 21 Women Black Top,26931.jpg,Tops,Black,Summer,64.0,6,budget,0.13600771,0,33
+44415,Men,Footwear,Shoes,2018.0,Casual,Red Tape Men Brown Shoes,44415.jpg,Casual Shoes,Brown,Winter,51.0,2,fashionista,0.1174095,0,5
+55784,Men,Footwear,Shoes,2014.0,Casual,Converse Men Black Casual Shoes,55784.jpg,Casual Shoes,Black,Summer,111.0,5,fashionista,0.049014878,0,52
+12580,Women,Apparel,Topwear,2011.0,Casual,Tantra Women Blue Printed T-shirt,12580.jpg,Tops,Green,Summer,21.0,2,fashionista,0.035193883,0,65
+44770,Men,Footwear,Shoes,2012.0,Casual,Globalite Men Black Skid Shoes,44770.jpg,Casual Shoes,Black,Fall,62.0,4,color_lover,0.043349907,0,76
+16201,Men,Apparel,Topwear,2011.0,Casual,Puma Men Polo Black TShirt,16201.jpg,Tshirts,Black,Fall,74.0,4,fashionista,0.40353072,0,42
+26347,Women,Accessories,Watches,2016.0,Formal,DKNY Women Beige Dial Chronograph Watch NY8322,26347.jpg,Watches,White,Winter,76.0,3,budget,0.2509122,0,74
+14928,Men,Apparel,Topwear,2011.0,Casual,Mr. Men Men Beware Grey Melange Tshirts,14928.jpg,Tshirts,Blue,Fall,62.0,3,fashionista,0.32237777,0,22
+34565,Women,Apparel,Dress,2012.0,Casual,Tonga Women Printed Black Dress,34565.jpg,Kurtas,Black,Summer,51.0,4,fashionista,0.094741195,0,54
+39960,Men,Footwear,Sandal,2013.0,Casual,GAS Men Brown Madly Sandals,39960.jpg,Flip Flops,Brown,Fall,38.0,0,fashionista,0.085652575,0,79
+24189,Unisex,Footwear,Shoes,2012.0,Casual,Converse Unisex Chuck Taylor Black Casual Shoes,24189.jpg,Casual Shoes,Black,Summer,32.0,2,color_lover,0.23315315,0,94
+7323,Men,Footwear,Shoes,2018.0,Casual,Red Tape Men's Casual Brown Shoe,7323.jpg,Casual Shoes,Brown,Fall,73.0,3,budget,0.54962015,1,74
+8861,Men,Apparel,Topwear,2011.0,Casual,Mark Taylor Men White Striped Shirt,8861.jpg,Shirts,Blue,Fall,50.0,4,fashionista,0.32706827,0,15
+37201,Girls,Apparel,Bottomwear,2012.0,Casual,United Colors of Benetton Girls Washed Blue Jeans,37201.jpg,Jeans,Blue,Summer,65.0,2,fashionista,0.2967148,0,7
+42564,Women,Apparel,Topwear,2012.0,Casual,Mother Earth Women Pink Top,42564.jpg,Tops,Green,Fall,20.0,5,fashionista,0.03764301,0,3
+21881,Women,Apparel,Topwear,2011.0,Ethnic,BIBA Women sequin Purple Kurta,21881.jpg,Kurtas,Black,Fall,82.0,4,fashionista,0.04613558,0,3
+40591,Women,Apparel,Topwear,2012.0,Ethnic,Aurelia Women Blue Kurta,40591.jpg,Tshirts,Green,Summer,55.0,3,color_lover,0.40835562,0,55
+17846,Men,Footwear,Shoes,2011.0,Sports,Nike Men Supergame Black Sports Shoe,17846.jpg,Sports Shoes,Black,Fall,73.0,2,budget,0.7421163,1,24
+15069,Men,Footwear,Sandal,2012.0,Casual,Ganuchi Men Brown Sandal,15069.jpg,Casual Shoes,Brown,Winter,72.0,2,fashionista,0.063532114,0,66
+4003,Men,Footwear,Flip Flops,2011.0,Casual,Spalding Men's Navy With Yellow Flip Flop,4003.jpg,Flip Flops,Black,Summer,18.0,4,color_lover,0.17737015,0,95
+43154,Women,Accessories,Watches,2016.0,Casual,Fastrack Women Purple Dial Watch,43154.jpg,Watches,Black,Fall,34.0,3,color_lover,0.23317648,0,66
+21133,Women,Apparel,Topwear,2011.0,Casual,s.Oliver Women Striped Purple Tshirt,21133.jpg,Sweaters,Navy Blue,Fall,57.0,3,budget,0.4538505,0,26
+56617,Women,Personal Care,Makeup,2017.0,,Streetwear Stay On Mineral Pink Rosette Blusher,56617.jpg,Highlighter and Blush,Rose,Spring,14.0,7,color_lover,0.0158304,0,92
+11951,Men,Footwear,Shoes,2012.0,Casual,Ganuchi Men Blue Shoes,11951.jpg,Casual Shoes,Black,Summer,68.0,2,color_lover,0.34310296,0,31
+56921,Women,Footwear,Shoes,2012.0,Casual,HM Women Blue Sandals,56921.jpg,Heels,Black,Winter,57.0,4,color_lover,0.02551898,0,49
+33443,Women,Accessories,Bags,2012.0,Casual,Baggit Women Brown Handbag,33443.jpg,Handbags,Black,Summer,38.0,1,budget,0.16537438,0,60
+46815,Girls,Apparel,Topwear,2012.0,Casual,Gini and Jony Girls Yellow Top,46815.jpg,Tops,White,Summer,51.0,2,color_lover,0.3356838,0,50
+26680,Women,Footwear,Shoes,2012.0,Casual,Puma Women Cross Black Flats,26680.jpg,Flats,Black,Summer,51.0,1,fashionista,0.44222555,0,18
+32507,Men,Footwear,Sandal,2015.0,Casual,Franco Leone Men Black Sandals,32507.jpg,Sandals,Black,Summer,89.0,2,color_lover,0.12922478,0,20
+9425,Men,Apparel,Topwear,2011.0,Formal,John Miller Men Purple Fila-Fil Shirts,9425.jpg,Shirts,Navy Blue,Fall,34.0,9,budget,0.30665186,0,4
+16989,Men,Footwear,Flip Flops,2012.0,Casual,Puma Men Lynx Black Slipper,16989.jpg,Flip Flops,Brown,Summer,54.0,3,color_lover,0.2755083,0,81
+3645,Men,Footwear,Shoes,2011.0,Casual,Fila Men's Maverick HI Black Red Canvas Shoe,3645.jpg,Casual Shoes,White,Fall,36.0,5,color_lover,0.102939546,0,91
+29125,Women,Accessories,Eyewear,2016.0,Casual,Vogue Women White Sunglasses,29125.jpg,Sunglasses,Brown,Winter,64.0,1,fashionista,0.14646263,0,41
+54600,Men,Apparel,Innerwear,2016.0,Casual,Jockey ELANCE Men Black Briefs 1004,54600.jpg,Briefs,Black,Summer,28.0,2,color_lover,0.32471225,0,60
+42228,Women,Apparel,Topwear,2012.0,Casual,Sepia Women White & Green Top,42228.jpg,Tops,Green,Summer,74.0,2,fashionista,0.046061657,0,21
+37789,Men,Apparel,Topwear,2012.0,Formal,John Players Men Formal Lavender Shirt,37789.jpg,Shirts,Blue,Fall,74.0,2,color_lover,0.34496632,0,20
+45088,Women,Apparel,Innerwear,2015.0,Casual,Bwitch Peach Precious Bra,45088.jpg,Bra,White,Winter,35.0,1,fashionista,0.06935772,0,69
+30991,Women,Personal Care,Fragrance,2017.0,,,30991.jpg,Lip Gloss,White,Spring,40.0,2,color_lover,0.12330512,0,0
+52480,Women,Apparel,Loungewear and Nightwear,2015.0,Casual,Red Rose Blue & Black Nightdress,52480.jpg,Baby Dolls,Black,Summer,45.0,2,color_lover,0.78333247,1,4
+7060,Unisex,Accessories,Bags,2013.0,Sports,Nike Black Classic Turf     NSW  Backpacks,7060.jpg,Backpacks,Blue,Summer,67.0,3,budget,0.40618688,0,11
+47361,Women,Accessories,Bags,2012.0,Casual,Baggit Women Black Voodoo Gang Handbag,47361.jpg,Handbags,Red,Summer,47.0,3,color_lover,0.08795344,0,89
+38466,Women,Accessories,Bags,2012.0,Casual,Baggit Women Red Mobile Pouch,38466.jpg,Laptop Bag,Red,Fall,67.0,0,color_lover,0.03956384,0,45
+42670,Women,Apparel,Topwear,2012.0,Ethnic,Alma Women Black Kurta,42670.jpg,Kurtas,White,Summer,74.0,4,color_lover,0.10934934,0,33
+33393,Women,Accessories,Bags,2012.0,Casual,Baggit Women Faltu Taj Brown Handbag,33393.jpg,Handbags,Brown,Summer,33.0,3,budget,0.1384967,0,48
+19837,Men,Apparel,Topwear,2011.0,Casual,U.S. Polo Assn. Men Check Green Shirt,19837.jpg,Shirts,Blue,Fall,43.0,2,budget,0.46121126,0,77
+48772,Women,Accessories,Jewellery,2013.0,Casual,Lucera Women Silver Pendant,48772.jpg,Pendant,Silver,Winter,54.0,2,fashionista,0.12203546,0,89
+55286,Women,Personal Care,Beauty Accessories,2017.0,Casual,Lakme All Over Shimmer Gloss,55286.jpg,Clutches,Green,Winter,64.0,10,budget,0.07869065,0,44
+7673,Women,Accessories,Socks,2016.0,Casual,Wrangler Women's Agate Green Secret Socks,7673.jpg,Socks,Green,Summer,72.0,2,color_lover,0.31617206,0,26
+23769,Women,Accessories,Eyewear,2016.0,Casual,Oakley Women Brown Unfaithful Sunglasses,23769.jpg,Sunglasses,Brown,Winter,62.0,2,fashionista,0.1437367,0,72
+22019,Women,Apparel,Topwear,2011.0,Ethnic,Vishudh Women Printed Brown Kurta,22019.jpg,Kurtas,White,Summer,68.0,5,fashionista,0.0087587545,0,25
+13235,Men,Apparel,Topwear,2011.0,Casual,Palm Tree Kids Boys Stripes Blue Tshirts,13235.jpg,Tshirts,Blue,Summer,54.0,2,color_lover,0.3380902,0,46
+20026,Men,Apparel,Topwear,2011.0,Casual,United Colors of Benetton Men Striped White Shirt,20026.jpg,Shirts,White,Summer,62.0,1,budget,0.29672593,0,85
+57981,Women,Apparel,Topwear,2010.0,Casual,Latin Quarters Women Red Check Shirt,57981.jpg,Tops,Red,Summer,59.0,1,budget,0.3181161,0,55
+58372,Men,Apparel,Topwear,2012.0,Casual,Locomotive Men Beige T-shirt,58372.jpg,Tshirts,White,Summer,60.0,6,fashionista,0.005436642,0,93
+7217,Men,Footwear,Shoes,2011.0,Formal,Rockport Men Carnforth Soft Black Shoe,7217.jpg,Camisoles,White,Summer,38.0,2,budget,0.26479733,0,62
+21629,Women,Apparel,Innerwear,2012.0,Casual,Enamor Women Lift White Bra,21629.jpg,Bra,White,Summer,73.0,4,fashionista,0.0042184354,0,47
+25828,Women,Apparel,Topwear,2012.0,Ethnic,Diva Women Printed Pink Kurta,25828.jpg,Kurtas,Red,Fall,65.0,2,color_lover,0.061305907,0,60
+3862,Men,Apparel,Topwear,2011.0,Casual,Wrangler Men's Authentic Embro Orange T-shirt,3862.jpg,Tshirts,Yellow,Summer,66.0,3,color_lover,0.24501896,0,80
+38151,Men,Apparel,Topwear,2012.0,Casual,Wildcraft Men Black T Poly Crew T-shirt,38151.jpg,Tshirts,Navy Blue,Summer,59.0,3,budget,0.21486637,0,25
+45564,Men,Personal Care,Fragrance,2017.0,Casual,Playboy Men Hollywood Deo 50 ml Free,45564.jpg,Perfume and Body Mist,Black,Spring,23.0,4,color_lover,0.02876375,0,35
+16043,Men,Apparel,Topwear,2011.0,Casual,Highlander Men Check Blue Shirt,16043.jpg,Shirts,Blue,Fall,56.0,2,color_lover,0.12206502,0,0
+37263,Unisex,Accessories,Bags,2012.0,Casual,Vital Gear Unisex Olive Tacti Backpack,37263.jpg,Backpacks,Black,Fall,26.0,3,budget,0.64078015,1,7
+5097,Men,Apparel,Topwear,2011.0,Casual,Wrangler Men's Hand Of Quality White T-shirt,5097.jpg,Tshirts,White,Summer,89.0,3,budget,0.57185686,1,98
+40984,Boys,Apparel,Topwear,2012.0,Casual,Gini and Jony Boys United White T-shirt,40984.jpg,Tshirts,White,Summer,95.0,3,color_lover,0.7467772,1,51
+51808,Women,Apparel,Loungewear and Nightwear,2016.0,Casual,Bwitch Red Nightdress,51808.jpg,Kurtas,Red,Summer,58.0,4,budget,0.094369166,0,78
+32374,Women,Accessories,Watches,2016.0,Casual,Q&Q Women White Dial Watch,32374.jpg,Watches,White,Winter,75.0,3,fashionista,0.056297153,0,46
+4054,Men,Apparel,Topwear,2011.0,Casual,Myntra Men's Hard Work Never Killed Anyone Black T-shirt,4054.jpg,Tshirts,Navy Blue,Summer,88.0,3,fashionista,0.20675308,0,55
+7597,Men,Footwear,Shoes,2011.0,Sports,Nike Men's Backboard Red Black Shoe,7597.jpg,Casual Shoes,White,Fall,43.0,7,color_lover,0.05693022,0,85
+11285,Men,Apparel,Bottomwear,2016.0,Casual,Wrangler Men Blue Texas Jeans,11285.jpg,Jeans,Blue,Fall,49.0,5,budget,0.16432124,0,13
+59762,Women,Footwear,Shoes,2012.0,Casual,Rocia Women Brown Flats,59762.jpg,Heels,Brown,Winter,32.0,3,budget,0.6355365,1,89
+54882,Women,Accessories,Jewellery,2012.0,Casual,Ivory Tag Women Metal Charmed Turquoise Blue and Red Necklace,54882.jpg,Pendant,Silver,Fall,30.0,5,fashionista,0.08424982,0,27
+10751,Men,Apparel,Bottomwear,2011.0,Sports,Nike Men Breakline Grey Track Pants,10751.jpg,Jeans,Black,Fall,49.0,2,fashionista,0.33122942,0,86
+34059,Boys,Apparel,Bottomwear,2012.0,Casual,Gini and Jony Boys Grey Shorts,34059.jpg,Shorts,Black,Summer,26.0,4,fashionista,0.050027627,0,77
+7895,Men,Apparel,Bottomwear,2011.0,Casual,Proline Men Olive Green Checked Shorts,7895.jpg,Shorts,Black,Fall,62.0,2,color_lover,0.07007035,0,87
+39846,Girls,Apparel,Topwear,2012.0,Casual,Gini And Jony Girls Striped Green Top,39846.jpg,Tops,Green,Summer,61.0,3,fashionista,0.06633726,0,1
+44923,Men,Apparel,Bottomwear,2012.0,Casual,Jack & Jones Men Blue Jeans,44923.jpg,Jeans,Blue,Fall,64.0,4,budget,0.45466888,0,25
+55898,Women,Personal Care,Nails,2017.0,Casual,Colorbar Quick Finish Nail Lacquer 20,55898.jpg,Lip Gloss,White,Summer,26.0,4,color_lover,0.0696824,0,13
+31866,Women,Accessories,Watches,2016.0,Casual,Titan Women Raga Silver Dial Watch,31866.jpg,Watches,Gold,Winter,35.0,2,color_lover,0.13612475,0,58
+22189,Men,Footwear,Shoes,2012.0,Casual,Timberland Men Brown Casual Shoes,22189.jpg,Casual Shoes,Brown,Summer,59.0,0,budget,0.41477758,0,55
+55590,Men,Apparel,Topwear,2012.0,Casual,Peter England Men White Shirt,55590.jpg,Shirts,White,Summer,58.0,2,budget,0.12795576,0,6
+44265,Men,Accessories,Wallets,2012.0,Casual,Hidekraft Men Black Wallet,44265.jpg,Wallets,Black,Winter,52.0,2,fashionista,0.30039448,0,2
+50984,Women,Apparel,Innerwear,2017.0,Casual,Enamor Women Cameo Rose Coloured Briefs,50984.jpg,Briefs,White,Summer,43.0,7,budget,0.15528174,0,22
+42129,Men,Footwear,Shoes,2012.0,Sports,Nike Men Black Air Visi Pro Sports Shoes,42129.jpg,Sports Shoes,Black,Fall,36.0,1,budget,0.4381982,0,17
+22812,Men,Apparel,Topwear,2011.0,Casual,Locomotive Men Brown Printed T-shirt,22812.jpg,Tshirts,Black,Fall,66.0,3,color_lover,0.11022006,0,37
+30983,Men,Personal Care,Fragrance,2017.0,Casual,Ferrari Men Perfume,30983.jpg,Perfume and Body Mist,Black,Spring,73.0,3,fashionista,0.23346087,0,98
+49363,Men,Footwear,Shoes,2012.0,Casual,Vans Men Beige Casual Shoes,49363.jpg,Casual Shoes,Pink,Fall,49.0,4,budget,0.07317137,0,14
+46691,Women,Personal Care,Fragrance,2017.0,Casual,Rasasi Women Instincts Perfume,46691.jpg,Perfume and Body Mist,White,Spring,57.0,2,budget,0.35773277,0,63
+57619,Women,Personal Care,Skin Care,2017.0,Casual,Lotus Herbals Safe Sun Sunscreen SPF 40,57619.jpg,Sunscreen,Green,Spring,70.0,5,budget,0.42041805,0,88
+36830,Women,Apparel,Topwear,2012.0,Ethnic,Vishudh Women Purple Kurta,36830.jpg,Kurtas,Black,Summer,31.0,3,budget,0.28450647,0,27
+50237,Women,Accessories,Bags,2012.0,Casual,Stoln Women Pink Handbag,50237.jpg,Handbags,Orange,Summer,83.0,3,budget,0.09469636,0,73
+36455,Men,Footwear,Shoes,2012.0,Sports,Spinn Men Techno White Sports Shoes,36455.jpg,Casual Shoes,White,Summer,41.0,1,fashionista,0.05944877,0,38
+16324,Men,Apparel,Topwear,2011.0,Casual,Peter England Men Printed Navy Blue TShirt,16324.jpg,Tshirts,Blue,Fall,68.0,4,color_lover,0.16288447,0,56
+5350,Men,Footwear,Shoes,2011.0,Sports,Artengo Artengo 522c Man Synthe,5350.jpg,Sports Shoes,White,Summer,64.0,0,budget,0.5167398,1,16
+39640,Men,Footwear,Shoes,2012.0,Casual,Lotto Men Black Shoes,39640.jpg,Casual Shoes,Black,Fall,41.0,2,fashionista,0.16376892,0,85
+27067,Women,Accessories,Bags,2012.0,Casual,Yelloe Silver Metallic Finish Handbag,27067.jpg,Wallets,White,Summer,45.0,1,budget,0.35783583,0,89
+26535,Men,Footwear,Shoes,2012.0,Casual,ID Men Blue Shoes,26535.jpg,Casual Shoes,Black,Summer,90.0,3,color_lover,0.088232554,0,43
+42944,Men,Accessories,Belts,2010.0,Casual,French Connection Men Black Belt,42944.jpg,Belts,Black,Summer,46.0,4,color_lover,0.07437782,0,24
+21268,Unisex,Accessories,Bags,2011.0,Casual,Footloose Unisex Black Mojo Backpack,21268.jpg,Backpacks,Blue,Winter,31.0,2,fashionista,0.3832163,0,16
+41210,Men,Footwear,Shoes,2012.0,Casual,Nike Men Black Shoes,41210.jpg,Casual Shoes,Black,Fall,39.0,5,fashionista,0.053272255,0,12
+48387,Men,Apparel,Bottomwear,2012.0,Casual,French Connection Men Blue Jeans,48387.jpg,Jeans,Blue,Summer,22.0,3,color_lover,0.12369678,0,83
+59102,Men,Apparel,Topwear,2012.0,Casual,Just Natural Men Black Rain Jacket,59102.jpg,Jackets,Black,Summer,70.0,3,color_lover,0.21682373,0,24
+43113,Men,Personal Care,Fragrance,2017.0,,JAGUAR Men Classic Black Eau De Toilette 100 ml,43113.jpg,Perfume and Body Mist,Blue,Spring,17.0,5,fashionista,0.0980501,0,67
+56263,Men,Apparel,Loungewear and Nightwear,2016.0,Casual,SDL by Sweet Dreams Men Mustard Pyjama Set,56263.jpg,Night suits,Multi,Summer,59.0,2,budget,0.14782354,0,9
+40473,Men,Footwear,Shoes,2012.0,Sports,Fila Men Black Supercharger Sports Shoes,40473.jpg,Casual Shoes,Black,Summer,59.0,8,fashionista,0.045937214,0,66
+22477,Men,Apparel,Topwear,2012.0,Sports,Timberland Men Red T-shirt,22477.jpg,Tshirts,Red,Summer,68.0,3,budget,0.27144712,0,17
+50389,Women,Accessories,Watches,2016.0,Casual,Miss Sixty Silver Dial Watch,50389.jpg,Watches,White,Winter,49.0,3,color_lover,0.018240102,0,99
+37718,Men,Apparel,Topwear,2012.0,Casual,John Players Men Polo Navy Blue T-shirt,37718.jpg,Tshirts,Black,Summer,23.0,4,color_lover,0.18975404,0,85

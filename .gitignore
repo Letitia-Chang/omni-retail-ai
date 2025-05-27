@@ -1,0 +1,15 @@
+# OS/system
+.DS_Store
+__pycache__/
+
+# Python
+*.pyc
+.env
+
+# Data
+data/raw/
+data/processed/
+model/
+
+# Colab artifacts
+.ipynb_checkpoints/
