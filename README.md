@@ -4,7 +4,6 @@
 
 > Automatically tag products, generate ad copy, predict purchase intent, and prioritize promotions based on real-time inventory — all in one intelligent pipeline.
 
----
 
 ## ❗ Motivation: Why Build OmniRetail AI?
 
@@ -26,7 +25,6 @@ Modern retail teams face growing pressure to scale marketing efforts across thou
   - Promotions often ignore stock levels — leading to wasted spend on out-of-stock items
   - Difficult to coordinate ad campaigns with sales and inventory realities
 
----
 
 ## ✅ OmniRetail AI Solves This By:
 
@@ -36,7 +34,6 @@ Modern retail teams face growing pressure to scale marketing efforts across thou
 - 🎯 Prioritizing promotions by predicted demand × available inventory
 - 📋 Generating segmented CSV campaigns ready for deployment
 
----
 
 ## 🌍 Project Overview
 
@@ -44,7 +41,6 @@ OmniRetail AI simulates a full-stack marketing workflow using image classificati
 
 It was built as a **portfolio project** to showcase applied ML, simulation, and production thinking.
 
----
 
 ## 🔥 Demo Highlights
 
@@ -54,7 +50,6 @@ It was built as a **portfolio project** to showcase applied ML, simulation, and 
 - 📦 **Inventory-Aware Ranking:** Combines intent score × inventory to prioritize products for promotion
 - 🧠 **User Segmentation:** Tailors campaigns for user personas (budget, fashionista, color-lover)
 
----
 
 ## 🧪 Tech Stack
 
@@ -65,7 +60,6 @@ It was built as a **portfolio project** to showcase applied ML, simulation, and 
 - 🧹 Data Simulation & Rule-Based Logic
 - 📦 KaggleHub for dataset download
 
----
 
 ## 📂 Project Structure
 
@@ -96,7 +90,6 @@ omni-retail-ai/
 └── README.md
 ```
 
----
 
 ## 🔁 Feature-by-Feature Breakdown
 
@@ -110,7 +103,6 @@ omni-retail-ai/
 | `6_inventory_strategy.ipynb`  | Combines inventory × demand for promotion ranking                           |
 | `7_omni_retail_demo.ipynb`    | Executes the entire pipeline on sample product set                          |
 
----
 
 ## 🚀 Run Locally
 
@@ -138,13 +130,11 @@ python src/download_data.py
 > ⚠️ Note: The full image dataset is not included in the repository due to size.
 > Please run `src/download_data.py` to fetch it locally using KaggleHub.
 
----
 
 ## 📋 License
 
 This project is licensed under the [MIT License](LICENSE).
 
----
 
 ## 📬 Contact
 
