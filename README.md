@@ -131,12 +131,12 @@ python src/download_data.py
 > Please run `src/download_data.py` to fetch it locally using KaggleHub.
 
 
-## 📋 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 
-## 📬 Contact
+## Contact
 
 Built with 💡 by Ting Ya Chang — Data & AI Enthusiast
 
