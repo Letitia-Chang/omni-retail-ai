@@ -45,7 +45,7 @@ class ProductTagger:
 
         missing = df[~df["has_image"]]
         if not missing.empty:
-            print("❗ Missing Images:")
+            print("Missing Images:")
             for img_id in missing["id"]:
                 print(f"Image {img_id} not found")
 
@@ -56,7 +56,7 @@ class ProductTagger:
 
         article_preds, colour_preds, season_preds = [], [], []
 
-        for _, row in tqdm(df.iterrows(), total=len(df), desc="🔍 Tagging Products"):
+        for _, row in tqdm(df.iterrows(), total=len(df), desc="Tagging Products"):
             img_id = str(row["id"])
             img_path = os.path.join(self.image_dir, f"{img_id}.jpg")
 

@@ -45,7 +45,7 @@ class AdGenerator:
         prompts = df.apply(self.build_prompt, axis=1)
         ads = []
 
-        for prompt in tqdm(prompts, desc="📝 Generating Ads"):
+        for prompt in tqdm(prompts, desc="Generating Ads"):
             raw_ad = self.call_model(prompt)
             cleaned_ad = self.clean_ad(raw_ad)
             ads.append(cleaned_ad)

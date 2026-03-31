@@ -22,7 +22,7 @@ class PromotionRanker:
 
             file_path = os.path.join(self.output_dir, f"campaign_{segment}.csv")
             segment_df.head(top_n).to_csv(file_path, index=False)
-            print(f"📤 Saved top {top_n} for user type '{segment}' → {file_path}")
+            print(f"Saved top {top_n} for user type '{segment}' → {file_path}")
 
     def export_rankings(self, top_n=50):
         all_path = os.path.join(self.output_dir, "final_campaign_ranking.csv")
@@ -31,12 +31,12 @@ class PromotionRanker:
         self.df.to_csv(all_path, index=False)
         self.df.head(top_n).to_csv(top_path, index=False)
 
-        print(f"📊 Full ranked product list saved to → {all_path}")
-        print(f"⭐ Top {top_n} promoted products saved to → {top_path}")
+        print(f"Full ranked product list saved to → {all_path}")
+        print(f"Top {top_n} promoted products saved to → {top_path}")
 
     def run_full_strategy(self, top_n=50):
         self.compute_scores()
         self.export_segment_campaigns(top_n)
         self.export_rankings(top_n)
-        print(f"✅ Promotion strategy complete. All files in → {self.output_dir}")
+        print(f"Promotion strategy complete. All files in → {self.output_dir}")
         return self.df
