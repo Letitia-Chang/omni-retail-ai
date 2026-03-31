@@ -1,15 +1,15 @@
-# 🛍️ OmniRetail AI
+# OmniRetail AI
 
 **An End-to-End AI System for Smarter Retail Marketing**
 
 > Automatically tag products, generate ad copy, predict purchase intent, and prioritize promotions based on real-time inventory — all in one intelligent pipeline.
 
 
-## ❗ Motivation: Why Build OmniRetail AI?
+## Motivation: Why Build OmniRetail AI?
 
 Modern retail teams face growing pressure to scale marketing efforts across thousands of products, channels, and customers — but the tooling is outdated and disconnected.
 
-### ⚠️ Problem 1: Manual e-commerce product tagging & campaign generation
+### Problem 1: Manual e-commerce product tagging & campaign generation
 
 - **Current workflow**: Marketing teams manually pull product descriptions and images from ERP systems, categorize them (e.g., by color, type, season), and write promotional copy one-by-one.
 - **Pain points**:
@@ -17,7 +17,7 @@ Modern retail teams face growing pressure to scale marketing efforts across thou
   - Inconsistent copy quality and tone
   - Not scalable for fast-changing inventory or seasonal pushes
 
-### ⚠️ Problem 2: Predicting purchase intent & optimizing ad strategy
+### Problem 2: Predicting purchase intent & optimizing ad strategy
 
 - **Current issue**: Brands lack data-driven methods to forecast customer interest or decide which products deserve promotion.
 - **Pain points**:
@@ -26,42 +26,42 @@ Modern retail teams face growing pressure to scale marketing efforts across thou
   - Difficult to coordinate ad campaigns with sales and inventory realities
 
 
-## ✅ OmniRetail AI Solves This By:
+## OmniRetail AI Solves This By:
 
-- 🏷️ Automatically tagging and classifying products using CV models
-- ✍️ Generating brand-consistent ad copy via LLMs
-- 🧠 Predicting likelihood of purchase from realistic user behavior
-- 🎯 Prioritizing promotions by predicted demand × available inventory
-- 📋 Generating segmented CSV campaigns ready for deployment
+- Automatically tagging and classifying products using CV models
+- Generating brand-consistent ad copy via LLMs
+- Predicting likelihood of purchase from realistic user behavior
+- Prioritizing promotions by predicted demand × available inventory
+- Generating segmented CSV campaigns ready for deployment
 
 
-## 🌍 Project Overview
+## Project Overview
 
 OmniRetail AI simulates a full-stack marketing workflow using image classification, prompt-tuned text generation, behavioral prediction, and inventory-aware optimization.
 
 It was built as a **portfolio project** to showcase applied ML, simulation, and production thinking.
 
 
-## 🔥 Demo Highlights
+## Demo Highlights
 
-- 🔍 **Product** **Tagging:** Classifies article type, color, and season using MobileNetV2
-- ✍️ **Ad Copy Generation:** Uses DeepSeek-v3 via Hugging Face API to generate stylish, short-form ads
-- 📊 **Purchase Prediction:** Predicts purchase probability using XGBoost and simulated clickstream
-- 📦 **Inventory-Aware Ranking:** Combines intent score × inventory to prioritize products for promotion
-- 🧠 **User Segmentation:** Tailors campaigns for user personas (budget, fashionista, color-lover)
-
-
-## 🧪 Tech Stack
-
-- 🐍 Python, Pandas, NumPy
-- 🤖 TensorFlow, Keras (MobileNetV2), XGBoost
-- 🔤 Hugging Face Transformers (DeepSeek-v3)
-- 📊 Scikit-learn, Matplotlib
-- 🧹 Data Simulation & Rule-Based Logic
-- 📦 KaggleHub for dataset download
+- **Product** **Tagging:** Classifies article type, color, and season using MobileNetV2
+- **Ad Copy Generation:** Uses DeepSeek-v3 via Hugging Face API to generate stylish, short-form ads
+- **Purchase Prediction:** Predicts purchase probability using XGBoost and simulated clickstream
+- **Inventory-Aware Ranking:** Combines intent score × inventory to prioritize products for promotion
+- **User Segmentation:** Tailors campaigns for user personas (budget, fashionista, color-lover)
 
 
-## 📂 Project Structure
+## Tech Stack
+
+- Python, Pandas, NumPy
+- TensorFlow, Keras (MobileNetV2), XGBoost
+- Hugging Face Transformers (DeepSeek-v3)
+- Scikit-learn, Matplotlib
+- Data Simulation & Rule-Based Logic
+- KaggleHub for dataset download
+
+
+## Project Structure
 
 ```bash
 omni-retail-ai/
@@ -91,7 +91,7 @@ omni-retail-ai/
 ```
 
 
-## 🔁 Feature-by-Feature Breakdown
+## Feature-by-Feature Breakdown
 
 | Notebook                      | Description                                                                 |
 | ----------------------------- | --------------------------------------------------------------------------- |
@@ -104,13 +104,13 @@ omni-retail-ai/
 | `7_omni_retail_demo.ipynb`    | Executes the entire pipeline on sample product set                          |
 
 
-## 🚀 Run Locally
+## Run Locally
 
 1. **Clone this repo**
 
 ```bash
-git clone https://github.com/your-username/OmniRetail-AI.git
-cd OmniRetail-AI
+git clone https://github.com/Letitia-Chang/omni-retail-ai.git
+cd omni-retail-ai
 ```
 
 2. **Install dependencies**
@@ -127,7 +127,7 @@ python src/download_data.py
 
 4. **Explore notebooks or build a custom pipeline!**
 
-> ⚠️ Note: The full image dataset is not included in the repository due to size.
+> Note: The full image dataset is not included in the repository due to size.
 > Please run `src/download_data.py` to fetch it locally using KaggleHub.
 
 
@@ -140,5 +140,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 Built with 💡 by Ting Ya Chang — Data & AI Enthusiast
 
-🔗 [LinkedIn](https://www.linkedin.com/in/ting-ya-chang-analytics/)  
-📫 Email: letitiachang0807@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/tingya-chang/)  
+📫 Email: tingyachang97@gmail.com
