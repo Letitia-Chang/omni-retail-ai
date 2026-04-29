@@ -15,6 +15,7 @@ kaggle.json
 .env
 
 # Large data
+data/archive/
 data/raw/
 data/processed/
 data/interim/
