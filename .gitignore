@@ -9,5 +9,12 @@ __pycache__/
 # Colab artifacts
 .ipynb_checkpoints/
 
-# Ignore large image assets
-data/raw/images/
+# Kaggle credentials
+kaggle.json
+.kaggle/
+.env
+
+# Large data
+data/raw/
+data/processed/
+data/interim/
