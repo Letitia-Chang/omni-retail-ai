@@ -1,0 +1,286 @@
+feature,importance
+avg_selling_price,0.09391022
+index_group_Baby/Children,0.08783875
+target_audience_Menswear,0.058978714
+price_vs_customer_avg,0.057739295
+target_audience_Baby/Children,0.049778197
+unique_products,0.044052254
+index_group_Menswear,0.0331911
+age_group_Adult,0.028207848
+product_group_Accessories,0.025355976
+garment_group_Accessories,0.02389641
+max_price,0.020810843
+garment_group_Unknown,0.020575618
+is_higher_than_customer_avg,0.018218195
+color_group_Black,0.018124292
+garment_group_Swimwear,0.017336933
+index_group_Ladieswear,0.01540001
+style_streetwear,0.015171353
+high_price_purchase_ratio,0.014741658
+copy_angle_streetwear and daily_wear focused,0.014004995
+garment_group_Jersey Basic,0.013103616
+is_lower_than_customer_avg,0.012670184
+total_spend,0.012551637
+product_type_Trousers,0.012405648
+low_price_purchase_ratio,0.009747936
+total_transactions,0.009677692
+target_audience_Ladieswear,0.009048352
+product_group_Shoes,0.008610117
+target_audience_Divided,0.0069360216
+product_group_Garment Lower body,0.0067450344
+index_group_Divided,0.0065234182
+avg_price,0.0058911755
+product_type_Bag,0.0054620067
+garment_group_Trousers Denim,0.00515112
+product_type_Leggings/Tights,0.0051373187
+garment_group_Jersey Fancy,0.0050958362
+customer_segment_Loyal High-Value Customers,0.004720644
+days_since_last_purchase,0.0046631484
+product_type_Belt,0.0045477613
+customer_segment_High-Value One-Time Buyers,0.004520615
+age,0.0044774455
+color_group_White,0.004191574
+product_type_Sweater,0.004056379
+garment_group_Knitwear,0.0039908686
+product_type_Hair ties,0.0038108788
+garment_group_Dressed,0.00374397
+garment_group_Shoes,0.0035997482
+product_group_Swimwear,0.00342564
+target_audience_Sport,0.0033704385
+"garment_group_Under-, Nightwear",0.003302019
+product_group_Garment Full body,0.003298183
+customer_lifetime_days,0.0031399783
+product_type_Shorts,0.0030743943
+style_sporty,0.0030736271
+garment_group_Socks and Tights,0.0029818648
+color_group_Light Pink,0.0029065534
+age_group_Mature,0.0028285068
+copy_angle_everyday and daily_wear focused,0.0027926872
+garment_group_Blouses,0.0027641363
+product_type_Underwear bottom,0.00268387
+index_group_Sport,0.002662367
+garment_group_Trousers,0.0025351897
+copy_angle_casual and daily_wear focused,0.0025306768
+color_group_Light Purple,0.0024934206
+occasion_work_or_outing,0.002454789
+product_type_Socks,0.0024341473
+color_group_Light Turquoise,0.0023291556
+garment_group_Shorts,0.0022645274
+copy_angle_everyday and vacation focused,0.0022394513
+product_type_Hair/alice band,0.0022378797
+color_group_Light Beige,0.0021704498
+product_type_Jumpsuit/Playsuit,0.0021592262
+purchase_frequency,0.0021567442
+product_group_Nightwear,0.0021084095
+product_type_Top,0.0020210051
+product_type_Scarf,0.0019781543
+style_everyday,0.0018979688
+product_type_Earring,0.0018905001
+product_type_Other accessories,0.0018550312
+occasion_workout,0.0017754685
+color_group_Other Red,0.0016939157
+color_group_Dark Red,0.0016916154
+garment_group_Outdoor,0.0016751144
+occasion_daily_wear,0.001662367
+product_type_Hair string,0.0016244728
+product_type_Bra,0.0016179244
+product_type_Hair clip,0.001602918
+age_group_Gen Z,0.001521812
+product_type_Hoodie,0.001511247
+product_type_T-shirt,0.0014755859
+product_group_Socks & Tights,0.0014666094
+product_type_Bikini top,0.0014426564
+product_type_Coat,0.001424258
+color_group_Blue,0.0013991699
+product_type_Sarong,0.0013920172
+product_group_Garment Upper body,0.0013894329
+product_type_Unknown,0.0013714982
+garment_group_Dresses Ladies,0.0013533819
+product_type_Sneakers,0.0013137888
+product_type_Garment Set,0.001277506
+product_type_Polo shirt,0.0012646647
+product_type_Blazer,0.0012625912
+product_type_Skirt,0.0012575964
+product_type_Bracelet,0.001241336
+product_type_Jacket,0.001231443
+garment_group_Shirts,0.0012214793
+color_group_Dark Purple,0.0011978145
+product_type_Pumps,0.001189972
+product_group_Underwear,0.0011830927
+color_group_Purple,0.0011711322
+product_type_Dress,0.0011666853
+product_type_Wedge,0.0011593002
+color_group_Light Orange,0.0011335856
+color_group_Pink,0.0011069553
+garment_group_Skirts,0.0010745572
+product_type_Ring,0.0010710483
+product_type_Blouse,0.0010701066
+color_group_Other Purple,0.0010629954
+garment_group_Special Offers,0.0010529975
+style_casual,0.0010341787
+product_type_Wallet,0.0009985263
+product_type_Cardigan,0.0009811203
+color_group_Red,0.0009744061
+product_type_Boots,0.00097416114
+customer_segment_Engaged Budget Shoppers,0.0009611046
+product_type_Dungarees,0.0009603799
+color_group_Orange,0.0009560436
+product_type_Shirt,0.0009193316
+color_group_Light Red,0.00090427854
+product_type_Ballerinas,0.00087755773
+garment_group_Woven/Jersey/Knitted mix Baby,0.0008211369
+customer_segment_Inactive Budget Shoppers,0.00077525096
+color_group_Greenish Khaki,0.0007057687
+product_type_Bodysuit,0.00069331954
+color_group_Dark Blue,0.0006930735
+style_elegant,0.00068831834
+fashion_news_binary,0.0006631992
+color_group_Beige,0.000607416
+color_group_Light Green,0.0005422436
+color_group_Silver,0.0005419862
+color_group_Dark Grey,0.0005202911
+color_group_Yellow,0.00051853445
+color_group_Dark Green,0.0005101834
+age_group_Young Adult,0.00044223128
+is_active,0.00042705078
+product_type_Swimwear bottom,0.00040863283
+color_group_Other Yellow,0.000403601
+product_type_Swimsuit,0.00039713166
+product_type_Flat shoe,0.00039525316
+occasion_vacation,0.0003877979
+color_group_Yellowish Brown,0.0003765579
+product_type_Sunglasses,0.00035574698
+customer_segment_Regular Shoppers,0.0003470353
+product_type_Pyjama set,0.00033956385
+color_group_Other Pink,0.00031213183
+color_group_Light Blue,0.00028053758
+color_group_Off White,0.00027654524
+product_type_Vest top,0.000264213
+product_type_Flip flop,0.0002472024
+product_type_Hat/beanie,0.00021250827
+color_group_Grey,0.00018949286
+color_group_Dark Beige,0.0001858368
+color_group_Gold,0.00015317532
+product_type_Pyjama jumpsuit/playsuit,0.00012575301
+color_group_Dark Pink,0.00011087922
+color_group_Green,0.000108629865
+color_group_Light Grey,7.7415534e-05
+product_type_Gloves,7.735148e-05
+product_type_Umbrella,0.0
+product_type_Underdress,0.0
+product_type_Underwear Tights,0.0
+product_type_Underwear body,0.0
+product_type_Underwear corset,0.0
+product_type_Underwear set,0.0
+product_type_Toy,0.0
+product_type_Towel,0.0
+product_type_Watch,0.0
+product_type_Waterbottle,0.0
+product_type_Weekend/Gym bag,0.0
+product_type_Wireless earphone case,0.0
+product_type_Wood balls,0.0
+product_type_Zipper head,0.0
+product_type_nan,0.0
+product_group_Bags,0.0
+product_group_Cosmetic,0.0
+product_group_Fun,0.0
+product_group_Furniture,0.0
+product_group_Garment and Shoe care,0.0
+product_group_Interior textile,0.0
+product_group_Items,0.0
+product_group_Stationery,0.0
+product_group_Underwear/nightwear,0.0
+product_group_Unknown,0.0
+product_group_nan,0.0
+product_type_Tote bag,0.0
+product_type_Keychain,0.0
+product_type_Kids Underwear top,0.0
+product_type_Leg warmers,0.0
+product_type_Long John,0.0
+product_type_Marker pen,0.0
+product_type_Mobile case,0.0
+index_group_nan,0.0
+product_type_Necklace,0.0
+product_type_Night gown,0.0
+product_type_Nipple covers,0.0
+product_type_Other shoe,0.0
+product_type_Outdoor Waistcoat,0.0
+product_type_Outdoor overall,0.0
+product_type_Outdoor trousers,0.0
+product_type_Pre-walkers,0.0
+product_type_Pyjama bottom,0.0
+product_type_Tie,0.0
+product_type_Tailored Waistcoat,0.0
+product_type_Robe,0.0
+product_type_Sandals,0.0
+product_type_Sewing kit,0.0
+product_type_Swimwear top,0.0
+product_type_Shoulder bag,0.0
+product_type_Side table,0.0
+color_group_Bronze/Copper,0.0
+product_type_Swimwear set,0.0
+product_type_Straw hat,0.0
+product_type_Stain remover spray,0.0
+product_type_Soft Toys,0.0
+color_group_Dark Orange,0.0
+product_type_Slippers,0.0
+color_group_Dark Turquoise,0.0
+color_group_Dark Yellow,0.0
+product_type_Sleeping sack,0.0
+product_type_Sleep Bag,0.0
+age_group_nan,0.0
+target_audience_nan,0.0
+color_group_Greyish Beige,0.0
+material_hint_nan,0.0
+material_hint_unknown,0.0
+occasion_nan,0.0
+style_nan,0.0
+color_group_Light Yellow,0.0
+garment_group_nan,0.0
+product_type_Clothing mist,0.0
+color_group_Other,0.0
+color_group_Other Blue,0.0
+color_group_Other Green,0.0
+color_group_Other Orange,0.0
+product_type_Costumes,0.0
+product_type_Cross-body bag,0.0
+product_type_Cushion,0.0
+product_type_Dog Wear,0.0
+product_type_Dog wear,0.0
+product_type_Chem. cosmetics,0.0
+product_type_Earrings,0.0
+product_type_Eyeglasses,0.0
+product_type_Felt hat,0.0
+product_type_Fine cosmetics,0.0
+product_type_Cap/peaked,0.0
+product_type_Flat shoes,0.0
+product_type_Cap,0.0
+product_type_Giftbox,0.0
+product_type_Bumbag,0.0
+product_type_Hairband,0.0
+product_type_Bucket hat,0.0
+product_type_Hat/brim,0.0
+product_type_Headband,0.0
+product_type_Heeled sandals,0.0
+product_type_Heels,0.0
+product_type_Braces,0.0
+product_type_Bra extender,0.0
+color_group_Other Turquoise,0.0
+product_type_Bootie,0.0
+product_type_Blanket,0.0
+product_type_Beanie,0.0
+color_group_Transparent,0.0
+color_group_Turquoise,0.0
+color_group_Unknown,0.0
+copy_angle_nan,0.0
+product_type_Backpack,0.0
+color_group_nan,0.0
+product_type_Baby Bib,0.0
+garment_group_Dresses/Skirts girls,0.0
+copy_angle_elegant and daily_wear focused,0.0
+copy_angle_elegant and work_or_outing focused,0.0
+product_type_Alice band,0.0
+product_type_Accessories set,0.0
+copy_angle_sporty and workout focused,0.0
+customer_segment_nan,0.0
+product_type_Moccasins,0.0

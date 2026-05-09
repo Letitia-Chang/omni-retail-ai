@@ -1,0 +1,6 @@
+customer_segment,top_campaign_score,avg_campaign_score,recommended_products,top_strategy,primary_channel
+Engaged Budget Shoppers,0.9640000000000001,0.7161253300627661,20,"Deal-focused campaigns, bundle offers, personalized sale alerts",push_notification
+High-Value One-Time Buyers,0.6440000000000001,0.5439357549960321,20,Reactivation campaigns with premium positioning,personalized_email
+Inactive Budget Shoppers,0.804,0.6920226895606378,20,"Win-back discounts, simple value offers, clearance promotions",email
+Loyal High-Value Customers,0.804,0.5223235841569872,20,"VIP rewards, early access, premium recommendations, loyalty campaigns",email_and_app_homepage
+Regular Shoppers,0.6440000000000001,0.5486253877786595,20,"Cross-sell recommendations, seasonal edits, everyday outfit suggestions",app_homepage
