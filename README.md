@@ -1,144 +1,154 @@
 # OmniRetail AI
 
-**An End-to-End AI System for Smarter Retail Marketing**
+**An end-to-end retail marketing intelligence pipeline — from raw transaction data to a segmented, ranked, ready-to-ship campaign dashboard.**
 
-> Automatically tag products, generate ad copy, predict purchase intent, and prioritize promotions based on real-time inventory — all in one intelligent pipeline.
+Portfolio project built to demonstrate applied data science and ML engineering: customer segmentation, a supervised purchase-intent model, and an inventory-aware campaign ranking system, served through a FastAPI backend and a React dashboard.
 
+> Built for **AI/ML Engineer**, **Data Scientist**, and **Data Analyst** roles.
 
-## Motivation: Why Build OmniRetail AI?
+---
 
-Modern retail teams face growing pressure to scale marketing efforts across thousands of products, channels, and customers — but the tooling is outdated and disconnected.
+## Problem Statement
 
-### Problem 1: Manual e-commerce product tagging & campaign generation
+Retail marketing teams manage thousands of products across multiple customer segments, but typically lack the tooling to plan campaigns at that scale:
 
-- **Current workflow**: Marketing teams manually pull product descriptions and images from ERP systems, categorize them (e.g., by color, type, season), and write promotional copy one-by-one.
-- **Pain points**:
-  - Tedious and repetitive — especially for large inventories or multi-brand campaigns
-  - Inconsistent copy quality and tone
-  - Not scalable for fast-changing inventory or seasonal pushes
+- Campaign planning is manual and doesn't scale with catalog size or customer diversity.
+- Promotions are rarely tied to actual purchase likelihood or current inventory, wasting spend on products customers won't buy or that are already out of stock.
+- Customer segments exist as a concept ("loyal", "budget-conscious") but aren't operationalized into an actual targeting workflow.
 
-### Problem 2: Predicting purchase intent & optimizing ad strategy
+**OmniRetail AI** turns raw customer/transaction/product data into a ranked list of "which product, to which segment, with what strategy" — the concrete output a marketing team would act on.
 
-- **Current issue**: Brands lack data-driven methods to forecast customer interest or decide which products deserve promotion.
-- **Pain points**:
-  - No personalization or targeting based on user type or product appeal
-  - Promotions often ignore stock levels — leading to wasted spend on out-of-stock items
-  - Difficult to coordinate ad campaigns with sales and inventory realities
+## Key Features
 
-
-## OmniRetail AI Solves This By:
-
-- Automatically tagging and classifying products using CV models
-- Generating brand-consistent ad copy via LLMs
-- Predicting likelihood of purchase from realistic user behavior
-- Prioritizing promotions by predicted demand × available inventory
-- Generating segmented CSV campaigns ready for deployment
-
-
-## Project Overview
-
-OmniRetail AI simulates a full-stack marketing workflow using image classification, prompt-tuned text generation, behavioral prediction, and inventory-aware optimization.
-
-It was built as a **portfolio project** to showcase applied ML, simulation, and production thinking.
-
-
-## Demo Highlights
-
-- **Product** **Tagging:** Classifies article type, color, and season using MobileNetV2
-- **Ad Copy Generation:** Uses DeepSeek-v3 via Hugging Face API to generate stylish, short-form ads
-- **Purchase Prediction:** Predicts purchase probability using XGBoost and simulated clickstream
-- **Inventory-Aware Ranking:** Combines intent score × inventory to prioritize products for promotion
-- **User Segmentation:** Tailors campaigns for user personas (budget, fashionista, color-lover)
-
+- **Customer segmentation** — KMeans clustering over RFM-style behavioral features, producing five named segments (e.g. *Loyal High-Value Customers*, *Inactive Budget Shoppers*) with a documented strategy per segment ([reports/segment_strategy.md](reports/segment_strategy.md))
+- **Product enrichment** — derives style/occasion tags and marketing attributes per product from catalog metadata
+- **Purchase-intent prediction** — an XGBoost classifier trained on simulated customer-product interactions, predicting purchase probability per customer-product pair
+- **Inventory-aware campaign ranking** — combines purchase probability × inventory signal × segment-fit score into a single campaign score, with a human-readable ranking explanation per recommendation
+- **FastAPI backend** — serves segments, ranked campaigns, and summary stats as JSON
+- **React dashboard** — a TanStack Start app with 5 views: overview, segment explorer, campaign list, analytics, and a campaign generator
 
 ## Tech Stack
 
-- Python, Pandas, NumPy
-- TensorFlow, Keras (MobileNetV2), XGBoost
-- Hugging Face Transformers (DeepSeek-v3)
-- Scikit-learn, Matplotlib
-- Data Simulation & Rule-Based Logic
-- KaggleHub for dataset download
+| Layer | Tools |
+|---|---|
+| Data / ML | Python, pandas, NumPy, scikit-learn, XGBoost, joblib |
+| Data source | [Kaggle H&M Personalized Fashion Recommendations](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations) dataset, via `kagglehub` |
+| Backend | FastAPI, Uvicorn |
+| Frontend | React 19, TanStack Start/Router/Query, Tailwind CSS, Radix UI |
+| Deploy target | Cloudflare (Vite plugin + `wrangler` config included) |
 
+## Architecture
 
-## Project Structure
+```mermaid
+flowchart LR
+    subgraph Data
+        A[Kaggle H&M dataset] -->|scripts/download_data.py| B[data/raw/hm]
+        B -->|notebooks/01_data_schema_and_cleaning| C[data/processed/hm]
+    end
 
-```bash
-omni-retail-ai/
-├── data/
-│   ├── raw/
-│   │   ├── styles.csv              # Metadata from DeepFashion
-│   │   └── images/                 # Product images (~44K)
-│   ├── processed/                  # Labeled and scored product data
-│   ├── sample/                     # Smaller demo-ready CSVs
-├── models/                         # Trained MobileNetV2 CNN models
-├── notebooks/
-│   ├── 1_product_tagging.ipynb     # CNN model for articleType
-│   ├── 2_colour_tagging.ipynb      # CNN model for baseColour
-│   ├── 3_season_tagging.ipynb      # CNN model for season
-│   ├── 4_ad_copy_generation.ipynb  # LLM-based ad generation via API
-│   ├── 5_purchase_prediction.ipynb # XGBoost on simulated clickstream
-│   ├── 6_inventory_strategy.ipynb  # Inventory × intent ranking
-│   ├── 7_omni_retail_demo.ipynb    # End-to-end demo
-├── src/
-│   ├── download_data.py            # Download + extract DeepFashion
-│   ├── product_tagger.py           # Predict image-based tags
-│   ├── ad_copy_generator.py        # LLM wrapper for ad copy
-│   ├── purchase_predictor.py       # XGBoost wrapper for intent model
-│   ├── promotion_ranker.py         # Ranker and segmenter
-├── requirements.txt
-└── README.md
+    subgraph Pipeline["src/ pipeline, run via scripts/run_full_pipeline.py"]
+        C --> D[Customer segmentation\nsrc/models/segmentation.py]
+        C --> E[Product enrichment\nsrc/features/product_enrichment.py]
+        D --> F[Purchase intent model\nsrc/models/purchase_intent.py]
+        E --> F
+        F --> G[Campaign ranking\nsrc/campaigns/campaign_ranker.py]
+        G --> H[Campaign generation\nsrc/campaigns/campaign_generator.py]
+    end
+
+    D --> I[(saved_models/segmentation)]
+    F --> J[(saved_models/purchase_model)]
+    H --> K[(data/processed/hm/*.csv)]
+
+    K --> L[FastAPI backend]
+    I -.-> L
+    J -.-> L
+    L --> M[React dashboard]
 ```
 
+## Setup
 
-## Feature-by-Feature Breakdown
-
-| Notebook                      | Description                                                                 |
-| ----------------------------- | --------------------------------------------------------------------------- |
-| `1_product_tagging.ipynb`     | Classifies product images into article types using CNNs                     |
-| `2_colour_tagging.ipynb`      | Predicts product base color using MobileNetV2                               |
-| `3_season_tagging.ipynb`      | Predicts seasonal use (Spring/Fall/etc.) from images                        |
-| `4_ad_copy_generation.ipynb`  | Generates catchy ad text using DeepSeek LLM                                 |
-| `5_purchase_prediction.ipynb` | Simulates user-product clicks and trains XGBoost model to predict purchases |
-| `6_inventory_strategy.ipynb`  | Combines inventory × demand for promotion ranking                           |
-| `7_omni_retail_demo.ipynb`    | Executes the entire pipeline on sample product set                          |
-
-
-## Run Locally
-
-1. **Clone this repo**
+### 1. Clone and install Python dependencies
 
 ```bash
-git clone https://github.com/Letitia-Chang/omni-retail-ai.git
+git clone git@github.com:Letitia-Chang/omni-retail-ai.git
 cd omni-retail-ai
-```
-
-2. **Install dependencies**
-
-```bash
+python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. **Download the dataset (one-time setup)**
+### 2. Get the data
+
+Requires a [Kaggle](https://www.kaggle.com/) account with `kaggle.json` credentials in `~/.kaggle/` (and having accepted the competition rules).
 
 ```bash
-python src/download_data.py
+python scripts/download_data.py
 ```
 
-4. **Explore notebooks or build a custom pipeline!**
+Then run [notebooks/01_data_schema_and_cleaning.ipynb](notebooks/01_data_schema_and_cleaning.ipynb) to produce the cleaned `data/processed/hm/` tables the pipeline expects (`customers.csv`, `articles.csv`, `transactions.csv`).
 
-> Note: The full image dataset is not included in the repository due to size.
-> Please run `src/download_data.py` to fetch it locally using KaggleHub.
+### 3. Run the ML pipeline
 
+```bash
+python scripts/run_full_pipeline.py
+```
+
+This runs segmentation → product enrichment → purchase-intent modeling → campaign ranking → campaign generation in sequence, writing outputs to `data/processed/hm/` and trained models to `saved_models/`.
+
+### 4. Run the backend
+
+```bash
+uvicorn backend.main:app --reload
+```
+
+Serves at `http://127.0.0.1:8000` — see `/` for available endpoints.
+
+### 5. Run the frontend
+
+```bash
+cd frontend
+cp .env.example .env   # points the dashboard at the local API
+npm install
+npm run dev
+```
+
+Dashboard runs at `http://localhost:3000` (TanStack Start dev server).
+
+## Demo
+
+With the backend and frontend both running:
+
+1. **Overview** (`/`) — total campaigns, segment count, average campaign score
+2. **Segments** (`/segments`) — explore each customer segment and its top recommended products
+3. **Campaigns** (`/campaigns`) — search/filter the full ranked campaign list
+4. **Analytics** (`/analytics`) — score distributions and inventory-level breakdowns
+5. **Generator** (`/generator`) — walks through a single campaign recommendation with its ranking explanation
+
+## Screenshots
+
+![Customer segments (PCA projection)](reports/figures/customer_pca_plot.png)
+![KMeans elbow method](reports/figures/kmeans_elbow_method.png)
+
+*(Dashboard screenshots — see `reports/figures/` after running the demo locally.)*
+
+## Limitations & Future Improvements
+
+- **Product/ad copy generation is currently rule-based, not a live LLM call.** `product_enrichment.py` and `campaign_generator.py` use keyword-matching and string templates today — this is the most important gap to close next.
+- **Inventory levels are synthetic** (randomly assigned), not sourced from a real inventory system.
+- **Purchase-intent training pairs are simulated**, not from real clickstream/purchase logs beyond the H&M transaction history used for labels.
+- No automated tests or CI yet.
+- Product images require a separate Kaggle download and aren't bundled in the repo.
+
+**Roadmap:**
+1. ~~Repo cleanup~~ (this pass)
+2. Add retrieval-augmented generation: FAISS index over the product catalog to ground ad-copy generation in real product context, replacing `mock_llm_enrich`
+3. Wire the RAG-grounded generator into the FastAPI backend as a real endpoint
+4. Polish the frontend and deploy (Cloudflare, per the existing `wrangler.jsonc`)
+5. Add a proper evaluation write-up (model metrics, ranking quality, RAG grounding quality)
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
+[MIT](LICENSE)
 
 ## Contact
 
-Built with 💡 by Ting Ya Chang — Data & AI Enthusiast
-
-🔗 [LinkedIn](https://www.linkedin.com/in/tingya-chang/)  
-📫 Email: tingyachang97@gmail.com
+Ting Ya Chang — [LinkedIn](https://www.linkedin.com/in/tingya-chang/)
