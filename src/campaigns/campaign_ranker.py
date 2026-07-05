@@ -32,9 +32,7 @@ def prepare_campaign_dataset(
         "copy_angle",
     ]
 
-    available_product_cols = [
-        col for col in product_cols if col in articles.columns
-    ]
+    available_product_cols = [col for col in product_cols if col in articles.columns]
 
     campaign_df = campaign_df.merge(
         articles[available_product_cols],
@@ -85,7 +83,6 @@ def add_inventory_signal(
 def add_product_score(campaign_df: pd.DataFrame) -> pd.DataFrame:
     df = campaign_df.copy()
     df["product_score"] = df["purchase_probability"] * df["inventory_score"]
-
     return df
 
 
@@ -116,45 +113,30 @@ def calculate_segment_match_scores(campaign_df: pd.DataFrame) -> pd.DataFrame:
         if "budget" in segment:
             if avg_price <= low_price_threshold:
                 score += 0.25
-            if any(
-                word in copy_angle_text
-                for word in ["value", "affordable", "practical"]
-            ):
+            if any(word in copy_angle_text for word in ["value", "affordable", "practical"]):
                 score += 0.15
 
         if "premium" in segment or "high-value" in segment:
             if avg_price >= high_price_threshold:
                 score += 0.25
-            if any(
-                word in copy_angle_text
-                for word in ["premium", "quality", "elevated", "exclusive"]
-            ):
+            if any(word in copy_angle_text for word in ["premium", "quality", "elevated", "exclusive"]):
                 score += 0.15
 
         if "fashion" in segment or "engaged" in segment:
-            if any(
-                word in style
-                for word in ["streetwear", "elegant", "sporty", "trendy"]
-            ):
+            if any(word in style for word in ["streetwear", "elegant", "sporty", "trendy"]):
                 score += 0.20
             if any(word in occasion for word in ["outing", "work", "vacation"]):
                 score += 0.10
 
         if "loyal" in segment or "regular" in segment:
-            if any(
-                word in product_group
-                for word in ["garment", "accessories", "shoes"]
-            ):
+            if any(word in product_group for word in ["garment", "accessories", "shoes"]):
                 score += 0.15
             score += 0.10
 
         if "inactive" in segment or "occasional" in segment:
             if avg_price <= mid_price_threshold:
                 score += 0.20
-            if any(
-                word in copy_angle_text
-                for word in ["easy", "everyday", "low-commitment"]
-            ):
+            if any(word in copy_angle_text for word in ["easy", "everyday", "low-commitment"]):
                 score += 0.10
 
         return min(score, 1.0)
@@ -188,20 +170,45 @@ def assign_promotion_strategy(campaign_df: pd.DataFrame) -> pd.DataFrame:
         intent = row["purchase_probability"]
         inventory = row["inventory_level"]
 
-        if inventory == "high" and intent >= 0.70:
+        if inventory == "high" and intent >= 0.90:
             return "Promote aggressively"
-        if inventory == "high" and intent < 0.70:
-            return "Discount campaign"
-        if inventory == "medium" and intent >= 0.70:
-            return "Personalized recommendation"
-        if inventory == "medium" and intent < 0.70:
-            return "Awareness campaign"
-        if inventory == "low" and intent >= 0.70:
+
+        if inventory == "low" and intent >= 0.85:
             return "Premium positioning"
+
+        if inventory == "medium" and intent >= 0.80:
+            return "Personalized recommendation"
+
+        if inventory == "high" and intent < 0.80:
+            return "Discount campaign"
+
+        if inventory == "medium" and intent < 0.80:
+            return "Awareness campaign"
 
         return "Deprioritize"
 
     df["promotion_strategy"] = df.apply(strategy, axis=1)
+
+    return df
+
+
+def normalize_campaign_scores(ranked_campaigns: pd.DataFrame) -> pd.DataFrame:
+    df = ranked_campaigns.copy()
+
+    df["raw_campaign_score"] = df["avg_campaign_score"]
+
+    min_score = df["avg_campaign_score"].min()
+    max_score = df["avg_campaign_score"].max()
+
+    if max_score > min_score:
+        df["campaign_score"] = (
+            (df["avg_campaign_score"] - min_score)
+            / (max_score - min_score)
+        )
+    else:
+        df["campaign_score"] = df["avg_campaign_score"]
+
+    df["purchase_probability"] = df["avg_purchase_probability"]
 
     return df
 
@@ -226,7 +233,10 @@ def rank_campaigns_by_segment(
         "segment_copy_angle",
     ]
 
-    group_cols = [col for col in group_cols if col in campaign_df.columns]
+    group_cols = [
+        col for col in group_cols
+        if col in campaign_df.columns
+    ]
 
     segment_product_scores = (
         campaign_df.groupby(group_cols, as_index=False)
@@ -239,8 +249,32 @@ def rank_campaigns_by_segment(
         )
     )
 
+    # Deduplicate visually/marketing-equivalent products
+    dedupe_cols = [
+        "customer_segment",
+        "product_name",
+        "product_type",
+        "product_group",
+        "color_group",
+        "style",
+        "occasion",
+        "target_audience",
+    ]
+
+    dedupe_cols = [
+        col for col in dedupe_cols
+        if col in segment_product_scores.columns
+    ]
+
+    segment_product_scores = (
+        segment_product_scores
+        .sort_values("avg_campaign_score", ascending=False)
+        .drop_duplicates(subset=dedupe_cols)
+    )
+
     ranked_campaigns = (
-        segment_product_scores.sort_values(
+        segment_product_scores
+        .sort_values(
             ["customer_segment", "avg_campaign_score"],
             ascending=[True, False],
         )
@@ -249,8 +283,11 @@ def rank_campaigns_by_segment(
         .reset_index(drop=True)
     )
 
-    return ranked_campaigns
+    ranked_campaigns = normalize_campaign_scores(
+        ranked_campaigns
+    )
 
+    return ranked_campaigns
 
 def create_ranking_explanations(ranked_campaigns: pd.DataFrame) -> pd.DataFrame:
     df = ranked_campaigns.copy()
@@ -261,8 +298,10 @@ def create_ranking_explanations(ranked_campaigns: pd.DataFrame) -> pd.DataFrame:
             f"an average purchase probability of "
             f"{row['avg_purchase_probability']:.2f}, "
             f"an inventory score of {row['avg_inventory_score']:.2f}, "
-            f"and a segment match score of "
-            f"{row['avg_segment_match_score']:.2f}."
+            f"a segment match score of "
+            f"{row['avg_segment_match_score']:.2f}, "
+            f"and a raw campaign score of "
+            f"{row['raw_campaign_score']:.2f}."
         ),
         axis=1,
     )

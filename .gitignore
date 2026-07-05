@@ -6,14 +6,21 @@ __pycache__/
 *.pyc
 .env
 
-# Colab artifacts
+# Jupyter checkpoints
 .ipynb_checkpoints/
 
 # Kaggle credentials
 kaggle.json
 .kaggle/
-.env
 
-# Large data
-data/archive/raw/images/
-data/raw/hm/images
+# Large / regenerable data (see README for how to regenerate)
+data/raw/hm/
+data/processed/hm/*.csv
+!data/processed/hm/campaign_recommendations.csv
+!data/processed/hm/campaign_recommendations_final.csv
+!data/processed/hm/campaign_summary.csv
+!data/processed/hm/customer_segment_summary.csv
+!data/processed/hm/segment_campaign_summary.csv
+!data/processed/hm/segment_strategy.csv
+!data/processed/hm/ranked_campaign_recommendations.csv
+!data/processed/hm/purchase_model_feature_importance.csv
