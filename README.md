@@ -125,10 +125,30 @@ With the backend and frontend both running:
 
 ## Screenshots
 
+**Overview** — live campaign stats, top recommendations, and strategy mix
+
+![Dashboard overview](reports/figures/dashboard_overview.png)
+
+**Segments** — pick a segment, browse its AI-ranked product picks with images
+
+![Segment explorer](reports/figures/dashboard_segments.png)
+
+**Campaigns** — full ranked list with search and filters
+
+![Campaign list](reports/figures/dashboard_campaigns.png)
+
+**AI Generator** — single-campaign recommendation with its ranking explanation
+
+![AI campaign generator](reports/figures/dashboard_generator.png)
+
+**Analytics** — score and inventory distributions across segments
+
+![Analytics](reports/figures/dashboard_analytics.png)
+
+**Modeling notebooks** — customer segmentation (PCA projection and elbow method)
+
 ![Customer segments (PCA projection)](reports/figures/customer_pca_plot.png)
 ![KMeans elbow method](reports/figures/kmeans_elbow_method.png)
-
-*(Dashboard screenshots — see `reports/figures/` after running the demo locally.)*
 
 ## Limitations & Future Improvements
 

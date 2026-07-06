@@ -1,4 +1,6 @@
-# OmniRetail AI – Use Cases
+# OmniRetail AI – Use Cases (Product Vision)
+
+> **Note:** this document describes the target product vision — the use cases OmniRetail AI is designed to grow into, not all of which are built yet. For what's actually implemented today, see the [README](../README.md#key-features) and its [Limitations & Future Improvements](../README.md#limitations--future-improvements) section. In particular, ad-copy generation is currently rule-based (not a live LLM call), personalization is batch/segment-level (not real-time per-user), and there is no computer-vision component yet.
 
 ## Overview
 
