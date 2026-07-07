@@ -29,6 +29,9 @@ data/processed/hm/*.csv
 !data/processed/hm/ranked_campaign_recommendations.csv
 !data/processed/hm/purchase_model_feature_importance.csv
 !data/processed/hm/campaign_candidate_summary.csv
+# Needed at deploy time to build the RAG index (scripts/build_product_index.py) —
+# raw Kaggle data isn't in the repo, so this can't be regenerated without it.
+!data/processed/hm/articles_enriched.csv
 
 # RAG product index (~50MB — regenerate with scripts/build_product_index.py)
 saved_models/rag/

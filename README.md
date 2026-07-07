@@ -37,7 +37,7 @@ Retail marketing teams manage thousands of products across multiple customer seg
 | Data source | [Kaggle H&M Personalized Fashion Recommendations](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations) dataset, via `kagglehub` |
 | Backend | FastAPI, Uvicorn |
 | Frontend | React 19, TanStack Start/Router/Query, Tailwind CSS, Radix UI |
-| Deploy target | Cloudflare (Vite plugin + `wrangler` config included) |
+| Deploy target | Frontend on Cloudflare Workers (Vite plugin + `wrangler` config included); backend on Render (`render.yaml` blueprint included) |
 
 ## Architecture
 
@@ -138,6 +138,35 @@ With the backend and frontend both running:
 4. **Analytics** (`/analytics`) — score distributions and inventory-level breakdowns
 5. **Generator** (`/generator`) — walks through a single campaign recommendation with its ranking explanation, and generates live RAG-grounded ad copy via Claude (falls back to a pre-computed template if `ANTHROPIC_API_KEY` isn't set)
 
+## Deploying
+
+The backend and frontend deploy to separate services — Cloudflare Workers doesn't run a Python/pandas/FAISS stack, so the two halves need different hosts.
+
+### Backend → Render
+
+1. Push this repo to GitHub, then in Render: **New → Blueprint**, point it at the repo. Render picks up [`render.yaml`](render.yaml) automatically (build: `pip install -r requirements.txt && python scripts/build_product_index.py`; start: `uvicorn backend.main:app`).
+2. Set the `ANTHROPIC_API_KEY` secret in the Render dashboard (left blank in `render.yaml` on purpose — never commit real keys).
+3. Note the deployed URL (e.g. `https://omni-retail-ai-backend.onrender.com`) — the frontend needs it next.
+
+Free tier spins down after inactivity, so the first request after a while has a ~30–60s cold start — expected for a portfolio demo, not a bug.
+
+**Known limitation:** product images won't load on the deployed backend — the H&M image set (~30GB) isn't in the repo (see `.gitignore`). The dashboard already handles this gracefully (falls back to a placeholder icon per product), so nothing breaks; it's just photo-less in production. Images work fully when running locally after `scripts/download_data.py`.
+
+### Frontend → Cloudflare Workers
+
+Requires Node.js **v22+** (`wrangler` itself won't run on older versions) and a Cloudflare account.
+
+```bash
+cd frontend
+echo "VITE_API_BASE_URL=https://your-render-backend.onrender.com" > .env   # the URL from the Render step
+npm install
+npx wrangler login    # one-time browser OAuth to your Cloudflare account
+npm run build
+npm run deploy        # wraps `wrangler deploy`
+```
+
+`VITE_API_BASE_URL` is inlined into the bundle at build time, so it must point at the deployed backend *before* `npm run build` — rebuild and redeploy if the backend URL ever changes.
+
 ## Screenshots
 
 **Overview** — live campaign stats, top recommendations, and strategy mix
@@ -178,7 +207,7 @@ With the backend and frontend both running:
 1. ~~Repo cleanup~~
 2. ~~Add retrieval-augmented generation~~ — FAISS index over the product catalog (`scripts/build_product_index.py`), grounding ad-copy generation in real product context
 3. ~~Wire the RAG-grounded generator into the FastAPI backend~~ — `POST /generate-copy`, called live from the Generator view's "Regenerate" button
-4. Polish the frontend and deploy (Cloudflare, per the existing `wrangler.jsonc`)
+4. ~~Polish the frontend and deploy~~ — see [Deploying](#deploying) (Cloudflare Workers for the frontend, Render for the backend)
 5. Add a proper evaluation write-up (model metrics, ranking quality, RAG grounding quality)
 
 ## License
