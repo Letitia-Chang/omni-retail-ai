@@ -1,0 +1,13 @@
+metric,key,count,avg_purchase_probability
+strategy_mix,Awareness campaign,125539,
+strategy_mix,Discount campaign,78544,
+strategy_mix,Deprioritize,66901,
+strategy_mix,Personalized recommendation,38802,
+strategy_mix,Promote aggressively,10134,
+strategy_mix,Premium positioning,10093,
+inventory_distribution,high,103383,
+inventory_distribution,low,62289,
+inventory_distribution,medium,164341,
+inventory_risk,high,103383,0.3618040982814075
+inventory_risk,low,62289,0.34702659199435903
+inventory_risk,medium,164341,0.3587341345839619

@@ -49,6 +49,11 @@ def load_summary():
     return pd.read_csv(path)
 
 
+def load_candidate_summary():
+    path = PROCESSED_DATA_DIR / "campaign_candidate_summary.csv"
+    return pd.read_csv(path)
+
+
 @app.get("/")
 def root():
     return {
@@ -58,6 +63,7 @@ def root():
             "/campaigns",
             "/campaigns/{segment}",
             "/summary",
+            "/analytics/candidate-summary",
         ],
     }
 
@@ -96,4 +102,19 @@ def get_campaigns_by_segment(segment: str):
 @app.get("/summary")
 def get_summary():
     summary = load_summary()
+    return summary.to_dict(orient="records")
+
+
+@app.get("/analytics/candidate-summary")
+def get_candidate_summary():
+    """Strategy/inventory distributions across every scored candidate
+    product, not just the top-N recommendations `/campaigns` returns —
+    used by the Analytics dashboard to show catalog-wide distributions
+    rather than a biased sample of only the curated top picks."""
+    summary = load_candidate_summary()
+    # avg_purchase_probability is NaN for strategy_mix/inventory_distribution
+    # rows (they don't carry that metric) — swap to None, which is valid JSON.
+    # (Must cast to object first: assigning None into a float64 column just
+    # coerces it back to NaN, which the JSON encoder then rejects.)
+    summary = summary.astype(object).where(pd.notnull(summary), None)
     return summary.to_dict(orient="records")

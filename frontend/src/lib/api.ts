@@ -92,8 +92,10 @@ export type Campaign = {
   campaign_score?: number; // 0–1
   promotion_strategy?: PromotionStrategy | string;
   recommended_strategy?: string;
-  copy_angle?: string;
+  product_copy_angle?: string;
+  segment_copy_angle?: string;
   ranking_explanation?: string;
+  campaign_message?: string;
 };
 
 // ---------- HTTP ----------
@@ -110,7 +112,34 @@ export const api = {
   campaignsBySegment: (segment: string) =>
     request<Campaign[]>(`/campaigns/${encodeURIComponent(segment)}`),
   summary: () => request<Record<string, unknown>[]>("/summary"),
+  candidateSummary: () =>
+    request<CandidateSummaryRow[]>("/analytics/candidate-summary"),
 };
+
+// ---------- Catalog-wide candidate summary ----------
+//
+// `/analytics/candidate-summary` covers every scored (segment, product)
+// candidate — not just the top-N recommendations `/campaigns` returns.
+// The dashboard uses this for distribution charts (strategy mix, inventory
+// distribution) so they reflect the whole catalog rather than a sample
+// that's biased toward whatever the ranking formula favors.
+
+export type CandidateSummaryMetric =
+  | "strategy_mix"
+  | "inventory_distribution"
+  | "inventory_risk";
+
+export type CandidateSummaryRow = {
+  metric: CandidateSummaryMetric;
+  key: string;
+  count: number;
+  avg_purchase_probability: number | null;
+};
+
+export const rowsForMetric = (
+  rows: CandidateSummaryRow[],
+  metric: CandidateSummaryMetric
+): CandidateSummaryRow[] => rows.filter((r) => r.metric === metric);
 
 // ---------- Field accessors ----------
 //
@@ -147,7 +176,9 @@ export const strategyOf = (c: Campaign): string => c.promotion_strategy ?? "—"
 
 export const explanationOf = (c: Campaign): string => c.ranking_explanation ?? "";
 
-export const copyAngleOf = (c: Campaign): string => c.copy_angle ?? "";
+export const copyAngleOf = (c: Campaign): string => c.product_copy_angle ?? "";
+
+export const campaignMessageOf = (c: Campaign): string => c.campaign_message ?? "";
 
 export const inventoryLevelOf = (c: Campaign): InventoryLevel | null => {
   const raw = String(c.inventory_level ?? "").toLowerCase();

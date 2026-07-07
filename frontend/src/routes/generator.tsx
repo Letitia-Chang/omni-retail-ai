@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useEffect, useMemo, useState } from "react";
 import {
   api,
+  campaignMessageOf,
   copyAngleOf,
   explanationOf,
   probabilityOf,
@@ -132,6 +133,7 @@ function GeneratedOutput({ product, segment }: { product: Campaign; segment: str
   const cta = CTAS[Math.floor(Math.random() * CTAS.length)];
   const headline = `${hook} — ${productOf(product)}`;
   const body =
+    campaignMessageOf(product) ||
     explanationOf(product) ||
     `Built for ${segment}. ${strategyOf(product)} pricing live now.`;
 

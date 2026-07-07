@@ -5,9 +5,8 @@ import {
   api,
   colorForSegment,
   colorForStrategy,
-  inventoryLevelOf,
-  probabilityOf,
   productOf,
+  rowsForMetric,
   scoreOf,
   strategyOf,
   type Campaign,
@@ -45,6 +44,10 @@ export const Route = createFileRoute("/")({
 function Overview() {
   const campaigns = useQuery({ queryKey: ["campaigns"], queryFn: api.campaigns });
   const segments = useQuery({ queryKey: ["segments"], queryFn: api.segments });
+  const candidateSummary = useQuery({
+    queryKey: ["candidateSummary"],
+    queryFn: api.candidateSummary,
+  });
 
   const data: Campaign[] = campaigns.data ?? [];
   const avgScore =
@@ -67,10 +70,21 @@ function Overview() {
       .slice(0, 6);
   }, [data]);
 
+  // "Active strategies" stat reflects the curated recommendations actually
+  // shown (i.e. what's currently running).
   const strategyCounts = countBy(data, strategyOf);
-  const strategyData = Object.entries(strategyCounts)
-    .map(([name, value]) => ({ name, value }))
-    .sort((a, b) => b.value - a.value);
+
+  // The strategy-mix chart, on the other hand, shows the catalog-wide split
+  // across every scored candidate, not just the curated top-N — that sample
+  // skews toward whatever strategy the ranking formula favors (see
+  // build_candidate_pool), so it isn't representative on its own.
+  const strategyData = useMemo(
+    () =>
+      rowsForMetric(candidateSummary.data ?? [], "strategy_mix")
+        .map((r) => ({ name: r.key, value: r.count }))
+        .sort((a, b) => b.value - a.value),
+    [candidateSummary.data]
+  );
 
   // Top recommended products (highest scoring)
   const topProducts = useMemo(
@@ -82,27 +96,27 @@ function Overview() {
     [data]
   );
 
-  // Inventory risk vs demand: bucket by inventory level, show avg purchase prob and count.
+  // Inventory risk vs demand, computed catalog-wide (every scored candidate)
+  // rather than from the curated top-N — the curated set is deliberately
+  // biased toward high-inventory items, so it can't show stockout risk on
+  // its own (there's nothing left in the "low stock" bucket to see).
   // High demand + low stock = stockout risk; low demand + high stock = overstock risk.
   const inventoryRisk = useMemo(() => {
-    const buckets: Record<string, { sum: number; n: number }> = {
-      low: { sum: 0, n: 0 },
-      medium: { sum: 0, n: 0 },
-      high: { sum: 0, n: 0 },
-    };
-    data.forEach((c) => {
-      const lvl = inventoryLevelOf(c);
-      if (!lvl) return;
-      buckets[lvl].sum += probabilityOf(c);
-      buckets[lvl].n += 1;
+    const rows = rowsForMetric(candidateSummary.data ?? [], "inventory_risk");
+    const byLevel: Record<string, { demand: number; count: number }> = {};
+    rows.forEach((r) => {
+      byLevel[r.key] = {
+        demand: (r.avg_purchase_probability ?? 0) * 100,
+        count: r.count,
+      };
     });
     return (["low", "medium", "high"] as const).map((lvl) => ({
       level: lvl,
       label: lvl === "low" ? "Low stock" : lvl === "medium" ? "Medium" : "High stock",
-      demand: buckets[lvl].n ? buckets[lvl].sum / buckets[lvl].n : 0,
-      count: buckets[lvl].n,
+      demand: byLevel[lvl]?.demand ?? 0,
+      count: byLevel[lvl]?.count ?? 0,
     }));
-  }, [data]);
+  }, [candidateSummary.data]);
 
   const stockoutRisk = inventoryRisk[0]; // low stock bucket
   const overstockRisk = inventoryRisk[2]; // high stock bucket
@@ -202,11 +216,11 @@ function Overview() {
           <CardHeader>
             <CardTitle>Campaign strategy mix</CardTitle>
             <p className="text-xs text-muted-foreground mt-1">
-              How the AI is splitting its playbook.
+              How strategy breaks down across the full scored catalog.
             </p>
           </CardHeader>
           <CardContent className="h-72 flex flex-col">
-            {campaigns.isLoading ? (
+            {candidateSummary.isLoading ? (
               <Loading rows={3} />
             ) : (
               <>
@@ -256,11 +270,11 @@ function Overview() {
               Inventory risk vs demand
             </CardTitle>
             <p className="text-xs text-muted-foreground mt-1">
-              Average purchase intent within each stock bucket — high intent on low stock = stockout risk.
+              Average purchase intent within each stock bucket, across the full catalog — high intent on low stock = stockout risk.
             </p>
           </CardHeader>
           <CardContent>
-            {campaigns.isLoading ? (
+            {candidateSummary.isLoading ? (
               <Loading rows={3} />
             ) : (
               <>

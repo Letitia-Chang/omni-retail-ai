@@ -28,3 +28,4 @@ data/processed/hm/*.csv
 !data/processed/hm/segment_strategy.csv
 !data/processed/hm/ranked_campaign_recommendations.csv
 !data/processed/hm/purchase_model_feature_importance.csv
+!data/processed/hm/campaign_candidate_summary.csv

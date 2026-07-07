@@ -6,8 +6,8 @@ import {
   colorForSegment,
   INVENTORY_COLORS,
   INVENTORY_LEVELS,
-  inventoryLevelOf,
   probabilityOf,
+  rowsForMetric,
   scoreOf,
   type InventoryLevel,
 } from "@/lib/api";
@@ -32,6 +32,10 @@ export const Route = createFileRoute("/analytics")({
 function AnalyticsPage() {
   const campaigns = useQuery({ queryKey: ["campaigns"], queryFn: api.campaigns });
   const summary = useQuery({ queryKey: ["summary"], queryFn: api.summary });
+  const candidateSummary = useQuery({
+    queryKey: ["candidateSummary"],
+    queryFn: api.candidateSummary,
+  });
 
   const data = campaigns.data ?? [];
 
@@ -53,25 +57,21 @@ function AnalyticsPage() {
   }, [data]);
 
   const inventoryDist = useMemo(() => {
-    // inventory_level is a categorical enum (low | medium | high) — bucket by label.
+    // Catalog-wide distribution (every scored candidate), not just the
+    // curated top-N `/campaigns` returns — that sample skews toward
+    // high-inventory items since inventory_score directly boosts ranking.
+    const rows = rowsForMetric(candidateSummary.data ?? [], "inventory_distribution");
     const counts: Record<InventoryLevel, number> = { low: 0, medium: 0, high: 0 };
-    let unknown = 0;
-    data.forEach((c) => {
-      const lvl = inventoryLevelOf(c);
-      if (lvl) counts[lvl] += 1;
-      else unknown += 1;
+    rows.forEach((r) => {
+      if (r.key in counts) counts[r.key as InventoryLevel] = r.count;
     });
-    const rows = INVENTORY_LEVELS.map((lvl) => ({
+    return INVENTORY_LEVELS.map((lvl) => ({
       level: lvl,
       label: lvl.charAt(0).toUpperCase() + lvl.slice(1),
       count: counts[lvl],
       fill: INVENTORY_COLORS[lvl],
     }));
-    if (unknown > 0) {
-      rows.push({ level: "low", label: "Unknown", count: unknown, fill: "var(--muted-foreground)" });
-    }
-    return rows;
-  }, [data]);
+  }, [candidateSummary.data]);
 
   const segmentScores = useMemo(() => {
     const buckets: Record<string, { sum: number; n: number }> = {};
@@ -116,15 +116,17 @@ function AnalyticsPage() {
         </ChartCard>
 
         <ChartCard title="Inventory distribution">
-          {campaigns.isLoading ? (
+          {candidateSummary.isLoading ? (
             <Loading rows={3} />
+          ) : candidateSummary.error ? (
+            <ApiError error={candidateSummary.error} />
           ) : (
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={inventoryDist}>
                 <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                 <XAxis dataKey="label" stroke="var(--muted-foreground)" fontSize={12} />
                 <YAxis stroke="var(--muted-foreground)" fontSize={12} allowDecimals={false} />
-                <Tooltip contentStyle={chartTooltip} formatter={(v: number) => [v, "Recommendations"]} />
+                <Tooltip contentStyle={chartTooltip} formatter={(v: number) => [v, "Candidates"]} />
                 <Bar dataKey="count" radius={[6, 6, 0, 0]}>
                   {inventoryDist.map((row, i) => (
                     <Cell key={i} fill={row.fill} />
