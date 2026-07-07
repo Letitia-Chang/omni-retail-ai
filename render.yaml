@@ -3,7 +3,7 @@ services:
     name: omni-retail-ai-backend
     runtime: python
     plan: free
-    buildCommand: "pip install -r requirements.txt && python scripts/build_product_index.py"
+    buildCommand: "pip install -r requirements.txt && PYTHONPATH=. python scripts/build_product_index.py"
     startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: ANTHROPIC_API_KEY
