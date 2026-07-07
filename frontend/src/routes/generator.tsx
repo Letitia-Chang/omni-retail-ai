@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import { useEffect, useMemo, useState } from "react";
 import {
   api,
@@ -129,13 +129,30 @@ function GeneratedOutput({ product, segment }: { product: Campaign; segment: str
   const angle = copyAngleOf(product);
   const prob = probabilityOf(product);
 
-  const hook = HOOKS[Math.floor(Math.random() * HOOKS.length)];
-  const cta = CTAS[Math.floor(Math.random() * CTAS.length)];
+  const hook = useMemo(() => HOOKS[Math.floor(Math.random() * HOOKS.length)], [product.article_id]);
+  const cta = useMemo(() => CTAS[Math.floor(Math.random() * CTAS.length)], [product.article_id]);
   const headline = `${hook} — ${productOf(product)}`;
-  const body =
+
+  // Live, RAG-grounded generation: retrieves similar catalog products via the
+  // FAISS index and asks Claude to write copy from that context. Falls back
+  // to the pre-computed template (campaign_message) if the call fails — e.g.
+  // no ANTHROPIC_API_KEY configured — so the page still works without a key.
+  const liveCopy = useMutation({
+    mutationFn: () =>
+      api.generateCopy(Number(product.article_id), segment, strategyOf(product)),
+  });
+
+  useEffect(() => {
+    liveCopy.mutate();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [product.article_id]);
+
+  const fallbackBody =
     campaignMessageOf(product) ||
     explanationOf(product) ||
     `Built for ${segment}. ${strategyOf(product)} pricing live now.`;
+
+  const body = liveCopy.data?.copy || fallbackBody;
 
   return (
     <div className="space-y-4">
@@ -143,12 +160,31 @@ function GeneratedOutput({ product, segment }: { product: Campaign; segment: str
         <CardHeader>
           <div className="flex items-center gap-2 text-xs font-medium text-primary uppercase tracking-wide">
             <Sparkles className="h-3.5 w-3.5" />
-            AI-generated campaign
+            {liveCopy.isPending
+              ? "Generating with Claude, grounded on similar products…"
+              : liveCopy.isSuccess
+                ? "AI-generated campaign — live, RAG-grounded"
+                : "AI-generated campaign (fallback template)"}
           </div>
           <CardTitle className="text-2xl mt-2 leading-snug">{headline}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <p className="text-base leading-relaxed text-foreground/90">{body}</p>
+          {liveCopy.isPending ? (
+            <Loading rows={2} />
+          ) : (
+            <p className="text-base leading-relaxed text-foreground/90">{body}</p>
+          )}
+          {liveCopy.isError && (
+            <p className="text-xs text-muted-foreground">
+              Live generation unavailable ({(liveCopy.error as Error).message}) — showing the
+              pre-computed template instead.
+            </p>
+          )}
+          {liveCopy.isSuccess && liveCopy.data.grounded_on.length > 0 && (
+            <p className="text-xs text-muted-foreground">
+              Grounded on similar products: {liveCopy.data.grounded_on.slice(0, 3).join(", ")}
+            </p>
+          )}
           <div className="flex flex-wrap gap-2 items-center">
             <button className="inline-flex items-center gap-1.5 h-10 px-5 rounded-md bg-primary text-primary-foreground text-sm font-medium">
               {cta}

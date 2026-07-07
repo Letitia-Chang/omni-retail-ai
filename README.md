@@ -24,7 +24,8 @@ Retail marketing teams manage thousands of products across multiple customer seg
 - **Product enrichment** — derives style/occasion tags and marketing attributes per product from catalog metadata
 - **Purchase-intent prediction** — an XGBoost classifier trained on simulated customer-product interactions, predicting purchase probability per customer-product pair
 - **Inventory-aware campaign ranking** — combines purchase probability × inventory signal × segment-fit score into a single campaign score, with a human-readable ranking explanation per recommendation
-- **FastAPI backend** — serves segments, ranked campaigns, and summary stats as JSON
+- **RAG-grounded ad-copy generation** — a FAISS index over the ~105K-product catalog (TF-IDF + SVD embeddings) retrieves similar products at request time to ground a live Claude Haiku call, so generated copy is tied to real catalog context instead of a fixed template
+- **FastAPI backend** — serves segments, ranked campaigns, summary stats, and live RAG-grounded copy generation as JSON
 - **React dashboard** — a TanStack Start app with 5 views: overview, segment explorer, campaign list, analytics, and a campaign generator
 
 ## Tech Stack
@@ -32,6 +33,7 @@ Retail marketing teams manage thousands of products across multiple customer seg
 | Layer | Tools |
 |---|---|
 | Data / ML | Python, pandas, NumPy, scikit-learn, XGBoost, joblib |
+| RAG | FAISS, scikit-learn (TF-IDF + TruncatedSVD embeddings), Anthropic Claude (`claude-haiku-4-5`) |
 | Data source | [Kaggle H&M Personalized Fashion Recommendations](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations) dataset, via `kagglehub` |
 | Backend | FastAPI, Uvicorn |
 | Frontend | React 19, TanStack Start/Router/Query, Tailwind CSS, Radix UI |
@@ -58,10 +60,13 @@ flowchart LR
     D --> I[(saved_models/segmentation)]
     F --> J[(saved_models/purchase_model)]
     H --> K[(data/processed/hm/*.csv)]
+    E -->|scripts/build_product_index.py| N[(saved_models/rag\nFAISS index)]
 
     K --> L[FastAPI backend]
     I -.-> L
     J -.-> L
+    N -.->|retrieval| L
+    L -->|"/generate-copy"| O[Claude Haiku\nRAG-grounded ad copy]
     L --> M[React dashboard]
 ```
 
@@ -94,7 +99,17 @@ python scripts/run_full_pipeline.py
 
 This runs segmentation → product enrichment → purchase-intent modeling → campaign ranking → campaign generation in sequence, writing outputs to `data/processed/hm/` and trained models to `saved_models/`.
 
-### 4. Run the backend
+### 4. Build the RAG product index
+
+```bash
+python scripts/build_product_index.py
+```
+
+Embeds the enriched product catalog (TF-IDF + SVD) and builds a FAISS index at `saved_models/rag/` — this grounds the live ad-copy generation endpoint. Takes well under a minute (no GPU or large model download required).
+
+Then copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY` (get one at [console.anthropic.com](https://console.anthropic.com/)) — required for `/generate-copy`. Without it, the dashboard still runs fine and falls back to the pre-computed ad-copy template.
+
+### 5. Run the backend
 
 ```bash
 uvicorn backend.main:app --reload
@@ -102,7 +117,7 @@ uvicorn backend.main:app --reload
 
 Serves at `http://127.0.0.1:8000` — see `/` for available endpoints.
 
-### 5. Run the frontend
+### 6. Run the frontend
 
 ```bash
 cd frontend
@@ -121,7 +136,7 @@ With the backend and frontend both running:
 2. **Segments** (`/segments`) — explore each customer segment and its top recommended products
 3. **Campaigns** (`/campaigns`) — search/filter the full ranked campaign list
 4. **Analytics** (`/analytics`) — score distributions and inventory-level breakdowns
-5. **Generator** (`/generator`) — walks through a single campaign recommendation with its ranking explanation
+5. **Generator** (`/generator`) — walks through a single campaign recommendation with its ranking explanation, and generates live RAG-grounded ad copy via Claude (falls back to a pre-computed template if `ANTHROPIC_API_KEY` isn't set)
 
 ## Screenshots
 
@@ -152,16 +167,17 @@ With the backend and frontend both running:
 
 ## Limitations & Future Improvements
 
-- **Product/ad copy generation is currently rule-based, not a live LLM call.** `product_enrichment.py` and `campaign_generator.py` use keyword-matching and string templates today — this is the most important gap to close next.
-- **Inventory levels are synthetic** (randomly assigned), not sourced from a real inventory system.
+- **Bulk product enrichment (`product_enrichment.py`) is still rule-based** (keyword-matching for style/occasion tags) — only the on-demand ad-copy call in the Generator view (`/generate-copy`) uses a live, RAG-grounded LLM call. Extending the LLM call to bulk enrichment would mean ~105K API calls, which is a batch-processing / cost tradeoff worth its own write-up rather than doing by default.
+- **Catalog embeddings are TF-IDF + SVD, not neural embeddings.** This was a deliberate platform-driven choice — no current `torch` wheel supports both Intel macOS and the `numpy>=2` the rest of the stack (`pandas`, `scikit-learn`) requires — but a from-scratch build could swap in a hosted embedding API without touching the FAISS index or the generation call.
+- **Inventory levels are synthetic** (randomly assigned per product), not sourced from a real inventory system.
 - **Purchase-intent training pairs are simulated**, not from real clickstream/purchase logs beyond the H&M transaction history used for labels.
 - No automated tests or CI yet.
 - Product images require a separate Kaggle download and aren't bundled in the repo.
 
 **Roadmap:**
-1. ~~Repo cleanup~~ (this pass)
-2. Add retrieval-augmented generation: FAISS index over the product catalog to ground ad-copy generation in real product context, replacing `mock_llm_enrich`
-3. Wire the RAG-grounded generator into the FastAPI backend as a real endpoint
+1. ~~Repo cleanup~~
+2. ~~Add retrieval-augmented generation~~ — FAISS index over the product catalog (`scripts/build_product_index.py`), grounding ad-copy generation in real product context
+3. ~~Wire the RAG-grounded generator into the FastAPI backend~~ — `POST /generate-copy`, called live from the Generator view's "Regenerate" button
 4. Polish the frontend and deploy (Cloudflare, per the existing `wrangler.jsonc`)
 5. Add a proper evaluation write-up (model metrics, ranking quality, RAG grounding quality)
 

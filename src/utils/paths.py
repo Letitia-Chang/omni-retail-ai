@@ -10,5 +10,6 @@ MODEL_DIR = ROOT_DIR / "saved_models"
 
 SEGMENTATION_MODEL_DIR = MODEL_DIR / "segmentation"
 PURCHASE_MODEL_DIR = MODEL_DIR / "purchase_model"
+RAG_MODEL_DIR = MODEL_DIR / "rag"
 
 REPORTS_DIR = ROOT_DIR / "reports"

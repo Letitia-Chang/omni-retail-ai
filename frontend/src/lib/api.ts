@@ -106,6 +106,25 @@ async function request<T>(path: string): Promise<T> {
   return (await res.json()) as T;
 }
 
+async function requestPost<T>(path: string, body: unknown): Promise<T> {
+  const res = await fetch(`${API_BASE_URL}${path}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!res.ok) {
+    const detail = await res.json().catch(() => null);
+    throw new Error(detail?.detail ?? `${res.status} ${res.statusText} – ${path}`);
+  }
+  return (await res.json()) as T;
+}
+
+export type GeneratedCopy = {
+  article_id: number;
+  copy: string;
+  grounded_on: string[];
+};
+
 export const api = {
   segments: () => request<{ segments: string[] }>("/segments"),
   campaigns: () => request<Campaign[]>("/campaigns"),
@@ -114,6 +133,12 @@ export const api = {
   summary: () => request<Record<string, unknown>[]>("/summary"),
   candidateSummary: () =>
     request<CandidateSummaryRow[]>("/analytics/candidate-summary"),
+  generateCopy: (articleId: number, customerSegment: string, promotionStrategy: string) =>
+    requestPost<GeneratedCopy>("/generate-copy", {
+      article_id: articleId,
+      customer_segment: customerSegment,
+      promotion_strategy: promotionStrategy,
+    }),
 };
 
 // ---------- Catalog-wide candidate summary ----------

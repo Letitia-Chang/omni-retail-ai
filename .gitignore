@@ -29,3 +29,6 @@ data/processed/hm/*.csv
 !data/processed/hm/ranked_campaign_recommendations.csv
 !data/processed/hm/purchase_model_feature_importance.csv
 !data/processed/hm/campaign_candidate_summary.csv
+
+# RAG product index (~50MB — regenerate with scripts/build_product_index.py)
+saved_models/rag/

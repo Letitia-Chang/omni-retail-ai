@@ -5,8 +5,15 @@ from pathlib import Path
 from fastapi.staticfiles import StaticFiles
 
 import pandas as pd
+from dotenv import load_dotenv
+from pydantic import BaseModel
 
-from src.utils.paths import PROCESSED_DATA_DIR
+from src.utils.paths import PROCESSED_DATA_DIR, RAG_MODEL_DIR
+from src.rag.product_index import load_product_index, retrieve_similar_products
+from src.rag.copy_generator import generate_grounded_copy
+from src.features.product_enrichment import create_product_context
+
+load_dotenv()
 
 app = FastAPI(
     title="OmniRetail AI API",
@@ -54,6 +61,47 @@ def load_candidate_summary():
     return pd.read_csv(path)
 
 
+_product_index_cache = None
+_articles_cache = None
+
+
+def get_product_index():
+    """Load the FAISS product index lazily and cache it for the process
+    lifetime — it's ~50MB and rebuilding/reloading it per request would make
+    every /generate-copy call noticeably slower for no benefit."""
+    global _product_index_cache
+
+    if _product_index_cache is None:
+        if not (RAG_MODEL_DIR / "product_catalog.faiss").exists():
+            raise HTTPException(
+                status_code=503,
+                detail=(
+                    "Product index not found. Run "
+                    "`python scripts/build_product_index.py` first."
+                ),
+            )
+        _product_index_cache = load_product_index(RAG_MODEL_DIR)
+
+    return _product_index_cache
+
+
+def get_articles():
+    global _articles_cache
+
+    if _articles_cache is None:
+        _articles_cache = pd.read_csv(
+            PROCESSED_DATA_DIR / "articles_enriched.csv"
+        )
+
+    return _articles_cache
+
+
+class GenerateCopyRequest(BaseModel):
+    article_id: int
+    customer_segment: str
+    promotion_strategy: str = "Promote aggressively"
+
+
 @app.get("/")
 def root():
     return {
@@ -64,6 +112,7 @@ def root():
             "/campaigns/{segment}",
             "/summary",
             "/analytics/candidate-summary",
+            "/generate-copy",
         ],
     }
 
@@ -118,3 +167,47 @@ def get_candidate_summary():
     # coerces it back to NaN, which the JSON encoder then rejects.)
     summary = summary.astype(object).where(pd.notnull(summary), None)
     return summary.to_dict(orient="records")
+
+
+@app.post("/generate-copy")
+def generate_copy(request: GenerateCopyRequest):
+    """RAG-grounded ad copy for a single product, generated live.
+
+    Retrieves similar catalog products via the FAISS index (TF-IDF + SVD
+    embeddings) to ground the prompt, then calls Claude Haiku to write the
+    copy — replacing the rule-based template in campaign_generator.py with
+    an actual LLM call for the interactive "Regenerate" flow."""
+    index, article_ids, vectorizer, svd = get_product_index()
+    articles = get_articles()
+
+    matches = articles[articles["article_id"] == request.article_id]
+    if matches.empty:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No product found for article_id: {request.article_id}",
+        )
+    product_row = matches.iloc[0]
+
+    query_text = create_product_context(product_row)
+    similar_products = retrieve_similar_products(
+        query_text, index, article_ids, articles, vectorizer, svd, top_k=5
+    )
+
+    try:
+        copy = generate_grounded_copy(
+            product_row=product_row,
+            similar_products=similar_products,
+            customer_segment=request.customer_segment,
+            promotion_strategy=request.promotion_strategy,
+        )
+    except Exception as exc:
+        raise HTTPException(
+            status_code=502,
+            detail=f"Ad copy generation failed: {exc}",
+        )
+
+    return {
+        "article_id": request.article_id,
+        "copy": copy,
+        "grounded_on": similar_products["product_name"].tolist(),
+    }

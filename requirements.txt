@@ -15,3 +15,11 @@ kagglehub
 # API backend
 fastapi
 uvicorn[standard]
+python-dotenv
+
+# RAG: product catalog retrieval (TF-IDF + SVD embeddings, indexed with FAISS)
+# and grounded ad-copy generation. Deliberately avoids sentence-transformers/
+# torch here: no current torch wheel supports both Intel macOS and numpy 2.x,
+# which the rest of this stack (pandas/scikit-learn) requires.
+faiss-cpu
+anthropic
