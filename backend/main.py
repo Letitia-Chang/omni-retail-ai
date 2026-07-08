@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
 from slowapi.util import get_remote_address
 
 from src.utils.paths import PROCESSED_DATA_DIR, RAG_MODEL_DIR
@@ -26,12 +27,19 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# /generate-copy calls the paid Claude API, and this backend is publicly
-# deployed — rate-limit per client IP, plus a hard daily cap below as a
-# backstop against abuse spread across many IPs.
-limiter = Limiter(key_func=get_remote_address)
+# This is a public portfolio demo on usage-billed hosting (Railway), so every
+# route gets a default rate limit — not just /generate-copy — otherwise a
+# scripted loop against e.g. /campaigns runs up real compute/bandwidth cost
+# even though that endpoint doesn't call any paid API. /generate-copy layers
+# a much stricter limit (and a daily cap) on top, since it also costs money
+# per call via the Anthropic API.
+limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+# default_limits above only takes effect on routes without their own
+# @limiter.limit(...) decorator via this middleware — without it, undecorated
+# routes (everything except /generate-copy) would be completely unlimited.
+app.add_middleware(SlowAPIMiddleware)
 
 IMAGES_DIR = (
     Path(__file__).resolve().parent.parent
@@ -58,19 +66,37 @@ app.add_middleware(
 )
 
 
+_campaigns_cache = None
+_summary_cache = None
+_candidate_summary_cache = None
+
+
 def load_campaigns():
-    path = PROCESSED_DATA_DIR / "campaign_recommendations_final.csv"
-    return pd.read_csv(path)
+    # These CSVs are pipeline output, static for the life of the running
+    # process (they only change on the next deploy) — re-reading and
+    # re-parsing them from disk on every request is wasted compute, which
+    # matters on usage-billed hosting even for endpoints with no abuse risk.
+    global _campaigns_cache
+    if _campaigns_cache is None:
+        path = PROCESSED_DATA_DIR / "campaign_recommendations_final.csv"
+        _campaigns_cache = pd.read_csv(path)
+    return _campaigns_cache
 
 
 def load_summary():
-    path = PROCESSED_DATA_DIR / "campaign_summary.csv"
-    return pd.read_csv(path)
+    global _summary_cache
+    if _summary_cache is None:
+        path = PROCESSED_DATA_DIR / "campaign_summary.csv"
+        _summary_cache = pd.read_csv(path)
+    return _summary_cache
 
 
 def load_candidate_summary():
-    path = PROCESSED_DATA_DIR / "campaign_candidate_summary.csv"
-    return pd.read_csv(path)
+    global _candidate_summary_cache
+    if _candidate_summary_cache is None:
+        path = PROCESSED_DATA_DIR / "campaign_candidate_summary.csv"
+        _candidate_summary_cache = pd.read_csv(path)
+    return _candidate_summary_cache
 
 
 _product_index_cache = None
