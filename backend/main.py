@@ -1,4 +1,6 @@
-from fastapi import FastAPI, HTTPException
+import datetime
+
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 from pathlib import Path
@@ -7,6 +9,9 @@ from fastapi.staticfiles import StaticFiles
 import pandas as pd
 from dotenv import load_dotenv
 from pydantic import BaseModel
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
 
 from src.utils.paths import PROCESSED_DATA_DIR, RAG_MODEL_DIR
 from src.rag.product_index import load_product_index, retrieve_similar_products
@@ -20,6 +25,13 @@ app = FastAPI(
     description="Backend API for campaign recommendations and retail marketing insights.",
     version="0.1.0",
 )
+
+# /generate-copy calls the paid Claude API, and this backend is publicly
+# deployed — rate-limit per client IP, plus a hard daily cap below as a
+# backstop against abuse spread across many IPs.
+limiter = Limiter(key_func=get_remote_address)
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 IMAGES_DIR = (
     Path(__file__).resolve().parent.parent
@@ -102,6 +114,25 @@ class GenerateCopyRequest(BaseModel):
     promotion_strategy: str = "Promote aggressively"
 
 
+MAX_DAILY_GENERATE_CALLS = 200
+_daily_call_tracker = {"date": None, "count": 0}
+
+
+def check_daily_generate_cap():
+    today = datetime.date.today()
+    if _daily_call_tracker["date"] != today:
+        _daily_call_tracker["date"] = today
+        _daily_call_tracker["count"] = 0
+
+    if _daily_call_tracker["count"] >= MAX_DAILY_GENERATE_CALLS:
+        raise HTTPException(
+            status_code=429,
+            detail="Daily ad-copy generation limit reached. Try again tomorrow.",
+        )
+
+    _daily_call_tracker["count"] += 1
+
+
 @app.get("/")
 def root():
     return {
@@ -170,21 +201,24 @@ def get_candidate_summary():
 
 
 @app.post("/generate-copy")
-def generate_copy(request: GenerateCopyRequest):
+@limiter.limit("10/minute")
+def generate_copy(request: Request, body: GenerateCopyRequest):
     """RAG-grounded ad copy for a single product, generated live.
 
     Retrieves similar catalog products via the FAISS index (TF-IDF + SVD
     embeddings) to ground the prompt, then calls Claude Haiku to write the
     copy — replacing the rule-based template in campaign_generator.py with
     an actual LLM call for the interactive "Regenerate" flow."""
+    check_daily_generate_cap()
+
     index, article_ids, vectorizer, svd = get_product_index()
     articles = get_articles()
 
-    matches = articles[articles["article_id"] == request.article_id]
+    matches = articles[articles["article_id"] == body.article_id]
     if matches.empty:
         raise HTTPException(
             status_code=404,
-            detail=f"No product found for article_id: {request.article_id}",
+            detail=f"No product found for article_id: {body.article_id}",
         )
     product_row = matches.iloc[0]
 
@@ -197,8 +231,8 @@ def generate_copy(request: GenerateCopyRequest):
         copy = generate_grounded_copy(
             product_row=product_row,
             similar_products=similar_products,
-            customer_segment=request.customer_segment,
-            promotion_strategy=request.promotion_strategy,
+            customer_segment=body.customer_segment,
+            promotion_strategy=body.promotion_strategy,
         )
     except Exception as exc:
         raise HTTPException(
@@ -207,7 +241,7 @@ def generate_copy(request: GenerateCopyRequest):
         )
 
     return {
-        "article_id": request.article_id,
+        "article_id": body.article_id,
         "copy": copy,
         "grounded_on": similar_products["product_name"].tolist(),
     }

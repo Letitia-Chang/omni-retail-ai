@@ -23,3 +23,6 @@ python-dotenv
 # which the rest of this stack (pandas/scikit-learn) requires.
 faiss-cpu
 anthropic
+
+# Rate limiting for the public /generate-copy endpoint
+slowapi
