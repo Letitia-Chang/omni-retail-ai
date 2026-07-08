@@ -27,6 +27,7 @@ Retail marketing teams manage thousands of products across multiple customer seg
 - **RAG-grounded ad-copy generation** — a FAISS index over the ~105K-product catalog (TF-IDF + SVD embeddings) retrieves similar products at request time to ground a live Claude Haiku call, so generated copy is tied to real catalog context instead of a fixed template
 - **FastAPI backend** — serves segments, ranked campaigns, summary stats, and live RAG-grounded copy generation as JSON
 - **React dashboard** — a TanStack Start app with 5 views: overview, segment explorer, campaign list, analytics, and a campaign generator
+- **Real, reproducible evaluation** — silhouette score, ROC-AUC, ranking-quality distributions, and a quantitative RAG grounding check, all computed from this repo's own pipeline ([reports/evaluation.md](reports/evaluation.md))
 
 ## Tech Stack
 
@@ -208,7 +209,7 @@ npm run deploy        # wraps `wrangler deploy`
 2. ~~Add retrieval-augmented generation~~ — FAISS index over the product catalog (`scripts/build_product_index.py`), grounding ad-copy generation in real product context
 3. ~~Wire the RAG-grounded generator into the FastAPI backend~~ — `POST /generate-copy`, called live from the Generator view's "Regenerate" button
 4. ~~Polish the frontend and deploy~~ — see [Deploying](#deploying) (Cloudflare Workers for the frontend, Render for the backend)
-5. Add a proper evaluation write-up (model metrics, ranking quality, RAG grounding quality)
+5. ~~Add a proper evaluation write-up~~ — see [reports/evaluation.md](reports/evaluation.md) (model metrics, ranking quality, RAG grounding quality)
 
 ## License
 
