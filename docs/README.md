@@ -30,5 +30,5 @@ OmniRetail AI turns raw customer/transaction/product data into a ranked list of 
 ## Live demo
 
 - **Dashboard:** [tanstack-start-app.letitiachang0807-bb0.workers.dev](https://tanstack-start-app.letitiachang0807-bb0.workers.dev)
-- **API:** [omni-retail-ai-backend.onrender.com](https://omni-retail-ai-backend.onrender.com)
+- **API:** [omni-retail-ai-backend-production.up.railway.app](https://omni-retail-ai-backend-production.up.railway.app) (Railway; the Render deployment is suspended — see [Deployment](deployment.md) for both options)
 - **Source:** [github.com/Letitia-Chang/omni-retail-ai](https://github.com/Letitia-Chang/omni-retail-ai)

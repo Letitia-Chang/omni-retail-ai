@@ -24,5 +24,5 @@
 
 - **Tests + CI** — currently zero automated tests. Even a small `pytest` suite (campaign scoring math, the ranking pipeline, an API smoke test) plus a GitHub Actions workflow on push would be the highest-leverage next addition.
 - **Fix the cluster-name mapping** — map segment names by cluster characteristics (e.g., sort by avg spend) instead of raw cluster index.
-- **Custom domains** — currently on the default `workers.dev` and `onrender.com` subdomains.
+- **Custom domains** — currently on the default `workers.dev` and `up.railway.app` subdomains.
 - **Re-pin/retrain saved models** — the segmentation and purchase-intent models were saved under an older scikit-learn version than what's currently installed; harmless today (a version-mismatch warning on load) but worth cleaning up.
