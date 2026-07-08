@@ -7,7 +7,7 @@
 | Data source | [Kaggle H&M Personalized Fashion Recommendations](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations) dataset, via `kagglehub` |
 | Backend | FastAPI, Uvicorn, slowapi (rate limiting) |
 | Frontend | React 19, TanStack Start/Router/Query, Tailwind CSS, Radix UI |
-| Deploy target | Frontend on Cloudflare Workers (Vite plugin + `wrangler` config included); backend on Render (`render.yaml` blueprint included) |
+| Deploy target | Frontend on Cloudflare Workers (Vite plugin + `wrangler` config included); backend on Railway or Render (`railway.json` / `render.yaml` both included) |
 
 ## Notable choices worth explaining
 
@@ -15,4 +15,4 @@
 
 **Why Claude Haiku for generation?** The ad-copy task — a couple of grounded sentences per product, called live and interactively — is short-form and latency-sensitive, which is exactly Haiku's profile. There was no need for a frontier-tier model here.
 
-**Why two separate deploy targets?** Cloudflare Workers doesn't run a Python/pandas/FAISS stack, so the backend (FastAPI + the full ML/RAG pipeline) deploys to Render instead, while the frontend deploys to Cloudflare Workers. See [Deployment](deployment.md).
+**Why two separate deploy targets?** Cloudflare Workers doesn't run a Python/pandas/FAISS stack, so the backend (FastAPI + the full ML/RAG pipeline) deploys to Railway or Render instead, while the frontend deploys to Cloudflare Workers. See [Deployment](deployment.md).

@@ -38,7 +38,7 @@ Retail marketing teams manage thousands of products across multiple customer seg
 | Data source | [Kaggle H&M Personalized Fashion Recommendations](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations) dataset, via `kagglehub` |
 | Backend | FastAPI, Uvicorn |
 | Frontend | React 19, TanStack Start/Router/Query, Tailwind CSS, Radix UI |
-| Deploy target | Frontend on Cloudflare Workers (Vite plugin + `wrangler` config included); backend on Render (`render.yaml` blueprint included) |
+| Deploy target | Frontend on Cloudflare Workers (Vite plugin + `wrangler` config included); backend on Railway or Render (`railway.json` / `render.yaml` both included) |
 
 ## Architecture
 
@@ -143,15 +143,17 @@ With the backend and frontend both running:
 
 The backend and frontend deploy to separate services — Cloudflare Workers doesn't run a Python/pandas/FAISS stack, so the two halves need different hosts.
 
-### Backend → Render
+### Backend: two supported targets
 
-1. Push this repo to GitHub, then in Render: **New → Blueprint**, point it at the repo. Render picks up [`render.yaml`](render.yaml) automatically (build: `pip install -r requirements.txt && python scripts/build_product_index.py`; start: `uvicorn backend.main:app`).
-2. Set the `ANTHROPIC_API_KEY` secret in the Render dashboard (left blank in `render.yaml` on purpose — never commit real keys).
-3. Note the deployed URL (e.g. `https://omni-retail-ai-backend.onrender.com`) — the frontend needs it next.
+Both configs are kept in the repo — [`render.yaml`](render.yaml) and [`railway.json`](railway.json) — so switching between them doesn't need a rewrite.
 
-Free tier spins down after inactivity, so the first request after a while has a ~30–60s cold start — expected for a portfolio demo, not a bug.
+**Option A: Railway** (paid, no cold start) — **New Project → Deploy from GitHub repo** in Railway, picks up `railway.json` automatically. Set `ANTHROPIC_API_KEY` in the dashboard. Hobby plan is $5/month (includes $5 usage credit); a service this size typically runs $5–15/month total, but stays running with no sleep-on-idle cold start.
 
-**Known limitation:** product images won't load on the deployed backend — the H&M image set (~30GB) isn't in the repo (see `.gitignore`). The dashboard already handles this gracefully (falls back to a placeholder icon per product), so nothing breaks; it's just photo-less in production. Images work fully when running locally after `scripts/download_data.py`.
+**Option B: Render** (free, cold start) — push to GitHub, then in Render: **New → Blueprint**, picks up `render.yaml` automatically. Set `ANTHROPIC_API_KEY` in the dashboard. Free tier spins down after inactivity, so the first request after a while has a ~30–60s cold start — the tradeoff for $0/month.
+
+Either way, note the deployed URL — the frontend needs it next.
+
+**Known limitation on either host:** product images won't load on the deployed backend — the H&M image set (~30GB) isn't in the repo (see `.gitignore`). The dashboard already handles this gracefully (falls back to a placeholder icon per product), so nothing breaks; it's just photo-less in production. Images work fully when running locally after `scripts/download_data.py`.
 
 ### Frontend → Cloudflare Workers
 
@@ -159,7 +161,7 @@ Requires Node.js **v22+** (`wrangler` itself won't run on older versions) and a 
 
 ```bash
 cd frontend
-echo "VITE_API_BASE_URL=https://your-render-backend.onrender.com" > .env   # the URL from the Render step
+echo "VITE_API_BASE_URL=https://your-backend-url" > .env   # the URL from the backend deploy step above
 npm install
 npx wrangler login    # one-time browser OAuth to your Cloudflare account
 npm run build
@@ -208,7 +210,7 @@ npm run deploy        # wraps `wrangler deploy`
 1. ~~Repo cleanup~~
 2. ~~Add retrieval-augmented generation~~ — FAISS index over the product catalog (`scripts/build_product_index.py`), grounding ad-copy generation in real product context
 3. ~~Wire the RAG-grounded generator into the FastAPI backend~~ — `POST /generate-copy`, called live from the Generator view's "Regenerate" button
-4. ~~Polish the frontend and deploy~~ — see [Deploying](#deploying) (Cloudflare Workers for the frontend, Render for the backend)
+4. ~~Polish the frontend and deploy~~ — see [Deploying](#deploying) (Cloudflare Workers for the frontend, Railway or Render for the backend)
 5. ~~Add a proper evaluation write-up~~ — see [reports/evaluation.md](reports/evaluation.md) (model metrics, ranking quality, RAG grounding quality)
 
 ## License
