@@ -12,7 +12,6 @@ from pydantic import BaseModel
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
-from slowapi.util import get_remote_address
 
 from src.utils.paths import PROCESSED_DATA_DIR, RAG_MODEL_DIR
 from src.rag.product_index import load_product_index, retrieve_similar_products
@@ -27,13 +26,35 @@ app = FastAPI(
     version="0.1.0",
 )
 
+def get_client_ip(request: Request) -> str:
+    """Real client IP for rate-limiting, not the proxy's own connection.
+
+    Behind Railway's (or any) reverse proxy, `request.client.host` is the
+    proxy's internal connection to this container, not the visitor's IP —
+    using it as the rate-limit key means every request can look like it's
+    from a different, uncounted "client". slowapi's own `get_remote_address`
+    only reads that raw peer address, and its `get_ipaddr` helper has a bug
+    (it checks for a header literally named "X_FORWARDED_FOR" with an
+    underscore, which real HTTP headers never use — they use hyphens,
+    "X-Forwarded-For" — so it never actually matches). Read the real header
+    name explicitly instead.
+    """
+    forwarded_for = request.headers.get("X-Forwarded-For")
+    if forwarded_for:
+        # First entry in the chain is the original client.
+        return forwarded_for.split(",")[0].strip()
+    if request.client and request.client.host:
+        return request.client.host
+    return "127.0.0.1"
+
+
 # This is a public portfolio demo on usage-billed hosting (Railway), so every
 # route gets a default rate limit — not just /generate-copy — otherwise a
 # scripted loop against e.g. /campaigns runs up real compute/bandwidth cost
 # even though that endpoint doesn't call any paid API. /generate-copy layers
 # a much stricter limit (and a daily cap) on top, since it also costs money
 # per call via the Anthropic API.
-limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
+limiter = Limiter(key_func=get_client_ip, default_limits=["60/minute"])
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 # default_limits above only takes effect on routes without their own
