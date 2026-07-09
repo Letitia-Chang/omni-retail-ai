@@ -1,5 +1,5 @@
 customer_segment,total_recommended_products,avg_campaign_score,avg_purchase_probability,total_reachable_customers
-Engaged Budget Shoppers,20,0.9882626531852454,0.9765253063704906,82
+Engaged Budget Shoppers,20,0.9882360231123286,0.9764720462246572,103
 High-Value One-Time Buyers,20,0.9678194190416667,0.9856388380833334,24
 Inactive Budget Shoppers,20,0.9926473022516475,0.9852946045032953,125
 Loyal High-Value Customers,20,0.9825540303,0.9651080606000001,36

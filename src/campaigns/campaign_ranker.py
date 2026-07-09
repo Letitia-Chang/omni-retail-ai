@@ -200,13 +200,30 @@ def assign_promotion_strategy(campaign_df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def normalize_campaign_scores(ranked_campaigns: pd.DataFrame) -> pd.DataFrame:
+def normalize_campaign_scores(
+    ranked_campaigns: pd.DataFrame,
+    min_score=None,
+    max_score=None,
+) -> pd.DataFrame:
+    """Min-max normalize avg_campaign_score into a 0-1 "match %" score.
+
+    min_score/max_score default to the bounds of `ranked_campaigns` itself,
+    but callers should pass the bounds of the *full* candidate pool instead
+    when `ranked_campaigns` is already a curated top-N slice. The top-N's
+    raw scores cluster tightly (e.g. 0.91-0.995 in practice) since they're
+    all "good" picks by construction — normalizing against just that narrow
+    band stretches a real few-percent quality gap between segments into a
+    misleading 6%-97% spread. Normalizing against the full population's
+    much wider range keeps the same 0-1 scale meaningful.
+    """
     df = ranked_campaigns.copy()
 
     df["raw_campaign_score"] = df["avg_campaign_score"]
 
-    min_score = df["avg_campaign_score"].min()
-    max_score = df["avg_campaign_score"].max()
+    if min_score is None:
+        min_score = df["avg_campaign_score"].min()
+    if max_score is None:
+        max_score = df["avg_campaign_score"].max()
 
     if max_score > min_score:
         df["campaign_score"] = (
@@ -308,7 +325,9 @@ def rank_campaigns_by_segment(
     )
 
     ranked_campaigns = normalize_campaign_scores(
-        ranked_campaigns
+        ranked_campaigns,
+        min_score=segment_product_scores["avg_campaign_score"].min(),
+        max_score=segment_product_scores["avg_campaign_score"].max(),
     )
 
     return ranked_campaigns
