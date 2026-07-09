@@ -191,8 +191,15 @@ export const getSessionAdCopies = (): SessionAdCopy[] => {
   }
 };
 
+/** Upsert by (article_id, customer_segment) rather than append — clicking
+ * "Regenerate" on a product replaces its previous attempt in the session
+ * list instead of piling up near-duplicate cards that differ only in copy
+ * text, which is what a plain append produced. */
 export const addSessionAdCopy = (entry: SessionAdCopy): SessionAdCopy[] => {
-  const next = [entry, ...getSessionAdCopies()].slice(0, SESSION_MAX_ENTRIES);
+  const existing = getSessionAdCopies().filter(
+    (c) => !(c.article_id === entry.article_id && c.customer_segment === entry.customer_segment)
+  );
+  const next = [entry, ...existing].slice(0, SESSION_MAX_ENTRIES);
   window.sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(next));
   return next;
 };
