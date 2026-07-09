@@ -14,6 +14,7 @@ import {
   type Campaign,
 } from "@/lib/api";
 import { PageHeader } from "@/components/PageHeader";
+import { HowThisWorks } from "@/components/WelcomeBanner";
 import { ApiError, Loading } from "@/components/ApiError";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -54,6 +55,13 @@ function Generator() {
         title="AI Campaign Generator"
         description="Spin up on-brand campaign messages from the model's top recommendations."
       />
+
+      <HowThisWorks id="generator">
+        Each generation retrieves similar products from the catalog via a vector index, then asks
+        Claude to write copy grounded only in that real context — so it can't invent product
+        details that aren't there. Every result also lands on the Ad Copies page automatically,
+        but only for this session — it disappears on refresh.
+      </HowThisWorks>
 
       {segments.error && <ApiError error={segments.error} />}
 

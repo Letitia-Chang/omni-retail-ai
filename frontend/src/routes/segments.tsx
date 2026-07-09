@@ -6,7 +6,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { ApiError, Loading } from "@/components/ApiError";
 import { CampaignCard } from "@/components/CampaignCard";
 import { SegmentCard } from "@/components/SegmentCard";
-import { WelcomeBanner } from "@/components/WelcomeBanner";
+import { HowThisWorks } from "@/components/WelcomeBanner";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles } from "lucide-react";
 
@@ -56,7 +56,11 @@ function SegmentExplorer() {
         description="Pick a customer segment to load AI-ranked product recommendations, generated copy, and channel suggestions in real time."
       />
 
-      <WelcomeBanner />
+      <HowThisWorks id="segments">
+        OmniRetail AI scores every product against every customer segment, then
+        curates the best campaign picks per segment — pick one below to see
+        AI-ranked products, why each was chosen, and ready-to-use ad copy.
+      </HowThisWorks>
 
       {segments.error && <ApiError error={segments.error} />}
 

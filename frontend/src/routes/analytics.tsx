@@ -11,6 +11,7 @@ import {
   type InventoryLevel,
 } from "@/lib/api";
 import { PageHeader } from "@/components/PageHeader";
+import { HowThisWorks } from "@/components/WelcomeBanner";
 import { ApiError, Loading } from "@/components/ApiError";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -92,6 +93,12 @@ function AnalyticsPage() {
         title="Analytics"
         description="Campaign and segment performance distilled from the FastAPI dataset."
       />
+
+      <HowThisWorks id="analytics">
+        These charts are computed across the full ~330K scored candidates, not just the curated
+        picks — the curated set is deliberately biased toward the best matches, so it can't show
+        a representative catalog-wide distribution on its own.
+      </HowThisWorks>
 
       {campaigns.error && <ApiError error={campaigns.error} />}
 

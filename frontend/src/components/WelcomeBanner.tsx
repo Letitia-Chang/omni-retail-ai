@@ -1,19 +1,24 @@
 import { useEffect, useState } from "react";
 import { Sparkles, X } from "lucide-react";
 
-const STORAGE_KEY = "omniretail-welcome-dismissed";
+const STORAGE_PREFIX = "omniretail-how-this-works-dismissed:";
 
-export function WelcomeBanner() {
+/** One-line "How this works" explainer, dismissible independently per page
+ * (each `id` gets its own localStorage key) so dismissing it on one page
+ * doesn't silently hide it everywhere else. */
+export function HowThisWorks({ id, children }: { id: string; children: React.ReactNode }) {
+  const storageKey = STORAGE_PREFIX + id;
   const [dismissed, setDismissed] = useState(true);
 
   useEffect(() => {
-    setDismissed(window.localStorage.getItem(STORAGE_KEY) === "1");
-  }, []);
+    setDismissed(window.localStorage.getItem(storageKey) === "1");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [storageKey]);
 
   if (dismissed) return null;
 
   const dismiss = () => {
-    window.localStorage.setItem(STORAGE_KEY, "1");
+    window.localStorage.setItem(storageKey, "1");
     setDismissed(true);
   };
 
@@ -22,9 +27,7 @@ export function WelcomeBanner() {
       <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
       <p className="flex-1 text-sm text-foreground/85">
         <span className="font-medium text-foreground">How this works: </span>
-        OmniRetail AI scores every product against every customer segment, then
-        curates the best campaign picks per segment — pick one below to see
-        AI-ranked products, why each was chosen, and ready-to-use ad copy.
+        {children}
       </p>
       <button
         type="button"

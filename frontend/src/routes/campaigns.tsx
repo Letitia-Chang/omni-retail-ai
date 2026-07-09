@@ -9,6 +9,7 @@ import {
   strategyOf,
 } from "@/lib/api";
 import { PageHeader } from "@/components/PageHeader";
+import { HowThisWorks } from "@/components/WelcomeBanner";
 import { ApiError, Loading } from "@/components/ApiError";
 import { CampaignCard } from "@/components/CampaignCard";
 import { Card, CardContent } from "@/components/ui/card";
@@ -87,6 +88,11 @@ function CampaignsPage() {
         title="All campaign recommendations"
         description="Browse the full library of AI-ranked picks. Filter by segment, strategy, or search by product."
       />
+
+      <HowThisWorks id="campaigns">
+        This is every curated pick across all 5 segments in one table — the same picks you'd
+        see browsing segment by segment, just searchable and sortable in one place.
+      </HowThisWorks>
 
       {error && <ApiError error={error} />}
 
