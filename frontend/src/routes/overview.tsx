@@ -12,6 +12,7 @@ import {
   type Campaign,
 } from "@/lib/api";
 import { PageHeader } from "@/components/PageHeader";
+import { WorkflowSteps } from "@/components/WorkflowSteps";
 import { StatCard } from "@/components/StatCard";
 import { ApiError, Loading } from "@/components/ApiError";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -139,6 +140,8 @@ function Overview() {
         title="Marketing command center"
         description="An at-a-glance view of where your AI assistant sees the highest opportunity right now."
       />
+
+      <WorkflowSteps />
 
       {campaigns.error && <ApiError error={campaigns.error} />}
 

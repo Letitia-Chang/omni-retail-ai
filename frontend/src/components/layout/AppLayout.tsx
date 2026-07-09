@@ -3,12 +3,12 @@ import { LayoutDashboard, Users, Table2, Sparkles, FileText, BarChart3, Bot } fr
 import { cn } from "@/lib/utils";
 
 const NAV = [
+  { to: "/overview", label: "Overview", icon: LayoutDashboard },
   { to: "/segments", label: "Segments", icon: Users },
   { to: "/campaigns", label: "Campaigns", icon: Table2 },
   { to: "/generator", label: "AI Generator", icon: Sparkles },
   { to: "/ad-copies", label: "Ad Copies", icon: FileText },
   { to: "/analytics", label: "Analytics", icon: BarChart3 },
-  { to: "/overview", label: "Overview", icon: LayoutDashboard },
 ] as const;
 
 export function AppLayout() {
