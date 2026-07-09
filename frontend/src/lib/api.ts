@@ -96,6 +96,7 @@ export type Campaign = {
   segment_copy_angle?: string;
   ranking_explanation?: string;
   campaign_message?: string;
+  price_tier?: "Budget" | "Mid-range" | "Premium" | string;
 };
 
 // ---------- HTTP ----------
@@ -125,6 +126,22 @@ export type GeneratedCopy = {
   grounded_on: string[];
 };
 
+/** One row of the pre-generated Ad Copies sample library (see
+ * scripts/generate_seed_ad_copy.py) — real Claude output, generated once
+ * and committed as a static CSV, not created on demand. */
+export type SeedAdCopy = {
+  article_id: number;
+  product_name: string;
+  customer_segment: string;
+  promotion_strategy: string;
+  campaign_score: number; // 0–1
+  purchase_probability: number; // 0–1
+  generated_copy: string;
+  grounded_on: string; // "; "-joined product names
+  status: string;
+  generated_at: string;
+};
+
 export const api = {
   segments: () => request<{ segments: string[] }>("/segments"),
   campaigns: () => request<Campaign[]>("/campaigns"),
@@ -139,6 +156,45 @@ export const api = {
       customer_segment: customerSegment,
       promotion_strategy: promotionStrategy,
     }),
+  adCopies: () => request<SeedAdCopy[]>("/ad-copies"),
+};
+
+// ---------- Session-only ad copy history ----------
+//
+// Live "Regenerate" calls from the Generator page are never sent back to
+// the backend to persist — that would mean a public write endpoint
+// something could spam, and would make the sample library above grow
+// without bound on every deploy. Instead each live generation is appended
+// here (sessionStorage: cleared on tab close or refresh) and merged with
+// the permanent sample library on the Ad Copies page.
+
+export type SessionAdCopy = {
+  article_id: number;
+  product_name: string;
+  customer_segment: string;
+  promotion_strategy: string;
+  generated_copy: string;
+  grounded_on: string[];
+  generated_at: string;
+};
+
+const SESSION_STORAGE_KEY = "omniretail-session-ad-copies";
+const SESSION_MAX_ENTRIES = 50;
+
+export const getSessionAdCopies = (): SessionAdCopy[] => {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.sessionStorage.getItem(SESSION_STORAGE_KEY);
+    return raw ? (JSON.parse(raw) as SessionAdCopy[]) : [];
+  } catch {
+    return [];
+  }
+};
+
+export const addSessionAdCopy = (entry: SessionAdCopy): SessionAdCopy[] => {
+  const next = [entry, ...getSessionAdCopies()].slice(0, SESSION_MAX_ENTRIES);
+  window.sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(next));
+  return next;
 };
 
 // ---------- Catalog-wide candidate summary ----------
@@ -212,6 +268,18 @@ export const inventoryLevelOf = (c: Campaign): InventoryLevel | null => {
     ? (raw as InventoryLevel)
     : null;
 };
+
+// H&M's avg_selling_price is a pre-anonymized 0-1 index, not real currency,
+// so this is a relative tier (ranked against the rest of the curated set)
+// rather than a dollar figure — see campaign_generator.py for how it's computed.
+const PRICE_TIER_SYMBOL: Record<string, string> = {
+  Budget: "$",
+  "Mid-range": "$$",
+  Premium: "$$$",
+};
+
+export const priceTierOf = (c: Campaign): string | null =>
+  c.price_tier ? (PRICE_TIER_SYMBOL[c.price_tier] ?? c.price_tier) : null;
 
 /** campaign_score (0–1) → percentage (0–100). */
 export const scoreOf = (c: Campaign): number => Number(c.campaign_score ?? 0) * 100;

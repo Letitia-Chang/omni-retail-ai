@@ -263,6 +263,7 @@ def build_candidate_pool(campaign_df: pd.DataFrame) -> pd.DataFrame:
         "recommended_strategy",
         "product_copy_angle",
         "segment_copy_angle",
+        "avg_selling_price",
     ]
 
     group_cols = [
@@ -307,21 +308,60 @@ def build_candidate_pool(campaign_df: pd.DataFrame) -> pd.DataFrame:
     return segment_product_scores
 
 
+def _pick_diverse_top_n(segment_df: pd.DataFrame, top_n: int) -> pd.DataFrame:
+    """Top picks for one segment, spread across the strategies present in
+    its candidate pool instead of pure top-N by score.
+
+    Pure top-N always favored "Promote aggressively" (it wins on both
+    purchase probability and inventory, the two heaviest terms in
+    campaign_score), so every curated pick in every segment ended up with
+    the same strategy, CTA, and channel — monotonous, and it made the
+    "active strategies" count misleadingly show 1 next to a 6-strategy
+    catalog-wide chart. Reserving roughly equal slots per strategy (still
+    filled by the best-scoring candidates within each) keeps quality high
+    while actually representing the mix.
+    """
+    strategies = segment_df["promotion_strategy"].unique()
+    per_strategy = max(1, top_n // len(strategies))
+
+    picks = (
+        segment_df.sort_values("avg_campaign_score", ascending=False)
+        .groupby("promotion_strategy", group_keys=False)
+        .head(per_strategy)
+    )
+
+    remaining = top_n - len(picks)
+    if remaining > 0:
+        leftover = (
+            segment_df.drop(picks.index)
+            .sort_values("avg_campaign_score", ascending=False)
+        )
+        picks = pd.concat([picks, leftover.head(remaining)])
+
+    return picks.sort_values("avg_campaign_score", ascending=False).head(top_n)
+
+
 def rank_campaigns_by_segment(
     campaign_df: pd.DataFrame,
     top_n: int = 20,
 ) -> pd.DataFrame:
     segment_product_scores = build_candidate_pool(campaign_df)
 
-    ranked_campaigns = (
-        segment_product_scores
-        .sort_values(
-            ["customer_segment", "avg_campaign_score"],
-            ascending=[True, False],
-        )
-        .groupby("customer_segment")
-        .head(top_n)
-        .reset_index(drop=True)
+    # Not a groupby().apply(): pandas 3.x drops the grouping column from
+    # the group passed to the applied function, and there's no way to opt
+    # back in (include_groups=True was removed) - so filter per segment
+    # explicitly instead.
+    ranked_campaigns = pd.concat(
+        [
+            _pick_diverse_top_n(
+                segment_product_scores[
+                    segment_product_scores["customer_segment"] == segment
+                ],
+                top_n,
+            )
+            for segment in segment_product_scores["customer_segment"].unique()
+        ],
+        ignore_index=True,
     )
 
     ranked_campaigns = normalize_campaign_scores(

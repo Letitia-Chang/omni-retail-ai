@@ -10,14 +10,21 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SegmentsRouteImport } from './routes/segments'
+import { Route as OverviewRouteImport } from './routes/overview'
 import { Route as GeneratorRouteImport } from './routes/generator'
 import { Route as CampaignsRouteImport } from './routes/campaigns'
 import { Route as AnalyticsRouteImport } from './routes/analytics'
+import { Route as AdCopiesRouteImport } from './routes/ad-copies'
 import { Route as IndexRouteImport } from './routes/index'
 
 const SegmentsRoute = SegmentsRouteImport.update({
   id: '/segments',
   path: '/segments',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OverviewRoute = OverviewRouteImport.update({
+  id: '/overview',
+  path: '/overview',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GeneratorRoute = GeneratorRouteImport.update({
@@ -35,6 +42,11 @@ const AnalyticsRoute = AnalyticsRouteImport.update({
   path: '/analytics',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdCopiesRoute = AdCopiesRouteImport.update({
+  id: '/ad-copies',
+  path: '/ad-copies',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -43,45 +55,69 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ad-copies': typeof AdCopiesRoute
   '/analytics': typeof AnalyticsRoute
   '/campaigns': typeof CampaignsRoute
   '/generator': typeof GeneratorRoute
+  '/overview': typeof OverviewRoute
   '/segments': typeof SegmentsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ad-copies': typeof AdCopiesRoute
   '/analytics': typeof AnalyticsRoute
   '/campaigns': typeof CampaignsRoute
   '/generator': typeof GeneratorRoute
+  '/overview': typeof OverviewRoute
   '/segments': typeof SegmentsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ad-copies': typeof AdCopiesRoute
   '/analytics': typeof AnalyticsRoute
   '/campaigns': typeof CampaignsRoute
   '/generator': typeof GeneratorRoute
+  '/overview': typeof OverviewRoute
   '/segments': typeof SegmentsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/analytics' | '/campaigns' | '/generator' | '/segments'
-  fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/analytics' | '/campaigns' | '/generator' | '/segments'
-  id:
-    | '__root__'
+  fullPaths:
     | '/'
+    | '/ad-copies'
     | '/analytics'
     | '/campaigns'
     | '/generator'
+    | '/overview'
+    | '/segments'
+  fileRoutesByTo: FileRoutesByTo
+  to:
+    | '/'
+    | '/ad-copies'
+    | '/analytics'
+    | '/campaigns'
+    | '/generator'
+    | '/overview'
+    | '/segments'
+  id:
+    | '__root__'
+    | '/'
+    | '/ad-copies'
+    | '/analytics'
+    | '/campaigns'
+    | '/generator'
+    | '/overview'
     | '/segments'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdCopiesRoute: typeof AdCopiesRoute
   AnalyticsRoute: typeof AnalyticsRoute
   CampaignsRoute: typeof CampaignsRoute
   GeneratorRoute: typeof GeneratorRoute
+  OverviewRoute: typeof OverviewRoute
   SegmentsRoute: typeof SegmentsRoute
 }
 
@@ -92,6 +128,13 @@ declare module '@tanstack/react-router' {
       path: '/segments'
       fullPath: '/segments'
       preLoaderRoute: typeof SegmentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/overview': {
+      id: '/overview'
+      path: '/overview'
+      fullPath: '/overview'
+      preLoaderRoute: typeof OverviewRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/generator': {
@@ -115,6 +158,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AnalyticsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ad-copies': {
+      id: '/ad-copies'
+      path: '/ad-copies'
+      fullPath: '/ad-copies'
+      preLoaderRoute: typeof AdCopiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -127,9 +177,11 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdCopiesRoute: AdCopiesRoute,
   AnalyticsRoute: AnalyticsRoute,
   CampaignsRoute: CampaignsRoute,
   GeneratorRoute: GeneratorRoute,
+  OverviewRoute: OverviewRoute,
   SegmentsRoute: SegmentsRoute,
 }
 export const routeTree = rootRouteImport

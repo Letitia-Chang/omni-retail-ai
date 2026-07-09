@@ -41,6 +41,19 @@ def generate_campaign_table(ranked_campaigns: pd.DataFrame) -> pd.DataFrame:
         axis=1,
     )
 
+    # H&M's avg_selling_price is a pre-anonymized 0-1 index, not a real
+    # currency amount (a known quirk of this Kaggle dataset), so it can't be
+    # shown as a dollar figure without fabricating precision that isn't
+    # there. A relative tier, ranked against the rest of this curated set,
+    # is an honest way to still surface price positioning on the card.
+    if "avg_selling_price" in campaigns.columns:
+        campaigns["price_tier"] = pd.qcut(
+            campaigns["avg_selling_price"],
+            q=3,
+            labels=["Budget", "Mid-range", "Premium"],
+            duplicates="drop",
+        )
+
     return campaigns
 
 

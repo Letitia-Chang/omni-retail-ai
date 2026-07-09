@@ -8,6 +8,7 @@ import {
   imageUrlOf,
   inventoryLevelOf,
   marketingAngleFor,
+  priceTierOf,
   probabilityOf,
   productOf,
   scoreOf,
@@ -55,6 +56,7 @@ export function CampaignCard({ c }: { c: Campaign }) {
   const cta = ctaFor(c);
   const angle = marketingAngleFor(c);
   const tags = tagsOf(c);
+  const priceTier = priceTierOf(c);
   const ChannelIcon = CHANNEL_ICON[channel];
   const imageUrl = imageUrlOf(c);
   const [imgFailed, setImgFailed] = useState(false);
@@ -100,15 +102,25 @@ export function CampaignCard({ c }: { c: Campaign }) {
       </div>
 
       <div className="flex flex-1 flex-col gap-4 p-5">
-        <div>
-          <h3 className="font-semibold text-base leading-snug line-clamp-2">
-            {productOf(c)}
-          </h3>
-          {c.target_audience && (
-            <div className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground">
-              <Users className="h-3 w-3" />
-              <span className="truncate">{c.target_audience}</span>
-            </div>
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0">
+            <h3 className="font-semibold text-base leading-snug line-clamp-2">
+              {productOf(c)}
+            </h3>
+            {c.target_audience && (
+              <div className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground">
+                <Users className="h-3 w-3" />
+                <span className="truncate">{c.target_audience}</span>
+              </div>
+            )}
+          </div>
+          {priceTier && (
+            <span
+              className="shrink-0 rounded-md bg-muted px-2 py-1 text-xs font-semibold text-muted-foreground"
+              title={`${c.price_tier} (relative to this curated set)`}
+            >
+              {priceTier}
+            </span>
           )}
         </div>
 
@@ -116,7 +128,7 @@ export function CampaignCard({ c }: { c: Campaign }) {
         <div className="grid grid-cols-2 gap-2">
           <Stat
             icon={TrendingUp}
-            label="Campaign score"
+            label="Score"
             value={`${score.toFixed(0)}%`}
             barValue={score}
             tone="primary"
@@ -179,13 +191,13 @@ export function CampaignCard({ c }: { c: Campaign }) {
               <Block icon={Wand2} label="Suggested marketing angle">
                 {angle}
               </Block>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 gap-2">
                 <MiniBlock label="Suggested CTA" value={cta} />
                 <MiniBlock
                   label="Suggested channel"
                   value={
                     <span className="inline-flex items-center gap-1.5">
-                      <ChannelIcon className="h-3.5 w-3.5" />
+                      <ChannelIcon className="h-3.5 w-3.5 shrink-0" />
                       {channel}
                     </span>
                   }
@@ -214,11 +226,11 @@ function Stat({
 }) {
   return (
     <div className="rounded-md border border-border bg-background p-2.5">
-      <div className="flex items-center justify-between text-[11px] text-muted-foreground">
-        <span className="inline-flex items-center gap-1">
-          <Icon className="h-3 w-3" /> {label}
+      <div className="flex items-center justify-between gap-1.5 text-[11px] text-muted-foreground">
+        <span className="inline-flex min-w-0 items-center gap-1 truncate">
+          <Icon className="h-3 w-3 shrink-0" /> <span className="truncate">{label}</span>
         </span>
-        <span className="font-semibold tabular-nums text-foreground">{value}</span>
+        <span className="shrink-0 font-semibold tabular-nums text-foreground">{value}</span>
       </div>
       <div className="mt-1.5 h-1 rounded-full bg-muted overflow-hidden">
         <div
@@ -259,7 +271,7 @@ function MiniBlock({ label, value }: { label: string; value: React.ReactNode }) 
       <div className="text-[10px] uppercase tracking-wide text-muted-foreground font-medium">
         {label}
       </div>
-      <div className="mt-0.5 text-sm font-medium text-foreground">{value}</div>
+      <div className="mt-0.5 text-sm font-medium text-foreground break-words">{value}</div>
     </div>
   );
 }

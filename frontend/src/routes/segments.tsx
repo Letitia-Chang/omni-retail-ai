@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { ApiError, Loading } from "@/components/ApiError";
 import { CampaignCard } from "@/components/CampaignCard";
 import { SegmentCard } from "@/components/SegmentCard";
+import { WelcomeBanner } from "@/components/WelcomeBanner";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles } from "lucide-react";
 
@@ -54,6 +55,8 @@ function SegmentExplorer() {
         title="Segment-first campaign explorer"
         description="Pick a customer segment to load AI-ranked product recommendations, generated copy, and channel suggestions in real time."
       />
+
+      <WelcomeBanner />
 
       {segments.error && <ApiError error={segments.error} />}
 
