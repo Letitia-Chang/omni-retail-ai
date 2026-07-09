@@ -152,13 +152,12 @@ function AnalyticsPage() {
                   <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                   <XAxis dataKey="name" stroke="var(--muted-foreground)" fontSize={12} interval={0} angle={-15} textAnchor="end" height={60} />
                   <YAxis stroke="var(--muted-foreground)" fontSize={12} tickFormatter={(v) => `${v}%`} />
-                  <Tooltip contentStyle={chartTooltip} formatter={(value: number, name: string) => name === "Avg score" ? [`${value.toFixed(1)}%`, name] : [value, name]} />
+                  <Tooltip contentStyle={chartTooltip} formatter={(value: number) => [`${value.toFixed(1)}%`, "Avg score"]} />
                   <Bar dataKey="score" name="Avg score" radius={[6, 6, 0, 0]}>
                     {segmentScores.map((row, i) => (
                       <Cell key={i} fill={row.fill} />
                     ))}
                   </Bar>
-                  <Bar dataKey="count" name="# recs" fill="var(--chart-3)" radius={[6, 6, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             )}
