@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { useEffect, useMemo, useState } from "react";
 import {
+  addSessionAdCopy,
   api,
   campaignMessageOf,
   copyAngleOf,
@@ -140,6 +141,19 @@ function GeneratedOutput({ product, segment }: { product: Campaign; segment: str
   const liveCopy = useMutation({
     mutationFn: () =>
       api.generateCopy(Number(product.article_id), segment, strategyOf(product)),
+    onSuccess: (data) => {
+      // Session-only — never sent back to the backend. See api.ts for why
+      // (avoids a public write endpoint and keeps the sample library static).
+      addSessionAdCopy({
+        article_id: Number(product.article_id),
+        product_name: productOf(product),
+        customer_segment: segment,
+        promotion_strategy: strategyOf(product),
+        generated_copy: data.copy,
+        grounded_on: data.grounded_on,
+        generated_at: new Date().toISOString(),
+      });
+    },
   });
 
   useEffect(() => {

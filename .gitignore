@@ -32,6 +32,9 @@ data/processed/hm/*.csv
 # Needed at deploy time to build the RAG index (scripts/build_product_index.py) —
 # raw Kaggle data isn't in the repo, so this can't be regenerated without it.
 !data/processed/hm/articles_enriched.csv
+# Seed content for the Ad Copies page — generated once locally via
+# scripts/generate_seed_ad_copy.py (real Claude calls), not at deploy time.
+!data/processed/hm/pregenerated_ad_copy.csv
 
 # RAG product index (~50MB — regenerate with scripts/build_product_index.py)
 saved_models/rag/

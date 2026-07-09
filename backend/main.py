@@ -124,6 +124,25 @@ def load_candidate_summary():
     return _candidate_summary_cache
 
 
+_ad_copies_cache = None
+
+
+def load_ad_copies():
+    # Pre-generated once via scripts/generate_seed_ad_copy.py (real Claude
+    # calls against real products), not regenerated at deploy time — this
+    # is a committed sample library, not live inference. Live "Regenerate"
+    # calls from the Generator view never write here; they're kept
+    # session-only on the frontend, so this file can never grow from public
+    # demo traffic.
+    global _ad_copies_cache
+    if _ad_copies_cache is None:
+        path = PROCESSED_DATA_DIR / "pregenerated_ad_copy.csv"
+        if not path.exists():
+            return pd.DataFrame()
+        _ad_copies_cache = pd.read_csv(path)
+    return _ad_copies_cache
+
+
 _product_index_cache = None
 _articles_cache = None
 
@@ -195,6 +214,7 @@ def root():
             "/summary",
             "/analytics/candidate-summary",
             "/generate-copy",
+            "/ad-copies",
         ],
     }
 
@@ -249,6 +269,15 @@ def get_candidate_summary():
     # coerces it back to NaN, which the JSON encoder then rejects.)
     summary = summary.astype(object).where(pd.notnull(summary), None)
     return summary.to_dict(orient="records")
+
+
+@app.get("/ad-copies")
+def get_ad_copies():
+    """The permanent sample library for the Ad Copies page — see
+    load_ad_copies() for why this is pre-generated and static rather than
+    accumulating from live /generate-copy calls."""
+    ad_copies = load_ad_copies()
+    return ad_copies.to_dict(orient="records")
 
 
 @app.post("/generate-copy")
