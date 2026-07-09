@@ -2,7 +2,7 @@
 .DS_Store
 __pycache__/
 
-# Claude Code local state
+# Local coding-agent state
 .claude/
 
 # Python

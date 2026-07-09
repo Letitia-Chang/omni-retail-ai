@@ -23,10 +23,11 @@ Retail marketing teams manage thousands of products across multiple customer seg
 - **Customer segmentation** — KMeans clustering over RFM-style behavioral features, producing five named segments (e.g. *Loyal High-Value Customers*, *Inactive Budget Shoppers*) with a documented strategy per segment ([reports/segment_strategy.md](reports/segment_strategy.md))
 - **Product enrichment** — derives style/occasion tags and marketing attributes per product from catalog metadata
 - **Purchase-intent prediction** — an XGBoost classifier trained on simulated customer-product interactions, predicting purchase probability per customer-product pair
-- **Inventory-aware campaign ranking** — combines purchase probability × inventory signal × segment-fit score into a single campaign score, with a human-readable ranking explanation per recommendation
+- **Inventory-aware, strategy-diversified campaign ranking** — combines purchase probability × inventory signal × segment-fit score into a single campaign score, then allocates each segment's curated picks across every promotion strategy it has candidates for (not just the single highest-scoring one), with a human-readable ranking explanation per recommendation
 - **RAG-grounded ad-copy generation** — a FAISS index over the ~105K-product catalog (TF-IDF + SVD embeddings) retrieves similar products at request time to ground a live Claude Haiku call, so generated copy is tied to real catalog context instead of a fixed template
-- **FastAPI backend** — serves segments, ranked campaigns, summary stats, and live RAG-grounded copy generation as JSON
-- **React dashboard** — a TanStack Start app with 5 views: overview, segment explorer, campaign list, analytics, and a campaign generator
+- **Ad copy review & export workflow** — a permanent library of pre-generated sample copy plus anything generated live in your own session, with one-click CSV export — closes the loop from "generate" to "hand off to a marketing team"
+- **FastAPI backend** — serves segments, ranked campaigns, summary stats, ad-copy library, and live RAG-grounded copy generation as JSON, with per-endpoint rate limiting and in-memory caching to keep the public demo's cost bounded
+- **React dashboard** — a TanStack Start app with 6 views: segment explorer (landing page), campaign list, AI generator, ad copies, analytics, and an overview summary — each with a one-line, dismissible "how this works" explainer for first-time visitors
 - **Real, reproducible evaluation** — silhouette score, ROC-AUC, ranking-quality distributions, and a quantitative RAG grounding check, all computed from this repo's own pipeline ([reports/evaluation.md](reports/evaluation.md))
 
 ## Tech Stack
@@ -36,7 +37,7 @@ Retail marketing teams manage thousands of products across multiple customer seg
 | Data / ML | Python, pandas, NumPy, scikit-learn, XGBoost, joblib |
 | RAG | FAISS, scikit-learn (TF-IDF + TruncatedSVD embeddings), Anthropic Claude (`claude-haiku-4-5`) |
 | Data source | [Kaggle H&M Personalized Fashion Recommendations](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations) dataset, via `kagglehub` |
-| Backend | FastAPI, Uvicorn |
+| Backend | FastAPI, Uvicorn, slowapi (rate limiting) |
 | Frontend | React 19, TanStack Start/Router/Query, Tailwind CSS, Radix UI |
 | Deploy target | Frontend on Cloudflare Workers (Vite plugin + `wrangler` config included); backend on Railway or Render (`railway.json` / `render.yaml` both included) |
 
@@ -63,12 +64,17 @@ flowchart LR
     H --> K[(data/processed/hm/*.csv)]
     E -->|scripts/build_product_index.py| N[(saved_models/rag\nFAISS index)]
 
+    N -->|scripts/generate_seed_ad_copy.py\none-time, real Claude calls| P[(pregenerated_ad_copy.csv)]
+
     K --> L[FastAPI backend]
+    P --> L
     I -.-> L
     J -.-> L
     N -.->|retrieval| L
     L -->|"/generate-copy"| O[Claude Haiku\nRAG-grounded ad copy]
+    O -->|session-only, never sent back| Q[Browser sessionStorage]
     L --> M[React dashboard]
+    Q --> M
 ```
 
 ## Setup
@@ -110,6 +116,8 @@ Embeds the enriched product catalog (TF-IDF + SVD) and builds a FAISS index at `
 
 Then copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY` (get one at [console.anthropic.com](https://console.anthropic.com/)) — required for `/generate-copy`. Without it, the dashboard still runs fine and falls back to the pre-computed ad-copy template.
 
+The Ad Copies page's permanent sample library (`data/processed/hm/pregenerated_ad_copy.csv`) is already committed, so no extra step is needed to see it locally. To regenerate it (real Claude API calls): `PYTHONPATH=. python scripts/generate_seed_ad_copy.py`.
+
 ### 5. Run the backend
 
 ```bash
@@ -131,13 +139,14 @@ Dashboard runs at `http://localhost:3000` (TanStack Start dev server).
 
 ## Demo
 
-With the backend and frontend both running:
+With the backend and frontend both running (`/` redirects straight to Segments — the stronger first-run experience):
 
-1. **Overview** (`/`) — total campaigns, segment count, average campaign score
-2. **Segments** (`/segments`) — explore each customer segment and its top recommended products
-3. **Campaigns** (`/campaigns`) — search/filter the full ranked campaign list
-4. **Analytics** (`/analytics`) — score distributions and inventory-level breakdowns
-5. **Generator** (`/generator`) — walks through a single campaign recommendation with its ranking explanation, and generates live RAG-grounded ad copy via Claude (falls back to a pre-computed template if `ANTHROPIC_API_KEY` isn't set)
+1. **Segments** (`/segments`) — explore each customer segment and its top recommended products, with images, price tier, and an expandable "why this was picked" panel
+2. **Campaigns** (`/campaigns`) — search/filter the full ranked campaign list
+3. **AI Generator** (`/generator`) — walks through a single campaign recommendation with its ranking explanation, and generates live RAG-grounded ad copy via Claude (falls back to a pre-computed template if `ANTHROPIC_API_KEY` isn't set)
+4. **Ad Copies** (`/ad-copies`) — a permanent library of sample generated copy plus anything generated live in your own session, with CSV export
+5. **Analytics** (`/analytics`) — score distributions and inventory-level breakdowns, computed across the full scored catalog
+6. **Overview** (`/overview`) — a 4-step workflow guide plus summary stats (products scored, avg campaign score, active strategies)
 
 ## Deploying
 
@@ -153,7 +162,7 @@ Both configs are kept in the repo — [`render.yaml`](render.yaml) and [`railway
 
 Either way, note the deployed URL — the frontend needs it next.
 
-**Known limitation on either host:** product images won't load on the deployed backend — the H&M image set (~30GB) isn't in the repo (see `.gitignore`). The dashboard already handles this gracefully (falls back to a placeholder icon per product), so nothing breaks; it's just photo-less in production. Images work fully when running locally after `scripts/download_data.py`.
+**On product images:** the full H&M image set (~30GB) isn't in the repo (see `.gitignore`) — but the deployed app only ever references the ~99 products in the curated recommendation set, so just those (~25MB) are bundled and tracked directly, and load correctly in production. If you extend the curated set to reference different products, re-bundle their images the same way (see `data/processed/hm/images/`) — the dashboard falls back to a placeholder icon for anything not bundled, so nothing breaks either way.
 
 ### Frontend → Cloudflare Workers
 
@@ -172,11 +181,7 @@ npm run deploy        # wraps `wrangler deploy`
 
 ## Screenshots
 
-**Overview** — live campaign stats, top recommendations, and strategy mix
-
-![Dashboard overview](reports/figures/dashboard_overview.png)
-
-**Segments** — pick a segment, browse its AI-ranked product picks with images
+**Segments** (landing page) — pick a segment, browse its AI-ranked product picks with real images, price tier, and a "why this was picked" panel
 
 ![Segment explorer](reports/figures/dashboard_segments.png)
 
@@ -184,27 +189,45 @@ npm run deploy        # wraps `wrangler deploy`
 
 ![Campaign list](reports/figures/dashboard_campaigns.png)
 
-**AI Generator** — single-campaign recommendation with its ranking explanation
+**AI Generator** — live, RAG-grounded ad copy generated by Claude on demand, grounded in real similar products
 
 ![AI campaign generator](reports/figures/dashboard_generator.png)
 
-**Analytics** — score and inventory distributions across segments
+**Ad Copies** — a permanent sample library plus anything generated live this session, with CSV export
+
+![Ad copies library](reports/figures/dashboard_ad_copies.png)
+
+**Analytics** — score and inventory distributions across the full scored catalog
 
 ![Analytics](reports/figures/dashboard_analytics.png)
 
-**Modeling notebooks** — customer segmentation (PCA projection and elbow method)
+**Overview** — a 4-step workflow guide plus live campaign stats and strategy mix
+
+![Dashboard overview](reports/figures/dashboard_overview.png)
+
+## Model Training & Evaluation Visuals
+
+**Customer segmentation** — PCA projection (showing why silhouette score is moderate — real behavioral segments overlap) and the elbow-method justification for k=5
 
 ![Customer segments (PCA projection)](reports/figures/customer_pca_plot.png)
 ![KMeans elbow method](reports/figures/kmeans_elbow_method.png)
+
+**Purchase-intent model (XGBoost)** — ROC curve, confusion matrix, and top feature importances on the held-out test set (all regenerated from the actual saved model — see `scripts/plot_purchase_model_evaluation.py`)
+
+![Purchase-intent ROC curve](reports/figures/purchase_intent_roc_curve.png)
+![Purchase-intent confusion matrix](reports/figures/purchase_intent_confusion_matrix.png)
+![Purchase-intent feature importance](reports/figures/purchase_intent_feature_importance.png)
 
 ## Limitations & Future Improvements
 
 - **Bulk product enrichment (`product_enrichment.py`) is still rule-based** (keyword-matching for style/occasion tags) — only the on-demand ad-copy call in the Generator view (`/generate-copy`) uses a live, RAG-grounded LLM call. Extending the LLM call to bulk enrichment would mean ~105K API calls, which is a batch-processing / cost tradeoff worth its own write-up rather than doing by default.
 - **Catalog embeddings are TF-IDF + SVD, not neural embeddings.** This was a deliberate platform-driven choice — no current `torch` wheel supports both Intel macOS and the `numpy>=2` the rest of the stack (`pandas`, `scikit-learn`) requires — but a from-scratch build could swap in a hosted embedding API without touching the FAISS index or the generation call.
 - **Inventory levels are synthetic** (randomly assigned per product), not sourced from a real inventory system.
-- **Purchase-intent training pairs are simulated**, not from real clickstream/purchase logs beyond the H&M transaction history used for labels.
+- **Purchase-intent training pairs are simulated**, not from real clickstream/purchase logs beyond the H&M transaction history used for labels — the reported ROC-AUC measures separation from *sampled* negatives, not observed non-purchases.
+- **Price tier is relative, not absolute.** H&M's `avg_selling_price` in this dataset is a pre-anonymized 0–1 index, not real currency (42% of the full catalog is literally `0`, meaning "no price history," not "free") — the Budget/Mid-range/Premium badges are ranked against the curated set itself, not a claim about real-world pricing.
+- Cluster-to-segment-name mapping is a hardcoded index lookup, not derived from cluster properties — rerunning KMeans on different data could silently relabel segments.
 - No automated tests or CI yet.
-- Product images require a separate Kaggle download and aren't bundled in the repo.
+- No data upload/import UI anywhere in the app, by design — data prep is an offline batch pipeline (`scripts/run_full_pipeline.py`), not something a user of this dashboard does by hand.
 
 **Roadmap:**
 1. ~~Repo cleanup~~
@@ -212,6 +235,8 @@ npm run deploy        # wraps `wrangler deploy`
 3. ~~Wire the RAG-grounded generator into the FastAPI backend~~ — `POST /generate-copy`, called live from the Generator view's "Regenerate" button
 4. ~~Polish the frontend and deploy~~ — see [Deploying](#deploying) (Cloudflare Workers for the frontend, Railway or Render for the backend)
 5. ~~Add a proper evaluation write-up~~ — see [reports/evaluation.md](reports/evaluation.md) (model metrics, ranking quality, RAG grounding quality)
+6. ~~Diversify curated recommendations across strategies~~ — campaign ranking now reserves slots per promotion strategy instead of pure top-N-by-score
+7. ~~Close the loop on ad-copy generation~~ — Ad Copies review/export page, backed by a permanent sample library plus session-only live history
 
 ## License
 
