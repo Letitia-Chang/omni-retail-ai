@@ -6,7 +6,6 @@ import {
   colorForSegment,
   INVENTORY_COLORS,
   INVENTORY_LEVELS,
-  probabilityOf,
   rowsForMetric,
   scoreOf,
   type InventoryLevel,
@@ -40,21 +39,22 @@ function AnalyticsPage() {
   const data = campaigns.data ?? [];
 
   const probBySegment = useMemo(() => {
-    const buckets: Record<string, { sum: number; n: number }> = {};
-    data.forEach((c) => {
-      const seg = (c.customer_segment as string) ?? "Unknown";
-      if (!buckets[seg]) buckets[seg] = { sum: 0, n: 0 };
-      buckets[seg].sum += probabilityOf(c);
-      buckets[seg].n += 1;
-    });
-    return Object.entries(buckets)
-      .map(([name, { sum, n }]) => ({
-        name,
-        // probabilityOf already returns 0–100.
-        value: n ? sum / n : 0,
+    // Catalog-wide average (every scored candidate per segment), not just
+    // the curated top-N `/campaigns` returns — purchase_probability is a
+    // direct term in campaign_score, so the top-N is selected for
+    // near-highest probability by construction and averages near 100% for
+    // every segment regardless of real differences between segments.
+    const rows = rowsForMetric(
+      candidateSummary.data ?? [],
+      "segment_purchase_probability"
+    );
+    return rows
+      .map((r) => ({
+        name: r.key,
+        value: (r.avg_purchase_probability ?? 0) * 100,
       }))
       .sort((a, b) => b.value - a.value);
-  }, [data]);
+  }, [candidateSummary.data]);
 
   const inventoryDist = useMemo(() => {
     // Catalog-wide distribution (every scored candidate), not just the
@@ -97,8 +97,10 @@ function AnalyticsPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <ChartCard title="Avg purchase probability by segment">
-          {campaigns.isLoading ? (
+          {candidateSummary.isLoading ? (
             <Loading rows={3} />
+          ) : candidateSummary.error ? (
+            <ApiError error={candidateSummary.error} />
           ) : (
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={probBySegment} layout="vertical" margin={{ left: 30 }}>

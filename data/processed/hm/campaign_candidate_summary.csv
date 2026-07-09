@@ -1,13 +1,18 @@
 metric,key,count,avg_purchase_probability
-strategy_mix,Awareness campaign,125539,
-strategy_mix,Discount campaign,78544,
-strategy_mix,Deprioritize,66901,
-strategy_mix,Personalized recommendation,38802,
-strategy_mix,Promote aggressively,10134,
-strategy_mix,Premium positioning,10093,
-inventory_distribution,high,103383,
-inventory_distribution,low,62289,
-inventory_distribution,medium,164341,
-inventory_risk,high,103383,0.3618040982814075
-inventory_risk,low,62289,0.34702659199435903
-inventory_risk,medium,164341,0.3587341345839619
+strategy_mix,Awareness campaign,125551,
+strategy_mix,Discount campaign,78516,
+strategy_mix,Deprioritize,66912,
+strategy_mix,Personalized recommendation,38782,
+strategy_mix,Promote aggressively,10140,
+strategy_mix,Premium positioning,10112,
+inventory_distribution,high,103365,
+inventory_distribution,low,62315,
+inventory_distribution,medium,164333,
+inventory_risk,high,103365,0.36178835852824287
+inventory_risk,low,62315,0.3471093327418164
+inventory_risk,medium,164333,0.3587282453442898
+segment_purchase_probability,Engaged Budget Shoppers,58843,0.3589570180088015
+segment_purchase_probability,High-Value One-Time Buyers,59568,0.3204720172514004
+segment_purchase_probability,Inactive Budget Shoppers,68976,0.3449736390240303
+segment_purchase_probability,Loyal High-Value Customers,61366,0.40170609745785785
+segment_purchase_probability,Regular Shoppers,81260,0.36080823843216303

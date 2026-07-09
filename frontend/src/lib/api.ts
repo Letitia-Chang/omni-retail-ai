@@ -152,7 +152,8 @@ export const api = {
 export type CandidateSummaryMetric =
   | "strategy_mix"
   | "inventory_distribution"
-  | "inventory_risk";
+  | "inventory_risk"
+  | "segment_purchase_probability";
 
 export type CandidateSummaryRow = {
   metric: CandidateSummaryMetric;

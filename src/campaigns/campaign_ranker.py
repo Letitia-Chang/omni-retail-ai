@@ -357,6 +357,24 @@ def summarize_candidate_pool(candidate_pool: pd.DataFrame) -> pd.DataFrame:
             }
         )
 
+    # Per-segment purchase probability across the *entire* candidate pool —
+    # the curated top-N recommendations are selected for near-highest
+    # purchase probability by construction (it's a direct term in
+    # campaign_score), so averaging over just those always lands near 100%
+    # regardless of segment. The candidate pool gives the real spread.
+    segment_groups = candidate_pool.groupby("customer_segment")
+    for segment, group in segment_groups:
+        rows.append(
+            {
+                "metric": "segment_purchase_probability",
+                "key": segment,
+                "count": int(len(group)),
+                "avg_purchase_probability": float(
+                    group["avg_purchase_probability"].mean()
+                ),
+            }
+        )
+
     return pd.DataFrame(rows)
 
 def create_ranking_explanations(ranked_campaigns: pd.DataFrame) -> pd.DataFrame:
