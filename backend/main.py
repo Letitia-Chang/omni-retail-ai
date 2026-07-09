@@ -65,10 +65,14 @@ app.add_middleware(SlowAPIMiddleware)
 IMAGES_DIR = (
     Path(__file__).resolve().parent.parent
     / "data"
-    / "raw"
+    / "processed"
     / "hm"
     / "images"
 )
+# Only the ~95 product images actually referenced by the curated campaign
+# recommendations are tracked here (~24MB) — the full 29GB Kaggle image set
+# lives at data/raw/hm/images/ locally but is gitignored, so it was never
+# present on deploy and every request 404'd to a placeholder icon.
 
 IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
