@@ -1,11 +1,9 @@
 # OmniRetail AI
 
-**Turns raw retail data into AI-ranked campaigns and ready-to-use ad copy.**
+**Turns raw retail data into AI-ranked campaigns and ready-to-use ad copy.**   🔗 [Try it live](https://tanstack-start-app.letitiachang0807-bb0.workers.dev)
 
 <!-- Screenshot below — swap for a demo video/GIF once one exists. -->
 ![OmniRetail AI — segment explorer](reports/figures/dashboard_segments.png)
-
-🔗 [Try it live](https://tanstack-start-app.letitiachang0807-bb0.workers.dev)
 
 ---
 
