@@ -1,10 +1,11 @@
 # OmniRetail AI
 
-**AI-powered retail marketing intelligence — from raw transaction data to AI-curated campaigns with live, RAG-grounded ad copy.**
+**Turns raw retail data into AI-ranked campaigns and ready-to-use ad copy.**
 
-[**Live Demo →**](https://tanstack-start-app.letitiachang0807-bb0.workers.dev)
-
+<!-- Screenshot below — swap for a demo video/GIF once one exists. -->
 ![OmniRetail AI — segment explorer](reports/figures/dashboard_segments.png)
+
+🔗 [Try it live](https://tanstack-start-app.letitiachang0807-bb0.workers.dev)
 
 ---
 
@@ -25,7 +26,11 @@ OmniRetail AI turns raw customer, transaction, and product data into a ranked li
 
 ## Product Walkthrough
 
-**Segments** (landing page) — pick a segment, see AI-ranked product picks with real images, price tier, and a "why this was picked" explanation.
+**Overview** (landing page) — a 4-step workflow guide plus live campaign stats.
+
+![Dashboard overview](reports/figures/dashboard_overview.png)
+
+**Segments** — pick a segment, see AI-ranked product picks with real images, price tier, and a "why this was picked" explanation.
 
 ![Segment explorer](reports/figures/dashboard_segments.png)
 
@@ -44,10 +49,6 @@ OmniRetail AI turns raw customer, transaction, and product data into a ranked li
 **Analytics** — score and inventory distributions across the full scored catalog.
 
 ![Analytics](reports/figures/dashboard_analytics.png)
-
-**Overview** — a 4-step workflow guide plus live campaign stats.
-
-![Dashboard overview](reports/figures/dashboard_overview.png)
 
 ## Tech Stack
 
@@ -98,7 +99,9 @@ precomputed offline; only ad-copy generation is live. Clean sans-serif
 labels, rounded rectangles, subtle shadows, arrows for data flow, no clutter.
 -->
 
-This is a **batch-then-serve architecture, not a real-time system**: the ML pipeline (segmentation, purchase-intent modeling, campaign ranking) runs once and writes its outputs to disk. FastAPI is a thin, cached read layer over those outputs, with exactly one live-inference endpoint — `/generate-copy` — bolted on for the RAG feature. Ad copy generated live is never written back to the backend; it's kept in the browser's session storage and merged client-side with a small, permanent sample library on the Ad Copies page.
+This is a **batch-then-serve architecture, not a real-time system**. The ML pipeline — segmentation, purchase-intent modeling, campaign ranking — runs once and writes its outputs to disk. FastAPI is a thin, cached read layer over those outputs, with exactly one live-inference endpoint: `/generate-copy`, for the RAG ad-copy feature.
+
+Ad copy generated live is never written back to the backend. It stays in the browser's session storage and merges client-side with a small, permanent sample library on the Ad Copies page.
 
 *(Diagram in progress — see the generation prompt in this file's source.)*
 

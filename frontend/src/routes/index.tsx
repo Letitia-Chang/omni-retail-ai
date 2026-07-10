@@ -1,11 +1,12 @@
 import { createFileRoute, redirect } from "@tanstack/react-router";
 
-// Segments is the more useful first screen — pick a segment, see why each
-// product was picked, generate copy — so it's the landing experience.
-// Overview (the summary dashboard) lives at /overview for once someone
-// already understands the system and wants the bird's-eye view.
+// Overview leads the sidebar and carries the 4-step workflow guide, so
+// it's the landing experience — a first-time visitor sees "here's how this
+// works" before anything else. Segments (the hands-on segment-by-segment
+// explorer) lives at /segments, one click away via the workflow guide or
+// the nav.
 export const Route = createFileRoute("/")({
   beforeLoad: () => {
-    throw redirect({ to: "/segments" });
+    throw redirect({ to: "/overview" });
   },
 });
