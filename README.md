@@ -63,47 +63,11 @@ OmniRetail AI turns raw customer, transaction, and product data into a ranked li
 
 ## Architecture
 
-<!--
-Image-generation prompt for reports/figures/architecture_diagram.png:
-
-Create a clean, modern, professional software architecture diagram (flat
-style, light background, muted teal/navy color palette) showing left-to-right
-data flow through these stages:
-
-1. Data source: "Kaggle H&M Dataset" (customers, articles, transactions)
-2. An "Offline batch pipeline, runs once" cluster:
-   - Data cleaning
-   - Customer segmentation (KMeans) and Product enrichment (rule-based
-     tagging), running in parallel
-   - Purchase-intent model (XGBoost), fed by both
-   - Campaign ranking (score + diversify across promotion strategies)
-   - Campaign generation (templates)
-   - Output: CSVs written to disk
-3. A branch from Product enrichment: FAISS product index (TF-IDF + SVD
-   embeddings)
-4. A one-time step from the FAISS index: "Seed ad-copy script (real Claude
-   calls, run once)" -> "Permanent ad-copy sample library (CSV)"
-5. A "Live, real-time" cluster, visually distinct from the offline cluster
-   (e.g. dashed boundary or different shading):
-   - FastAPI backend, reading the CSVs (cached in memory) and the FAISS index
-   - One live endpoint, /generate-copy: retrieves similar products via
-     FAISS, calls Claude Haiku, returns grounded ad copy
-6. Client: React dashboard (TanStack Start) on Cloudflare Workers, plus
-   browser sessionStorage holding live-generated ad copy for the current
-   session only (merged client-side with the permanent sample library,
-   never sent back to the backend)
-7. Backend deployed on Railway
-
-The single most important thing to convey visually: most of the system is
-precomputed offline; only ad-copy generation is live. Clean sans-serif
-labels, rounded rectangles, subtle shadows, arrows for data flow, no clutter.
--->
+![Architecture diagram](reports/figures/architecture_diagram.png)
 
 This is a **batch-then-serve architecture, not a real-time system**. The ML pipeline — segmentation, purchase-intent modeling, campaign ranking — runs once and writes its outputs to disk. FastAPI is a thin, cached read layer over those outputs, with exactly one live-inference endpoint: `/generate-copy`, for the RAG ad-copy feature.
 
 Ad copy generated live is never written back to the backend. It stays in the browser's session storage and merges client-side with a small, permanent sample library on the Ad Copies page.
-
-*(Diagram in progress — see the generation prompt in this file's source.)*
 
 ## Model Training & Evaluation
 
