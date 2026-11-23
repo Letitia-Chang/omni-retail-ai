@@ -36,5 +36,5 @@ data/processed/hm/*.csv
 # scripts/generate_seed_ad_copy.py (real Claude calls), not at deploy time.
 !data/processed/hm/pregenerated_ad_copy.csv
 
-# RAG product index (~50MB — regenerate with scripts/build_product_index.py)
-saved_models/rag/
+# RAG product index is committed (built once with scripts/build_product_index.py)
+# so deploys don't rebuild it; the build step peaks at ~770 MB of RAM.

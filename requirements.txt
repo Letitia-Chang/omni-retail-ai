@@ -6,7 +6,7 @@ tqdm
 joblib
 
 # Machine learning
-scikit-learn
+scikit-learn==1.9.1  # pinned: the committed RAG index pickles were built with this version
 xgboost
 
 # Kaggle dataset downloader
@@ -21,7 +21,7 @@ python-dotenv
 # and grounded ad-copy generation. Deliberately avoids sentence-transformers/
 # torch here: no current torch wheel supports both Intel macOS and numpy 2.x,
 # which the rest of this stack (pandas/scikit-learn) requires.
-faiss-cpu
+faiss-cpu==1.16.0
 anthropic
 
 # Rate limiting for the public /generate-copy endpoint
