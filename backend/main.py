@@ -1,3 +1,4 @@
+import os
 import datetime
 
 from fastapi import FastAPI, HTTPException, Request
@@ -14,6 +15,7 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
 
 from src.utils.paths import PROCESSED_DATA_DIR, RAG_MODEL_DIR
+from src.campaigns.campaign_generator import generate_campaign_message
 from src.rag.product_index import load_product_index, retrieve_similar_products
 from src.rag.copy_generator import generate_grounded_copy
 from src.features.product_enrichment import create_product_context
@@ -167,12 +169,30 @@ def get_product_index():
     return _product_index_cache
 
 
+ARTICLE_COLUMNS = [
+    "article_id",
+    "product_name",
+    "product_type",
+    "product_group",
+    "color_group",
+    "index_group",
+    "garment_group",
+    "description",
+    "style",
+    "occasion",
+]
+
+
 def get_articles():
     global _articles_cache
 
     if _articles_cache is None:
+        # Only the columns the RAG path reads. The full catalog has ~37
+        # columns and takes ~177 MB in memory; this subset is about half,
+        # which keeps the server inside a 512 MB free-tier instance.
         _articles_cache = pd.read_csv(
-            PROCESSED_DATA_DIR / "articles_enriched.csv"
+            PROCESSED_DATA_DIR / "articles_enriched.csv",
+            usecols=ARTICLE_COLUMNS,
         )
 
     return _articles_cache
@@ -307,21 +327,32 @@ def generate_copy(request: Request, body: GenerateCopyRequest):
         query_text, index, article_ids, articles, vectorizer, svd, top_k=5
     )
 
-    try:
-        copy = generate_grounded_copy(
-            product_row=product_row,
-            similar_products=similar_products,
-            customer_segment=body.customer_segment,
-            promotion_strategy=body.promotion_strategy,
-        )
-    except Exception as exc:
-        raise HTTPException(
-            status_code=502,
-            detail=f"Ad copy generation failed: {exc}",
-        )
+    if not os.getenv("ANTHROPIC_API_KEY"):
+        # No key configured (e.g. a local run): fall back to the rule-based
+        # template instead of failing, as documented in the README.
+        template_row = product_row.copy()
+        template_row["customer_segment"] = body.customer_segment
+        template_row["promotion_strategy"] = body.promotion_strategy
+        copy = generate_campaign_message(template_row)
+        source = "template"
+    else:
+        try:
+            copy = generate_grounded_copy(
+                product_row=product_row,
+                similar_products=similar_products,
+                customer_segment=body.customer_segment,
+                promotion_strategy=body.promotion_strategy,
+            )
+        except Exception as exc:
+            raise HTTPException(
+                status_code=502,
+                detail=f"Ad copy generation failed: {exc}",
+            )
+        source = "claude"
 
     return {
         "article_id": body.article_id,
         "copy": copy,
+        "source": source,
         "grounded_on": similar_products["product_name"].tolist(),
     }
