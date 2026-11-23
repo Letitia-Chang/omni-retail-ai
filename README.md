@@ -119,4 +119,4 @@ Without `ANTHROPIC_API_KEY`, everything still runs — the Generator falls back 
 
 ## Contact
 
-Ting Ya Chang — [LinkedIn](https://www.linkedin.com/in/tingya-chang/) · tingyachang97@gmail.com
+Ting-Ya Chang — [LinkedIn](https://www.linkedin.com/in/tingya-chang/) · tingyachang97@gmail.com
