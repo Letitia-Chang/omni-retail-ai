@@ -57,7 +57,7 @@ OmniRetail AI turns raw customer, transaction, and product data into a ranked li
 | Data source | [Kaggle H&M Personalized Fashion Recommendations](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations) |
 | Backend | FastAPI, Uvicorn, slowapi (rate limiting) |
 | Frontend | React 19, TanStack Start/Router/Query, Tailwind CSS, Radix UI |
-| Deployed on | Cloudflare Workers (frontend), Railway (backend) |
+| Deployed on | Cloudflare Workers (frontend), Render (backend) |
 
 ## Architecture
 
